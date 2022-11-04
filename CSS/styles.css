@@ -1,0 +1,115 @@
+/*MENU RESPONSIVE */
+
+/*TEST MENU*/
+nav{
+    padding: 1em;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+}
+.logo-index{
+    margin-right: auto;
+}
+li {
+    display: block;
+    transition-duration: 0.5s;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+/**/
+body{
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+h2{
+    font: 2em 'Archia-Bold',sans-serif;
+}
+
+p{
+    font: 1em 'Archia-Regular',sans-serif;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.video-presentation{
+    //order:-1;
+    aspect-ratio:48 / 31.155;
+}
+
+.butInformation{
+    align-self: center;
+    font: 0.875em 'Archia-Bold',sans-serif;
+    text-decoration: none;
+    border: none;
+    border-radius: 2em;
+    padding: 1em;
+    background-color: blue;
+    color: white;
+}
+
+cite{
+    font: 11px 'Archia-Regular',sans-serif;
+}
+
+.h2-small{
+    font: 1rem 'Archia-Bold',sans-serif;
+    color: blue;
+}
+
+.logo-flex{
+    display: inline-block;
+}
+
+.logo:nth-child(odd), .logo:nth-child(even){
+width: 48%;
+}
+
+.text-small, .link-text-small{
+    font: 0.875rem 'Archia-Regular',sans-serif;
+    color: #7e838f;
+}
+
+.link-text-small{
+    color: blue;
+}
+
+h3{
+    font:1.5rem 'Archia-Bold',sans-serif;
+}
+
+
+article ul li{
+    font: 0.875rem 'Archia-Medium',sans-serif ;
+    font-weight: 500;
+}
