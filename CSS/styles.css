@@ -1,16 +1,23 @@
 /*MENU RESPONSIVE */
+body {
+    background-color: white;
+    padding-right: 1.20rem;
+    padding-left: 1.20rem;
+}
 
-/*TEST MENU*/
-nav{
+nav {
     padding: 1em;
 }
-.menu{
+
+.menu {
     display: flex;
     justify-content: flex-end;
 }
-.logo-index{
+
+.logo-index {
     margin-right: auto;
 }
+
 li {
     display: block;
     transition-duration: 0.5s;
@@ -41,75 +48,205 @@ ul li ul li {
     clear: both;
     width: 100%;
 }
-/**/
-body{
+
+body {
     font-size: 1rem;
     text-align: center;
 }
 
 
-h2{
-    font: 2em 'Archia-Bold',sans-serif;
+h2 {
+    font: 2em 'Archia-Bold', sans-serif;
 }
 
-p{
-    font: 1em 'Archia-Regular',sans-serif;
+p {
+    font: 1em 'Archia-Regular', sans-serif;
 }
 
-section{
+section {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.video-presentation{
-    //order:-1;
-    aspect-ratio:48 / 31.155;
+.video-presentation {
+    order: -1;
+    aspect-ratio: 48 / 31.155;
 }
 
-.butInformation{
+.butInformation {
     align-self: center;
-    font: 0.875em 'Archia-Bold',sans-serif;
+    font: 0.875em 'Archia-Bold', sans-serif;
+    text-decoration: none;
+    border: none;
+    border-radius: 12.5rem;
+    padding: 0.5rem 1em;
+    background-color: #004bff;
+    color: white;
+    border: 2px solid #004bff;
+    width: 12rem;
+    min-height: 2.5rem;
+}
+
+.butInformation:hover {
+    align-self: center;
+    font: 0.875em 'Archia-Bold', sans-serif;
     text-decoration: none;
     border: none;
     border-radius: 2em;
     padding: 1em;
-    background-color: blue;
+    background-color: #004bff;
     color: white;
+    border: 2px solid #004bff;
 }
 
-cite{
-    font: 11px 'Archia-Regular',sans-serif;
+cite {
+    font: 11px 'Archia-Regular', sans-serif;
 }
 
-.h2-small{
-    font: 1rem 'Archia-Bold',sans-serif;
+.h2-small {
+    font: 1rem 'Archia-Bold', sans-serif;
     color: blue;
 }
 
-.logo-flex{
+.logo-flex {
     display: inline-block;
 }
 
-.logo:nth-child(odd), .logo:nth-child(even){
-width: 48%;
-}
-
-.text-small, .link-text-small{
-    font: 0.875rem 'Archia-Regular',sans-serif;
+.text-small, .link-text-small {
+    font: 0.875rem 'Archia-Regular', sans-serif;
     color: #7e838f;
 }
 
-.link-text-small{
+.link-text-small {
     color: blue;
 }
 
-h3{
-    font:1.5rem 'Archia-Bold',sans-serif;
+h3 {
+    font: 1.5rem 'Archia-Bold', sans-serif;
 }
 
 
-article ul li{
-    font: 0.875rem 'Archia-Medium',sans-serif ;
+article ul li {
+    font: 0.875rem 'Archia-Medium', sans-serif;
     font-weight: 500;
 }
+
+
+/* SLIDER https://alvarotrigo.com/blog/create-a-slider-with-pure-CSS/ */
+.slider{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    overflow: hidden;
+    column-gap: 30px;
+}
+.card-reviews{
+    padding: 1rem;
+}
+/* FIN DU SLIDER */
+
+@media screen and (max-width: 767px) {
+    section p span, .text-small, .comparaison, .small-disappear {
+        display: none;
+    }
+
+    h2 {
+        font: 2rem 'Archia-Bold', sans-serif;
+        margin-bottom: 1.25rem;
+    }
+
+    section p {
+        color: #474c56;
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 2rem;
+    }
+
+    .butInformation {
+        margin-bottom: 0.5rem;
+    }
+
+    .logo-flex {
+        display: grid;
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 2.5rem;
+        justify-content: stretch;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 3fr));
+    }
+
+    .logo-flex > img {
+        max-width: 100px;
+    }
+
+    section ul li {
+        color: #474c56;
+        font: 1rem Archia-SemiBold, sans-serif;
+        text-align: left;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 479px) /* SMALL SCREEN*/ {
+    .logo-flex {
+        display: grid;
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 2.5rem;
+        justify-content: stretch;
+        grid-template-columns: repeat(auto-fit, minmax(128px, 3fr));
+    }
+
+    .logo-flex > img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    section p span, .text-small, .comparaison, .small-disappear {
+        display: none;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* SECTION MENU CHANGEANT */
+.main-container-button {
+    margin: 1rem auto;
+    background-color: white;
+    min-width: 18.75rem;
+    height: auto;
+}
+
+button {
+    border: none;
+}
+
+.buttons {
+    display: flex;
+    gap: 2px;
+}
+.blocks{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.button1 {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.button2 {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.button3 {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+/* FIN DU MENU CHANGEANT EN CSS / JS*/
