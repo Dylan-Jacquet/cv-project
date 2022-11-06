@@ -16,17 +16,17 @@
     <h1 class="hidden">
         CV de Dylan JACQUET
     </h1>
-    <nav>
+    <nav class="top-nav">
         <h2 class="hidden">
             Menu de navigation
         </h2>
         <ul class="menu">
-            <li class="logo-index">
+            <li>
                 <a href="#"><img src="./IMG/logo.svg" alt="Dylan Jacquet Logo"></a>
             </li>
-            <li>
+            <li class="menu-deroulant">
                 Accueil
-                <ul>
+                <ul class="sous-menu">
                     <li><a href="#">Lien 1</a></li>
                     <li><a href="#">Lien 2</a></li>
                     <li><a href="#">Lien 3</a></li>
@@ -34,9 +34,9 @@
                     <li><a href="#">Lien 5</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="menu-deroulant">
                 A propos
-                <ul>
+                <ul class="sous-menu">
                     <li><a href="#">Javascript et Typescript</a></li>
                     <li><a href="#">PHP et MySql</a></li>
                     <li><a href="#">HTML & CSS</a></li>
@@ -45,9 +45,9 @@
             <li>
                 <a href="#">Langages</a>
             </li>
-            <li>
+            <li class="menu-deroulant">
                 Veille numérique
-                <ul>
+                <ul class="sous-menu">
                     <li><a href="#">CSS</a></li>
                     <li><a href="#">JavaScript</a></li>
                     <li><a href="#">Angular</a></li>
@@ -57,9 +57,9 @@
                     <li><a href="#">Java</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="menu-deroulant">
                 Compétences
-                <ul>
+                <ul class="sous-menu">
                     <li><a href="#">Inverse de chaîne</a></li>
                     <li><a href="#">Encodeur d'URL</a></li>
                     <li><a href="#">Décapant des lignes vides</a></li>
@@ -70,7 +70,10 @@
             <li>
                 <a href="#">Projets</a>
             </li>
-            <button>Portfolio</button>
+            <li>
+                <button>Portfolio</button>
+            </li>
+
         </ul>
     </nav>
     <section>
@@ -79,8 +82,7 @@
         </h2>
         <p>
             <span>Je suis le développeur web #1 de la section web à l’HEPL.</span> Ma maitrise des différents langages
-            de
-            programmation me permet d’être polyvalent dans le métier du web.
+            de programmation me permet d’être polyvalent dans le métier du web.
         </p>
         <button class="butInformation">En savoir plus</button>
         <cite>
@@ -112,15 +114,15 @@
         <p class="text-small">Beaucoup de connaissance que j’ai acquis proviennent de ces endroits <a
                 class="link-text-small" href="#">En savoir plus.</a></p>
     </section>
-    <section>
+    <section class="small-disappear">
         <h2>
-            Découvrez en davantage sur mon curriculum vitae
+            Dites au revoir aux site internet peu accessible
         </h2>
         <p>
             Je m’appelle Dylan Jacquet, je suis un étudiant de la HEPL, dans ma section nous avons appris l’art de la
             qualité du web.
         </p>
-        <article>
+        <article class="comparaison">
             <h3>
                 Un mauvais développeur web
             </h3>
@@ -145,10 +147,10 @@
                 </li>
             </ul>
         </article>
-        <h3>
-            Dylan Jacquet développeur Web
-        </h3>
-        <article>
+        <article class="comparaison">
+            <h3>
+                Dylan Jacquet développeur Web
+            </h3>
             <ul>
                 <li>
                     <img src="./LOGO1.png" alt="">
@@ -179,122 +181,205 @@
             Je m’appelle Dylan Jacquet, je suis un étudiant de la HEPL, dans ma section nous avons appris l’art de la
             qualité du web.
         </p>
-        <div>
-            <a href="#">Qui suis-je ?</a> <!-- Menu changeant JS -->
-            <a href="#">Pourquoi ce choix ?</a> <!-- Menu changeant JS-->
-            <a href="#">Ce que j’aime</a> <!-- Menu changeant JS -->
-        </div>
-        <div>
-            <video controls>
-                <source src="Dylan-Jacquet-CV.mp4" type="video/mp4"/>
-                <source src="Dylan-Jacquet-CV.webm" type="video/webm"/>
-                <p>
-                    Votre navigateur de recherche ne supporte pas ce contenu. Vous pouvez retrouver
-                    <a href="Dylan-Jacquet-CV.mp4">ici la vidéo.</a>
-                </p>
-            </video>
-            <p>
-                Je m’appelle Dylan, je suis un étudiant de l’HEPL. J’ai 21 ans. J’habite dans la commune de Stoumont. Je
-                possède le permis B et je possède une qualification en infographie et bientôt un diplôme.
-            </p>
-            <div>
-                <img src="" alt="Photo de moi">
-                <p>
-                    Dylan Jacquet
-                </p>
-                <p>
-                    Étudiant à l’HEPL en Technique Infographique Option WEB
-                </p>
+        <div class="main-container-button">
+            <div class="buttons">
+                <button id="btn_button1">Qui suis-je ?</button> <!-- Menu changeant JS -->
+                <button id="btn_button2">Pourquoi ce choix ?</button> <!-- Menu changeant JS-->
+                <button id="btn_button3">Ce que j’aime</button> <!-- Menu changeant JS -->
+            </div>
+            <div class="blocks">
+                <div class="button1" id="button1">
+                    <video controls>
+                        <source src="Dylan-Jacquet-CV.mp4" type="video/mp4"/>
+                        <source src="Dylan-Jacquet-CV.webm" type="video/webm"/>
+                        <p>
+                            Votre navigateur de recherche ne supporte pas ce contenu. Vous pouvez retrouver
+                            <a href="Dylan-Jacquet-CV.mp4">ici la vidéo.</a>
+                        </p>
+                    </video>
+                    <p>
+                        Je m’appelle Dylan, je suis un étudiant de l’HEPL. J’ai 21 ans. J’habite dans la commune de
+                        Stoumont. Je
+                        possède le permis B et je possède une qualification en infographie et bientôt un diplôme.
+                    </p>
+                    <img src="" alt="Photo de moi">
+                    <p>
+                        Dylan Jacquet
+                    </p>
+                    <p>
+                        Étudiant à l’HEPL en Technique Infographique Option WEB
+                    </p>
+                    <a href="#">
+                        Apprenez en plus à propos de moi
+                    </a>
+                    <button>
+                        Travailler avec moi
+                    </button>
+                </div>
+                <div class="button2" id="button2">
+                    <video controls>
+                        <source src="Dylan-Jacquet-CV.mp4" type="video/mp4"/>
+                        <source src="Dylan-Jacquet-CV.webm" type="video/webm"/>
+                        <p>
+                            Votre navigateur de recherche ne supporte pas ce contenu. Vous pouvez retrouver
+                            <a href="Dylan-Jacquet-CV.mp4">ici la vidéo.</a>
+                        </p>
+                    </video>
+                    <p>
+                        J’ai décidé de choisir l’option Web car la création de site internet et le développement
+                        d’application mobile m’ont toujours intéressé.
+                    </p>
+                    <img src="" alt="Photo de moi">
+                    <p>
+                        Dylan Jacquet
+                    </p>
+                    <p>
+                        Étudiant à l’HEPL en Technique Infographique Option WEB
+                    </p>
+                    <a href="#">
+                        Apprenez en plus à propos de moi
+                    </a>
+                    <button>
+                        Travailler avec moi
+                    </button>
+                </div>
+                <div class="button3" id="button3">
+                    <video controls>
+                        <source src="Dylan-Jacquet-CV.mp4" type="video/mp4"/>
+                        <source src="Dylan-Jacquet-CV.webm" type="video/webm"/>
+                        <p>
+                            Votre navigateur de recherche ne supporte pas ce contenu. Vous pouvez retrouver
+                            <a href="Dylan-Jacquet-CV.mp4">ici la vidéo.</a>
+                        </p>
+                    </video>
+                    <p>
+                        Dans le Web, j’apprécie la plupart des choses. J’ai appris à faire du Front END et du Back END
+                        et plus tard j’aimerais être un développeur web Full Stack .
+                    </p>
+                    <img src="" alt="Photo de moi">
+                    <p>
+                        Dylan Jacquet
+                    </p>
+                    <p>
+                        Étudiant à l’HEPL en Technique Infographique Option WEB
+                    </p>
+                    <a href="#">
+                        Apprenez en plus à propos de moi
+                    </a>
+                    <button>
+                        Travailler avec moi
+                    </button>
+                </div>
             </div>
         </div>
-        <a href="#">Apprenez en plus à propos de moi</a>
+        </div>
     </section>
     <section>
         <h2>
             Voici quelques avis sur mes travaux réalisés
         </h2>
-        <div>
-            <p>
-
-            </p>
-            <p>
-
-            </p>
-            <img src=""> <!-- RATING -->
-            <div>
-                <img src="#">
-                <p>NOM</p>
-                <p>POSTE ENTREPRISE</p>
+        <div class="slider-wrapper">
+            <div class="slider">
+                    <section class="card-reviews" id="slide-1">
+                        <h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur beatae eveniet
+                            laboriosam molestias natus non nulla, perspiciatis repellendus! Harum inventore iste magnam,
+                            magni nam quae soluta. Autem molestias, non?
+                        </p>
+                        <img src=""> <!-- RATING -->
+                        <div>
+                            <img src="#">
+                            <p>NOM</p>
+                            <p>POSTE ENTREPRISE</p>
+                        </div>
+                    </section>
+                    <section class="card-reviews" id="slide-2">
+                        <h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur beatae eveniet
+                            laboriosam molestias natus non nulla, perspiciatis repellendus! Harum inventore iste magnam,
+                            magni nam quae soluta. Autem molestias, non?
+                        </p>
+                        <img src=""> <!-- RATING -->
+                        <div>
+                            <img src="#">
+                            <p>NOM</p>
+                            <p>POSTE ENTREPRISE</p>
+                        </div>
+                    </section>
+                    <section class="card-reviews" id="slide-3">
+                        <h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur beatae eveniet
+                            laboriosam molestias natus non nulla, perspiciatis repellendus! Harum inventore iste magnam,
+                            magni nam quae soluta. Autem molestias, non?
+                        </p>
+                        <img src=""> <!-- RATING -->
+                        <div>
+                            <img src="#">
+                            <p>NOM</p>
+                            <p>POSTE ENTREPRISE</p>
+                        </div>
+                    </section>
+                    <section class="card-reviews" id="slide-4">
+                        <h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur beatae eveniet
+                            laboriosam molestias natus non nulla, perspiciatis repellendus! Harum inventore iste magnam,
+                            magni nam quae soluta. Autem molestias, non?
+                        </p>
+                        <img src=""> <!-- RATING -->
+                        <div>
+                            <img src="#">
+                            <p>NOM</p>
+                            <p>POSTE ENTREPRISE</p>
+                        </div>
+                    </section>
+                    <section class="card-reviews" id="slide-5" >
+                        <h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur beatae eveniet
+                            laboriosam molestias natus non nulla, perspiciatis repellendus! Harum inventore iste magnam,
+                            magni nam quae soluta. Autem molestias, non?
+                        </p>
+                        <img src=""> <!-- RATING -->
+                        <div>
+                            <img src="#">
+                            <p>NOM</p>
+                            <p>POSTE ENTREPRISE</p>
+                        </div>
+                    </section>
+                    <section class="card-reviews" id="slide-6">
+                        <h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur beatae eveniet
+                            laboriosam molestias natus non nulla, perspiciatis repellendus! Harum inventore iste magnam,
+                            magni nam quae soluta. Autem molestias, non?
+                        </p>
+                        <img src=""> <!-- RATING -->
+                        <div>
+                            <img src="#">
+                            <p>NOM</p>
+                            <p>POSTE ENTREPRISE</p>
+                        </div>
+                    </section>
             </div>
-        </div>
-        <div>
-            <p>
-
-            </p>
-            <p>
-
-            </p>
-            <img src=""> <!-- RATING -->
-            <div>
-                <img src="#">
-                <p>NOM</p>
-                <p>POSTE ENTREPRISE</p>
-            </div>
-        </div>
-        <div>
-            <p>
-
-            </p>
-            <p>
-
-            </p>
-            <img src=""> <!-- RATING -->
-            <div>
-                <img src="#">
-                <p>NOM</p>
-                <p>POSTE ENTREPRISE</p>
-            </div>
-        </div>
-        <div>
-            <p>
-
-            </p>
-            <p>
-
-            </p>
-            <img src=""> <!-- RATING -->
-            <div>
-                <img src="#">
-                <p>NOM</p>
-                <p>POSTE ENTREPRISE</p>
-            </div>
-        </div>
-        <div>
-            <p>
-
-            </p>
-            <p>
-
-            </p>
-            <img src=""> <!-- RATING -->
-            <div>
-                <img src="#">
-                <p>NOM</p>
-                <p>POSTE ENTREPRISE</p>
-            </div>
-        </div>
-        <div>
-            <p>
-
-            </p>
-            <p>
-
-            </p>
-            <img src=""> <!-- RATING -->
-            <div>
-                <img src="#">
-                <p>NOM</p>
-                <p>POSTE ENTREPRISE</p>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
             </div>
         </div>
     </section>
@@ -346,7 +431,7 @@
             </ul>
             <button>Travailler avec moi</button>
             <div>
-                <img src="./IMAGE-TEXTE.png" alt="">
+                <img src="../../IMAGE-TEXTE.png" width="100px " alt="">
                 <p>
                     2019 <!-- CHANGEMENT D'IMAGE EN APPUYANT -->
                 </p>
@@ -380,7 +465,7 @@
                 </li>
             </ul>
             <button>Travailler avec moi</button>
-            <img src="./PARCOURS-SCOLAIRES.png" alt="">
+            <img src="../../PARCOURS-SCOLAIRES.png" alt="">
         </section>
     </section>
     <section>
@@ -398,7 +483,7 @@
                 <span>100%</span> web developper
             </p>
         </div>
-        <a href="#">En apprendre plus sur moi</a>
+        <a class="link" href="#">En apprendre plus sur moi</a>
         <img src="./JS-TS.png" alt="">
     </section>
 </main>
@@ -481,5 +566,6 @@
         </div>
     </div>
 </footer>
+<script src="./JS/main.js"></script>
 </body>
 </html>
