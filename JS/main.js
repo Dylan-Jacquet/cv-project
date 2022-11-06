@@ -1,3 +1,13 @@
+// NAV MENU
+const selectElement = (element) => document.querySelector(element);
+selectElement('.menu-icons').addEventListener('click',() =>{
+   selectElement('nav').classList.toggle('active');
+});
+selectElement('.nav-list li:hover > .sub-menu').addEventListener('mouseover',() =>{
+    selectElement('.sub-menu').style.display="block";
+});
+// NAV MENU END
+
 const btn_button1 = document.querySelector("#btn_button1");
 const btn_button2 = document.querySelector("#btn_button2");
 const btn_button3 = document.querySelector("#btn_button3");

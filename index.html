@@ -8,6 +8,7 @@
     <meta name="description" content="Voici un site internet présentant le CV de Dylan Jacquet Web Designer">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="stylesheet" href="./CSS/reset.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/styles.css">
     <title>Dylan Jacquet CV</title>
 </head>
@@ -16,67 +17,83 @@
     <h1 class="hidden">
         CV de Dylan JACQUET
     </h1>
-    <nav class="top-nav">
-        <h2 class="hidden">
-            Menu de navigation
-        </h2>
-        <ul class="menu">
-            <li>
-                <a href="#"><img src="./IMG/logo.svg" alt="Dylan Jacquet Logo"></a>
-            </li>
-            <li class="menu-deroulant">
-                Accueil
-                <ul class="sous-menu">
-                    <li><a href="#">Lien 1</a></li>
-                    <li><a href="#">Lien 2</a></li>
-                    <li><a href="#">Lien 3</a></li>
-                    <li><a href="#">Lien 4</a></li>
-                    <li><a href="#">Lien 5</a></li>
-                </ul>
-            </li>
-            <li class="menu-deroulant">
-                A propos
-                <ul class="sous-menu">
-                    <li><a href="#">Javascript et Typescript</a></li>
-                    <li><a href="#">PHP et MySql</a></li>
-                    <li><a href="#">HTML & CSS</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Langages</a>
-            </li>
-            <li class="menu-deroulant">
-                Veille numérique
-                <ul class="sous-menu">
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">Angular</a></li>
-                    <li><a href="#">Java</a></li>
-                    <li><a href="#">Java</a></li>
-                    <li><a href="#">Java</a></li>
-                    <li><a href="#">Java</a></li>
-                </ul>
-            </li>
-            <li class="menu-deroulant">
-                Compétences
-                <ul class="sous-menu">
-                    <li><a href="#">Inverse de chaîne</a></li>
-                    <li><a href="#">Encodeur d'URL</a></li>
-                    <li><a href="#">Décapant des lignes vides</a></li>
-                    <li><a href="#">Compte des mots de chaîne</a></li>
-                    <li><a href="#">Compte des mots de chaîne</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Projets</a>
-            </li>
-            <li>
-                <button>Portfolio</button>
-            </li>
+    <div class="container">
+        <nav>
+            <h2 class="hidden">
+                Menu de navigation
+            </h2>
+            <div class="menu-icons">
+                <i class="icon ion-md-menu"></i>
+                <i class="icon ion-md-close"></i>
+            </div>
+            <a href="index.html" class="logo">
+                <img src="./IMG/logo.svg" alt="">
+            </a>
+            <ul class="nav-list">
+                <li>
+                    <a href="" class="link-menu">Accueil
+                        <i class="icon ion-md-arrow-dropdown"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Lien 1</a></li>
+                        <li><a href="#">Lien 2</a></li>
+                        <li><a href="#">Lien 3</a></li>
+                        <li><a href="#">Lien 4</a></li>
+                        <li><a href="#">Lien 5</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="link-menu">A propos
+                        <i class="icon ion-md-arrow-dropdown"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Javascript et Typescript</a></li>
+                        <li><a href="#">PHP et MySql</a></li>
+                        <li><a href="#">HTML & CSS</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="link-menu">Langages</a>
+                </li>
+                <li>
+                    <a href="#" class="link-menu">Veille numérique
+                        <i class="icon ion-md-arrow-dropdown"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">Angular</a></li>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">Java</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="link-menu">Compétences
+                        <i class="icon ion-md-arrow-dropdown"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Inverse de chaîne</a></li>
+                        <li><a href="#">Encodeur d'URL</a></li>
+                        <li><a href="#">Décapant des lignes vides</a></li>
+                        <li><a href="#">Compte des mots de chaîne</a></li>
+                        <li><a href="#">Compte des mots de chaîne</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Projets</a>
+                </li>
+                <li>
+                    <a href="#" class="btn">Portfolio</a>
+                </li>
 
-        </ul>
-    </nav>
-    <section>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section>
         <h2>
             Dylan Jacquet Développeur WEB
         </h2>
@@ -97,7 +114,6 @@
             </p>
         </video>
     </section>
-</header>
 <main>
     <section>
         <h2 class="h2-small">
@@ -280,102 +296,102 @@
         </h2>
         <div class="slider-wrapper">
             <div class="slider">
-                    <section class="card-reviews" id="slide-1">
-                        <h3>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur beatae eveniet
-                            laboriosam molestias natus non nulla, perspiciatis repellendus! Harum inventore iste magnam,
-                            magni nam quae soluta. Autem molestias, non?
-                        </p>
-                        <img src=""> <!-- RATING -->
-                        <div>
-                            <img src="#">
-                            <p>NOM</p>
-                            <p>POSTE ENTREPRISE</p>
-                        </div>
-                    </section>
-                    <section class="card-reviews" id="slide-2">
-                        <h3>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur beatae eveniet
-                            laboriosam molestias natus non nulla, perspiciatis repellendus! Harum inventore iste magnam,
-                            magni nam quae soluta. Autem molestias, non?
-                        </p>
-                        <img src=""> <!-- RATING -->
-                        <div>
-                            <img src="#">
-                            <p>NOM</p>
-                            <p>POSTE ENTREPRISE</p>
-                        </div>
-                    </section>
-                    <section class="card-reviews" id="slide-3">
-                        <h3>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur beatae eveniet
-                            laboriosam molestias natus non nulla, perspiciatis repellendus! Harum inventore iste magnam,
-                            magni nam quae soluta. Autem molestias, non?
-                        </p>
-                        <img src=""> <!-- RATING -->
-                        <div>
-                            <img src="#">
-                            <p>NOM</p>
-                            <p>POSTE ENTREPRISE</p>
-                        </div>
-                    </section>
-                    <section class="card-reviews" id="slide-4">
-                        <h3>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur beatae eveniet
-                            laboriosam molestias natus non nulla, perspiciatis repellendus! Harum inventore iste magnam,
-                            magni nam quae soluta. Autem molestias, non?
-                        </p>
-                        <img src=""> <!-- RATING -->
-                        <div>
-                            <img src="#">
-                            <p>NOM</p>
-                            <p>POSTE ENTREPRISE</p>
-                        </div>
-                    </section>
-                    <section class="card-reviews" id="slide-5" >
-                        <h3>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur beatae eveniet
-                            laboriosam molestias natus non nulla, perspiciatis repellendus! Harum inventore iste magnam,
-                            magni nam quae soluta. Autem molestias, non?
-                        </p>
-                        <img src=""> <!-- RATING -->
-                        <div>
-                            <img src="#">
-                            <p>NOM</p>
-                            <p>POSTE ENTREPRISE</p>
-                        </div>
-                    </section>
-                    <section class="card-reviews" id="slide-6">
-                        <h3>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur beatae eveniet
-                            laboriosam molestias natus non nulla, perspiciatis repellendus! Harum inventore iste magnam,
-                            magni nam quae soluta. Autem molestias, non?
-                        </p>
-                        <img src=""> <!-- RATING -->
-                        <div>
-                            <img src="#">
-                            <p>NOM</p>
-                            <p>POSTE ENTREPRISE</p>
-                        </div>
-                    </section>
+                <section class="card-reviews" id="slide-1">
+                    <h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur beatae eveniet
+                        laboriosam molestias natus non nulla, perspiciatis repellendus! Harum inventore iste magnam,
+                        magni nam quae soluta. Autem molestias, non?
+                    </p>
+                    <img src=""> <!-- RATING -->
+                    <div>
+                        <img src="#">
+                        <p>NOM</p>
+                        <p>POSTE ENTREPRISE</p>
+                    </div>
+                </section>
+                <section class="card-reviews" id="slide-2">
+                    <h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur beatae eveniet
+                        laboriosam molestias natus non nulla, perspiciatis repellendus! Harum inventore iste magnam,
+                        magni nam quae soluta. Autem molestias, non?
+                    </p>
+                    <img src=""> <!-- RATING -->
+                    <div>
+                        <img src="#">
+                        <p>NOM</p>
+                        <p>POSTE ENTREPRISE</p>
+                    </div>
+                </section>
+                <section class="card-reviews" id="slide-3">
+                    <h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur beatae eveniet
+                        laboriosam molestias natus non nulla, perspiciatis repellendus! Harum inventore iste magnam,
+                        magni nam quae soluta. Autem molestias, non?
+                    </p>
+                    <img src=""> <!-- RATING -->
+                    <div>
+                        <img src="#">
+                        <p>NOM</p>
+                        <p>POSTE ENTREPRISE</p>
+                    </div>
+                </section>
+                <section class="card-reviews" id="slide-4">
+                    <h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur beatae eveniet
+                        laboriosam molestias natus non nulla, perspiciatis repellendus! Harum inventore iste magnam,
+                        magni nam quae soluta. Autem molestias, non?
+                    </p>
+                    <img src=""> <!-- RATING -->
+                    <div>
+                        <img src="#">
+                        <p>NOM</p>
+                        <p>POSTE ENTREPRISE</p>
+                    </div>
+                </section>
+                <section class="card-reviews" id="slide-5">
+                    <h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur beatae eveniet
+                        laboriosam molestias natus non nulla, perspiciatis repellendus! Harum inventore iste magnam,
+                        magni nam quae soluta. Autem molestias, non?
+                    </p>
+                    <img src=""> <!-- RATING -->
+                    <div>
+                        <img src="#">
+                        <p>NOM</p>
+                        <p>POSTE ENTREPRISE</p>
+                    </div>
+                </section>
+                <section class="card-reviews" id="slide-6">
+                    <h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur beatae eveniet
+                        laboriosam molestias natus non nulla, perspiciatis repellendus! Harum inventore iste magnam,
+                        magni nam quae soluta. Autem molestias, non?
+                    </p>
+                    <img src=""> <!-- RATING -->
+                    <div>
+                        <img src="#">
+                        <p>NOM</p>
+                        <p>POSTE ENTREPRISE</p>
+                    </div>
+                </section>
             </div>
             <div class="slider-nav">
                 <a href="#slide-1"></a>

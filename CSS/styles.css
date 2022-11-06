@@ -1,59 +1,208 @@
-/*MENU RESPONSIVE */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Archia', sans-serif;
+}
+
 body {
     background-color: white;
-    padding-right: 1.20rem;
-    padding-left: 1.20rem;
+    overflow-x: hidden;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
 }
 
-nav {
-    padding: 1em;
+a {
+    text-decoration: none;
 }
 
-.menu {
-    display: flex;
-    justify-content: flex-end;
+ul {
+    list-style: none;
 }
 
-.logo-index {
-    margin-right: auto;
-}
-
-li {
-    display: block;
-    transition-duration: 0.5s;
-}
-
-li:hover {
-    cursor: pointer;
-}
-
-ul li ul {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    transition: all 0.5s ease;
-    margin-top: 1rem;
+header {
+    width: 100%;
+    top: 0;
     left: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 117rem;
+    margin: 0 auto;
+}
+
+.menu-icons {
+    color: grey;
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1500;
     display: none;
 }
 
-ul li:hover > ul,
-ul li ul:hover {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-}
-
-ul li ul li {
-    clear: both;
+nav {
+    display: flex;
+    align-items: center;
     width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
 }
 
-body {
-    font-size: 1rem;
+.logo {
+    display: flex;
+    margin-right: 5rem;
+}
+
+.logo i {
+    margin: auto;
+    font-size: 2rem;
+    color: grey;
+}
+
+.nav-list {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-list > li {
+    position: relative;
+}
+
+.sub-menu li {
+    line-height: 3rem;
+}
+
+.nav-list a {
+    display: block;
+    color: #7e838f;
+    font-size: .875rem;
+    line-height: 3;
+    font-weight: 500;
+    padding: 0 1rem;
+    transition: color .2s;
+}
+
+.link-menu {
+    padding: 1rem;
+}
+
+.nav-list a:hover {
+    color: blue;
+}
+
+li .btn {
+    font: .875rem Archia-Bold,sans-serif;
+    font-weight: 700;
+    color: #004bff;
+    display: inline-block;
+    background-color: white;
+    border: .125rem solid #004bff;
+    border-radius: 5rem;
+    transition: background-color 650ms;
+    line-height: 1;
+    width: 9rem;
+    padding: .75rem 1.25rem;
     text-align: center;
 }
 
+.btn:hover {
+    background-color: #00FAC8;
+    color: black;
+    border: 2px solid #004bff;
+}
+
+.sub-menu {
+    width: 100%;
+    position: absolute;
+    border-radius: 1rem;
+    background-color: white; /* FOND SOUS MENU*/
+    z-index: 100;
+    right: 3rem;
+    transition: all 650ms ease;
+    display: none
+}
+
+.nav-list li:hover > .sub-menu {
+    right: -1rem;
+    display: block;
+    visibility: visible;
+    -webkit-box-shadow: 0px 0px 13px -1px rgba(0, 0, 0, 0.72);
+    box-shadow: 0px 0px 13px -1px rgba(0, 0, 0, 0.72);
+}
+
+@media screen and (max-width: 991px) {
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        display: none;
+        flex-direction: column;
+        align-items: initial;
+        background-color: white;
+        z-index: 1000;
+    }
+
+    .nav-list > li {
+        line-height: 6rem;
+    }
+
+    .sub-menu {
+        position: initial;
+        border: 3px solid transparent;
+        border-left-color: #7e838f;
+        margin-left: 1rem;
+        max-height: 0;
+    }
+
+    .sub-menu:before {
+        display: none;
+    }
+
+    .nav-list li:hover > .sub-menu {
+        opacity: 1;
+        visibility: visible;
+        max-height: initial;
+    }
+
+    .btn {
+        margin: 0 auto 0 0;
+        line-height: initial;
+    }
+
+    .menu-icons {
+        display: block;
+    }
+
+    .ion-md-close {
+        display: none;
+    }
+
+    nav.active .ion-md-close {
+        display: block;
+    }
+
+    nav.active .ion-md-menu {
+        display: none;
+    }
+
+    nav.active .nav-list {
+        display: flex;
+    }
+}
+
+
+/*MENU RESPONSIVE */
 
 h2 {
     font: 2em 'Archia-Bold', sans-serif;
@@ -70,7 +219,7 @@ section {
 }
 
 .video-presentation {
-    order: -1;
+/ / order: - 1;
     aspect-ratio: 48 / 31.155;
 }
 
@@ -134,16 +283,18 @@ article ul li {
 
 
 /* SLIDER https://alvarotrigo.com/blog/create-a-slider-with-pure-CSS/ */
-.slider{
+.slider {
     display: flex;
     flex-grow: 1;
     flex-shrink: 0;
     overflow: hidden;
     column-gap: 30px;
 }
-.card-reviews{
+
+.card-reviews {
     padding: 1rem;
 }
+
 /* FIN DU SLIDER */
 
 @media screen and (max-width: 767px) {
@@ -226,7 +377,8 @@ button {
     display: flex;
     gap: 2px;
 }
-.blocks{
+
+.blocks {
     display: flex;
     width: 100%;
     height: 100%;
@@ -249,4 +401,5 @@ button {
     width: 100%;
     height: auto;
 }
+
 /* FIN DU MENU CHANGEANT EN CSS / JS*/
