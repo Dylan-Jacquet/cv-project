@@ -1,10 +1,9 @@
-body {
-    background-color: white;
-    overflow-x: hidden;
-    padding: 0 1.25rem;
-}
 /*NAV BUILD*/
 /*STICKY NAV ON THE TOP*/
+body{
+    padding: 8rem 1.25rem 0;
+}
+
 header {
     z-index: 5;
     width: 100%;
@@ -13,49 +12,50 @@ header {
     top: 0;
     left: 0;
 }
-
+/* NAVBAR*/
 .container {
-    position: relative;
     left: 0;
     top: 0;
     right: 0;
     bottom: auto;
+    position: fixed;
+    height: 4rem;
+    background-color: white;
 }
-
 /*VIDEO IN THE BACK OF THE NAV*/
 .video-presentation {
     z-index: 1;
 }
-
 /* NAVBAR STYLING STARTS */
 .navbar {
     display: flex;
     column-gap: 2rem;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: 0.25rem 1.25rem;
     background-color: #ffffff;
     color: #ffffff;
+    min-height: 100%;
 }
-
 li a {
     color: #7e838f;
     font: .875rem Archia-Medium, sans-serif;
     font-weight: 300;
     transition: all 500ms ease;
 }
-
 li a:hover {
     color: #004bff;
 }
-
 /* LOGO */
 .logo {
     font-size: 2rem;
 }
-
+.logo img {
+    width: 7rem;
+    padding-top: .25rem;
+}
 /* NAVBAR MENU */
-.menu {
+.menu { // VERSION DESKTOP
     display: flex;
     gap: 2em;
     font-size: 1rem;
@@ -67,7 +67,6 @@ li a:hover {
     position: relative;
     transition: all 5000ms ease;
 }
-
 .dropdown {
     background-color: #fff;
     padding: 1em 0;
@@ -79,9 +78,6 @@ li a:hover {
     -webkit-box-shadow: 0 0 21px -7px rgba(0, 0, 0, 0.67);
     -moz-box-shadow: 0 0 21px -7px rgba(0, 0, 0, 0.67);
     transition: all 500ms ease;
-}
-
-.link-menu:hover {
 }
 
 .dropdown li + li {
@@ -105,18 +101,51 @@ li a:hover {
     top: 1em;
 }
 
-/*RESPONSIVE NAVBAR MENU STARTS*/
-/* CHECKBOX HACK */
+/* BURGER MENU */
 input[type=checkbox] {
     display: none;
 }
-
-/*HAMBURGER MENU*/
-.hamburger {
-    display: none;
-    font-size: 24px;
-    user-select: none;
+.container-burger {
+    cursor: pointer;
 }
+#burger{
+    z-index: 999;
+}
+
+.burger-wrapper{
+    padding: 8px 8px 8px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 24px;
+    height: 2px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    transform-origin: center;
+    border-radius: 1rem;
+}
+
+#checkbox_toggle:checked ~ #burger > .burger-wrapper .bar1 {
+    transition: all 1s;
+    translate:0 9px;
+    rotate:45deg;
+}
+
+#checkbox_toggle:checked ~ #burger > .burger-wrapper .bar2 {
+    transition: all 300ms;
+    translate: 10px;
+    opacity:0;
+}
+
+#checkbox_toggle:checked ~ #burger > .burger-wrapper .bar3 {
+    transition: all 1s;
+    transform:translate(0,-7px) rotate(-45deg);
+}
+/*END BURGER MENU*/
+
+
+
 .personnal-information{
     width: 40%;
 }
@@ -126,292 +155,48 @@ input[type=checkbox] {
     max-width: 70rem;
     margin:0 auto ;
 }
-/* APPLYING MEDIA QUERIES */
-@media (max-width: 990px) {
-    body{
-        padding: 8rem 1.25rem 0;
-    }
-    .logo img {
-        width: 7rem;
-    }
-    .navbar{
-        padding: 0.25rem 1.25rem;
-    }
-    .container {
-        position: fixed;
-        height: 4rem;
-        background-color: white;
-    }
-
-    .menu {
-        display: none;
-        position: fixed;
-        z-index: 4;
-        background-color: #fff;
-        color: #0f141e;
-        right: 0;
-        left: 0;
-        padding: 6rem 2rem 8rem;
-        height: 100vh;
-    }
-
-    .menu li:active {
-        display: inline-block;
-        color: #004bff;
-        transition: 0.3s ease;
-    }
-
-    .menu li + li {
-        margin-top: 12px;
-    }
-
-    input[type=checkbox]:checked ~ .menu {
-        display: block;
-    }
-
-    .hamburger {
-        display: block;
-        color: #474c56;
-        padding: 1rem;
-    }
-
-    .dropdown {
-        background-color: #fff;
-        padding: 1em 0;
-        position: relative; /*WITH RESPECT TO PARENT*/
-        display: none;
-        border-radius: 8px;
-        transform: translateX(35%);
-    }
-
-    .dropdown li:active {
-        background-color: #4c9e9e;
-    }
-    .presentation{
-        flex-direction: column;
-    }
-    .video-presentation {
-        order: -1;
-        aspect-ratio: 48 / 31.155;
-    }
-}
-/*NAVBAR END*/
-/* STYLE BUTTON */
-.btn{
-    align-self: center;
-    font: 0.875em 'Archia-Bold', sans-serif;
-    text-decoration: none;
-    border: none;
-    border-radius: 12.5rem;
-    padding: 0.5rem 1em;
-    background-color: #004bff;
-    color: white;
-    border: 2px solid #004bff;
-    width: 12rem;
-    min-height: 2.5rem;
+.menu {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    background-color: #fff;
+    color: #0f141e;
+    right: 0;
+    left: 0;
+    padding: 6rem 2rem 8rem;
+    height: 100vh;
 }
 
-.btn:hover{
-
-}
-/* END STYLE BUTTON*/
-
-h2 {
-    font: 2.5rem 'Archia-Bold', sans-serif;
-}
-
-p {
-    font: 1em 'Archia-Regular', sans-serif;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.video-presentation {
-    order: 1;
-    aspect-ratio: 48 / 31.155;
-}
-
-.butInformation {
-    align-self: center;
-    font: 0.875em 'Archia-Bold', sans-serif;
-    text-decoration: none;
-    border: none;
-    border-radius: 12.5rem;
-    padding: 0.5rem 1em;
-    background-color: #004bff;
-    color: white;
-    border: 2px solid #004bff;
-    width: 12rem;
-    min-height: 2.5rem;
-}
-
-.butInformation:hover {
-    align-self: center;
-    font: 0.875em 'Archia-Bold', sans-serif;
-    text-decoration: none;
-    border: none;
-    border-radius: 2em;
-    padding: 1em;
-    background-color: #004bff;
-    color: white;
-    border: 2px solid #004bff;
-}
-
-cite {
-    font: 11px 'Archia-Regular', sans-serif;
-}
-
-.h2-small {
-    font: 1rem 'Archia-Bold', sans-serif;
-    color: blue;
-}
-
-.logo-flex {
+.menu li:active {
     display: inline-block;
+    color: #004bff;
+    transition: 0.3s ease;
 }
 
-.text-small, .link-text-small {
-    font: 0.875rem 'Archia-Regular', sans-serif;
-    color: #7e838f;
+.menu li + li {
+    margin-top: 12px;
 }
 
-.link-text-small {
-    color: blue;
-}
-
-h3 {
-    font: 1.5rem 'Archia-Bold', sans-serif;
-}
-
-
-article ul li {
-    font: 0.875rem 'Archia-Medium', sans-serif;
-    font-weight: 500;
-}
-
-
-/* SLIDER https://alvarotrigo.com/blog/create-a-slider-with-pure-CSS/ */
-.slider {
-    display: flex;
-    flex-grow: 1;
-    flex-shrink: 0;
-    overflow: hidden;
-    column-gap: 30px;
-}
-
-.card-reviews {
-    padding: 1rem;
-}
-
-/* FIN DU SLIDER */
-
-@media screen and (max-width: 767px) {
-    section p span, .text-small, .comparaison, .small-disappear {
-        display: none;
-    }
-
-    h2 {
-        font: 2rem 'Archia-Bold', sans-serif;
-        margin-bottom: 1.25rem;
-    }
-
-    section p {
-        color: #474c56;
-        font-size: 1rem;
-        line-height: 1.7;
-        margin-bottom: 2rem;
-    }
-
-    .butInformation {
-        margin-bottom: 0.5rem;
-    }
-
-    .logo-flex {
-        display: grid;
-        grid-column-gap: 1.5rem;
-        grid-row-gap: 2.5rem;
-        justify-content: stretch;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 3fr));
-    }
-
-    .logo-flex > img {
-        max-width: 100px;
-    }
-
-    section ul li {
-        color: #474c56;
-        font: 1rem Archia-SemiBold, sans-serif;
-        text-align: left;
-        margin-left: 20px;
-    }
-}
-
-@media screen and (max-width: 479px) /* SMALL SCREEN*/ {
-    .logo-flex {
-        display: grid;
-        grid-column-gap: 1.5rem;
-        grid-row-gap: 2.5rem;
-        justify-content: stretch;
-        grid-template-columns: repeat(auto-fit, minmax(128px, 3fr));
-    }
-
-    .logo-flex > img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    section p span, .text-small, .comparaison, .small-disappear {
-        display: none;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-}
-
-/* SECTION MENU CHANGEANT */
-.main-container-button {
-    margin: 1rem auto;
-    background-color: white;
-    min-width: 18.75rem;
-    height: auto;
-}
-
-button {
-    border: none;
-}
-
-.buttons {
-    display: flex;
-    gap: 2px;
-}
-
-.blocks {
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-
-.button1 {
-    width: 100%;
-    height: auto;
+input[type=checkbox]:checked ~ .menu {
     display: block;
 }
 
-.button2 {
+.dropdown {
+    background-color: #fff;
+    padding: 1em 0;
+    position: relative; /*WITH RESPECT TO PARENT*/
     display: none;
-    width: 100%;
-    height: auto;
+    border-radius: 8px;
+    transform: translateX(35%);
 }
 
-.button3 {
-    display: none;
-    width: 100%;
-    height: auto;
+.dropdown li:active {
+    background-color: #4c9e9e;
 }
-
-/* FIN DU MENU CHANGEANT EN CSS / JS*/
+.presentation{
+    flex-direction: column;
+}
+.video-presentation {
+    order: -1;
+    aspect-ratio: 48 / 31.155;
+}
