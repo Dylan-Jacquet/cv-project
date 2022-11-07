@@ -52,6 +52,26 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Archia', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
 
 /* FIN DU RESET DE MEYER */
 
