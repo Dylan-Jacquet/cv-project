@@ -8,7 +8,6 @@
     <meta name="description" content="Voici un site internet présentant le CV de Dylan Jacquet Web Designer">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="stylesheet" href="./CSS/reset.css">
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/styles.css">
     <title>Dylan Jacquet CV</title>
 </head>
@@ -36,9 +35,13 @@
                 </label>
                 <div class="menu">
                     <li class="services">
-                        <a href="" class="link-menu">Accueil
-                        </a>
-                        <ul class="dropdown">
+                        <input type="checkbox" id="checkbox_first_dropdown"/>
+                        <label id="arrow1" for="checkbox_first_dropdown">
+                            <div class="arrow-wrapper">
+                                <div class="arrow">Accueil</div>
+                            </div>
+                        </label>
+                        <ul class="dropdown1">
                             <li><a href="#">Lien 1</a></li>
                             <li><a href="#">Lien 2</a></li>
                             <li><a href="#">Lien 3</a></li>
@@ -47,21 +50,29 @@
                         </ul>
                     </li>
                     <li class="services">
-                        <a href="#" class="link-menu">A propos
-                        </a>
-                        <ul class="dropdown">
+                        <input type="checkbox" id="checkbox_second_dropdown"/>
+                        <label id="arrow2" for="checkbox_second_dropdown">
+                            <div class="arrow-wrapper">
+                                <div class="arrow">A propos</div>
+                            </div>
+                        </label>
+                        <ul class="dropdown2">
                             <li><a href="#">Javascript et Typescript</a></li>
                             <li><a href="#">PHP et MySql</a></li>
                             <li><a href="#">HTML & CSS</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="link-menu">Langages</a>
+                        <a href="#" class="link-menu">Compétences</a>
                     </li>
                     <li class="services">
-                        <a href="#" class="link-menu">Veille
-                        </a>
-                        <ul class="dropdown">
+                        <input type="checkbox" id="checkbox_third_dropdown"/>
+                        <label id="arrow3" for="checkbox_third_dropdown">
+                            <div class="arrow-wrapper">
+                                <div class="arrow">Langages</div>
+                            </div>
+                        </label>
+                        <ul class="dropdown3">
                             <li><a href="#">CSS</a></li>
                             <li><a href="#">JavaScript</a></li>
                             <li><a href="#">Angular</a></li>
@@ -72,9 +83,13 @@
                         </ul>
                     </li>
                     <li class="services">
-                        <a href="#" class="link-menu">Compétences
-                        </a>
-                        <ul class="dropdown">
+                        <input type="checkbox" id="checkbox_fourth_dropdown"/>
+                        <label id="arrow4" for="checkbox_fourth_dropdown">
+                            <div class="arrow-wrapper">
+                                <div class="arrow">Veille</div>
+                            </div>
+                        </label>
+                        <ul class="dropdown4">
                             <li><a href="#">Inverse de chaîne</a></li>
                             <li><a href="#">Encodeur d'URL</a></li>
                             <li><a href="#">Décapant des lignes vides</a></li>
@@ -97,14 +112,15 @@
     <section class="presentation">
         <div class="personnal-information">
             <h2>
-                Dylan Jacquet Développeur WEB
+                Dylan Jacquet Développeur Web
             </h2>
             <p>
-                <span>Je suis le développeur web #1 de la section web à l’HEPL.</span> Ma maitrise des différents
+                <strong class="mobile-hidden">Je suis le développeur web #1 de la section web à l’HEPL.</strong> Ma
+                maitrise des différents
                 langages
                 de programmation me permet d’être polyvalent dans le métier du web.
             </p>
-            <button class="butInformation">En savoir plus</button>
+            <button class="butInformation">En savoir davantage</button>
             <cite>
                 Aucune obligation
             </cite>
@@ -117,25 +133,25 @@
                 <a href="Dylan-Jacquet-CV.mp4">ici la vidéo.</a>
             </p>
         </video>
+        <section class="logo-section">
+            <h3>
+                Ce qui m’a permis de devenir qui je suis
+            </h3>
+            <div class="logo-grid">
+                <img src="./LOGO1.png" class="logo" width="400" height="81">
+                <img src="./LOGO1.png" class="logo">
+                <img src="./LOGO1.png" class="logo">
+                <img src="./LOGO1.png" class="logo">
+                <img src="./LOGO1.png" class="logo">
+                <img src="./LOGO1.png" class="logo">
+            </div>
+            <cite class="mobile-hidden">Beaucoup de connaissance que j’ai acquis proviennent de ces endroits <a
+                    class="link-text-small" href="#">En savoir plus.</a></cite>
+        </section>
     </section>
-    <section>
-        <h2 class="h2-small">
-            Ce qui m’a permis de devenir qui je suis.
-        </h2>
-        <div class="logo-flex">
-            <img src="./LOGO1.png" class="logo">
-            <img src="./LOGO1.png" class="logo">
-            <img src="./LOGO1.png" class="logo">
-            <img src="./LOGO1.png" class="logo">
-            <img src="./LOGO1.png" class="logo">
-            <img src="./LOGO1.png" class="logo">
-        </div>
-        <p class="text-small">Beaucoup de connaissance que j’ai acquis proviennent de ces endroits <a
-                class="link-text-small" href="#">En savoir plus.</a></p>
-    </section>
-    <section class="small-disappear">
+    <section class="mobile-hidden">
         <h2>
-            Dites au revoir aux site internet peu accessible
+            Dites au revoir aux sites internet peu accessible
         </h2>
         <p>
             Je m’appelle Dylan Jacquet, je suis un étudiant de la HEPL, dans ma section nous avons appris l’art de la
@@ -192,7 +208,7 @@
             </ul>
         </article>
     </section>
-    <section>
+    <section class="section-slider">
         <h2>
             Découvrez en davantage sur mon curriculum vitae
         </h2>
@@ -202,9 +218,9 @@
         </p>
         <div class="main-container-button">
             <div class="buttons">
-                <button id="btn_button1">Qui suis-je ?</button> <!-- Menu changeant JS -->
-                <button id="btn_button2">Pourquoi ce choix ?</button> <!-- Menu changeant JS-->
-                <button id="btn_button3">Ce que j’aime</button> <!-- Menu changeant JS -->
+                <button class="btn_slider" id="btn_button1">Qui suis-je ?</button> <!-- Menu changeant JS -->
+                <button class="btn_slider" id="btn_button2">Pourquoi ce choix ?</button> <!-- Menu changeant JS-->
+                <button class="btn_slider" id="btn_button3">Ce que j’aime</button> <!-- Menu changeant JS -->
             </div>
             <div class="blocks">
                 <div class="button1" id="button1">
@@ -245,7 +261,7 @@
                         </p>
                     </video>
                     <p>
-                        J’ai décidé de choisir l’option Web car la création de site internet et le développement
+                        J’ai décidé de choisir l’option Web, car la création de site internet et le développement
                         d’application mobile m’ont toujours intéressé.
                     </p>
                     <img src="" alt="Photo de moi">

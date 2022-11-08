@@ -1,7 +1,7 @@
 /*NAV BUILD*/
 /*STICKY NAV ON THE TOP*/
-body{
-    padding: 8rem 1.25rem 0;
+body {
+    background-color: white;
 }
 
 header {
@@ -12,6 +12,7 @@ header {
     top: 0;
     left: 0;
 }
+
 /* NAVBAR*/
 .container {
     left: 0;
@@ -22,10 +23,7 @@ header {
     height: 4rem;
     background-color: white;
 }
-/*VIDEO IN THE BACK OF THE NAV*/
-.video-presentation {
-    z-index: 1;
-}
+
 /* NAVBAR STYLING STARTS */
 .navbar {
     display: flex;
@@ -37,26 +35,33 @@ header {
     color: #ffffff;
     min-height: 100%;
 }
+
 li a {
     color: #7e838f;
-    font: .875rem Archia-Medium, sans-serif;
-    font-weight: 300;
+    font: 1rem Archia-Regular, sans-serif;
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-align: left;
     transition: all 500ms ease;
 }
+
 li a:hover {
     color: #004bff;
 }
+
 /* LOGO */
 .logo {
     font-size: 2rem;
 }
+
 .logo img {
     width: 7rem;
     padding-top: .25rem;
 }
+
 /* NAVBAR MENU */
-.menu { // VERSION DESKTOP
-    display: flex;
+.menu {
+/ / VERSION DESKTOP display: flex;
     gap: 2em;
     font-size: 1rem;
     transition: all 500ms ease;
@@ -67,57 +72,73 @@ li a:hover {
     position: relative;
     transition: all 5000ms ease;
 }
-.dropdown {
-    background-color: #fff;
-    padding: 1em 0;
-    position: absolute; /*WITH RESPECT TO PARENT*/
-    display: none;
-    border-radius: 0.5rem;
-    top: 1rem;
-    box-shadow: 0 0 21px -7px rgba(0, 0, 0, 0.67);
-    -webkit-box-shadow: 0 0 21px -7px rgba(0, 0, 0, 0.67);
-    -moz-box-shadow: 0 0 21px -7px rgba(0, 0, 0, 0.67);
-    transition: all 500ms ease;
+
+.arrow {
+    background-color: #F4F6F8;
+    padding: 1rem 0;
+    border-radius: 0.2rem;
+}
+#checkbox_first_dropdown:checked ~ #arrow1 > .arrow-wrapper .arrow {
+    transition: all 2s 1s;
 }
 
-.dropdown li + li {
-    margin-top: 10px;
-}
-
-.dropdown li {
-    padding: 0.5em 1em;
-    min-width: 8em;
-    text-align: left;
-}
-
-.dropdown li:hover {
-    color: #004bff;
-}
-
-.services:hover .dropdown {
-    transition: all 500ms ease;
+#checkbox_first_dropdown:checked ~ .dropdown1{
+    transition: all 2s 1s;
     display: block;
-    right: 0;
-    top: 1em;
+}
+#checkbox_second_dropdown:checked ~ .dropdown2{
+    transition: all 2s 1s;
+    display: block;
+}
+
+#checkbox_third_dropdown:checked ~ .dropdown3{
+    transition: all 2s 1s;
+    display: block;
+}
+
+#checkbox_fourth_dropdown:checked ~ .dropdown4{
+    transition: all 2s 1s;
+    display: block;
+}
+.dropdown1:first-of-type,
+.dropdown2:first-of-type,
+.dropdown3:first-of-type,
+.dropdown4:first-of-type{
+    border-top:2px solid #0f141e;
+}
+
+.dropdown1,
+.dropdown2,
+.dropdown3,
+.dropdown4
+{
+    background-color: #F4F6F8;
+    padding: 1em 0;
+    position: relative; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 0.1rem;
+    transition: all 500ms ease;
 }
 
 /* BURGER MENU */
 input[type=checkbox] {
     display: none;
 }
+
 .container-burger {
     cursor: pointer;
 }
-#burger{
+
+#burger {
     z-index: 999;
 }
 
-.burger-wrapper{
+.burger-wrapper {
     padding: 8px 8px 8px;
 }
 
 .bar1, .bar2, .bar3 {
-    width: 24px;
+    width: 1.4rem;
     height: 2px;
     background-color: #333;
     margin: 6px 0;
@@ -128,33 +149,22 @@ input[type=checkbox] {
 
 #checkbox_toggle:checked ~ #burger > .burger-wrapper .bar1 {
     transition: all 1s;
-    translate:0 9px;
-    rotate:45deg;
+    translate: 0 9px;
+    rotate: 45deg;
 }
 
 #checkbox_toggle:checked ~ #burger > .burger-wrapper .bar2 {
     transition: all 300ms;
     translate: 10px;
-    opacity:0;
+    opacity: 0;
 }
 
 #checkbox_toggle:checked ~ #burger > .burger-wrapper .bar3 {
     transition: all 1s;
-    transform:translate(0,-7px) rotate(-45deg);
+    transform: translate(0, -7px) rotate(-45deg);
 }
-/*END BURGER MENU*/
 
 
-
-.personnal-information{
-    width: 40%;
-}
-.presentation{
-    display: flex;
-    flex-direction: row;
-    max-width: 70rem;
-    margin:0 auto ;
-}
 .menu {
     display: none;
     position: fixed;
@@ -163,7 +173,7 @@ input[type=checkbox] {
     color: #0f141e;
     right: 0;
     left: 0;
-    padding: 6rem 2rem 8rem;
+    padding: 2rem 2rem 8rem;
     height: 100vh;
 }
 
@@ -178,7 +188,9 @@ input[type=checkbox] {
 }
 
 input[type=checkbox]:checked ~ .menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    transition: display 1s 1s;
 }
 
 .dropdown {
@@ -187,15 +199,151 @@ input[type=checkbox]:checked ~ .menu {
     position: relative; /*WITH RESPECT TO PARENT*/
     display: none;
     border-radius: 8px;
-    transform: translateX(35%);
+    transition: all 1s 300ms;
 }
 
 .dropdown li:active {
     background-color: #4c9e9e;
 }
-.presentation{
-    flex-direction: column;
+/*END BURGER MENU*/
+
+.mobile-hidden{
+    display: none;
 }
+
+/*VIDEO IN THE BACK OF THE NAV*/
+/* SECTION 1 PRESENTATION*/
+.presentation {
+    display: flex;
+    flex-direction: column;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 5.375rem 1.25rem 0;
+    background: no-repeat 20% top url("../IMG/BGVIDEO.svg");
+    background-size: 130%;
+}
+
+.video-presentation {
+    z-index: 1;
+    border-radius: .25rem;
+    box-shadow: 0 0 21px -7px rgba(0, 0, 0, 0.67);
+    -webkit-box-shadow: 0 0 21px -7px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: 0 0 21px -7px rgba(0, 0, 0, 0.67);
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font: 2rem Archia-Bold, sans-serif;
+    line-height: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    color: #474c56;
+    font: 1rem Archia-Regular, sans-serif;
+    line-height: 1.7rem;
+    text-align: center;
+    margin-bottom: 2.25rem;
+}
+
+p strong {
+    display: none;
+}
+
+.butInformation {
+    display: block;
+    margin: 0 auto 1rem;
+    font: .875rem Archia-Bold, sans-serif;
+    border: none;
+    color: white;
+    background-color: #004bff;
+    border-radius: 2rem;
+    padding: 0.70rem 1rem;
+}
+
+cite:before {
+    position: relative;
+    display: inline-block;
+    width: .875rem;
+    top: 0.02rem;
+    left: -.2rem;
+    content:url(../IMG/email.svg);
+}
+
+cite {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto 0;
+    width: 100%;
+    text-align: center;
+    font: .7rem Archia-Regular,sans-serif;
+    font-weight: 400;
+    color: #95979B;
+    letter-spacing: 0.010rem;
+}
+
+.logo-section{
+    padding: 3.5rem 0 5rem;
+}
+
+h3{
+    font: 1rem Archia-Bold,sans-serif; /* 16px */
+    font-weight: 700;
+    letter-spacing: 0.025rem;
+    color: #004bff;
+    margin-bottom: 2.5rem;
+}
+.logo-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2.5rem;
+}
+
+.logo-grid img{
+    max-height: 2rem;
+    width: 100%;
+}
+/* FIN DE LA SECTION 1*/
+
+/* SECTION 2 */
+/**/
+
+/* SECTION 3*/
+.section-slider{
+    padding: 0 1.25rem;
+}
+
+.section-slider h2{
+    font: 1.5rem Archia-Bold, sans-serif;
+    line-height: 2rem;
+    letter-spacing: 0.025em;
+}
+
+.btn_slider{
+    border: none;
+    font: 1rem Archia-SemiBold,sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.010rem;
+    background-color: #f7fafc;
+    color: #474c56;
+    padding: 0.875rem 1.75rem ;
+    border-radius: 2rem;
+}
+
+.btn_slider:active{
+    color: white;
+    background-color: #0f141e;
+}
+
+.btn_slider:hover{
+    color: #0f141e;
+    background-color: #e3e9f5;
+}
+/**/
+
+
 .video-presentation {
     order: -1;
     aspect-ratio: 48 / 31.155;
