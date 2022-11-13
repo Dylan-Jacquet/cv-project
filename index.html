@@ -12,28 +12,29 @@
     <title>Dylan Jacquet CV</title>
 </head>
 <body>
-<header class="main">
+<header>
     <h1 class="hidden">
         CV de Dylan JACQUET
     </h1>
-    <nav class="primary-nav" aria-label="Main">
+    <nav class="navbar">
+        <h2 class="hidden">
+            Menu de navigation
+        </h2>
+        <a href="index.html" class="logo">
+            <img src="./IMG/logo.svg" alt="Homepage">
+        </a>
+        <input type="checkbox" id="checkbox_toggle"/>
+        <label class="burger-wrapper" for="checkbox_toggle" id="burger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </label>
         <div class="container">
-            <a href="/" class="logo-holder">
-                <img class="logo" src="./IMG/logo.svg" alt="Homepage"/>
-            </a>
-        </div>
-        <button id="hamburger" aria-expanded="false">
-            <div class="burger-wraper">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-        </button>
-        <div class="main-nav">
-            <ul class="container-li">
-                <li class="has-submenu">
-                    <a href="#" aria-haspopup="true" aria-expanded="false">Accueil </a>
-                    <ul>
+            <ul class="menu" id="menu-mobile">
+                <li class="services">
+                    <a href="" class="link-menu">Accueil
+                    </a>
+                    <ul class="dropdown">
                         <li><a href="#">Lien 1</a></li>
                         <li><a href="#">Lien 2</a></li>
                         <li><a href="#">Lien 3</a></li>
@@ -41,20 +42,22 @@
                         <li><a href="#">Lien 5</a></li>
                     </ul>
                 </li>
-                <li class="has-submenu">
-                    <a href="#" aria-haspopup="true" aria-expanded="false">A propos</a>
-                    <ul class="">
+                <li class="services">
+                    <a href="#" class="link-menu">A propos
+                    </a>
+                    <ul class="dropdown">
                         <li><a href="#">Javascript et Typescript</a></li>
                         <li><a href="#">PHP et MySql</a></li>
                         <li><a href="#">HTML & CSS</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Compétences</a>
+                    <a href="#" class="link-menu">Langages</a>
                 </li>
-                <li class="has-submenu">
-                    <a href="#" aria-haspopup="true" aria-expanded="false">Langages</a>
-                    <ul class="">
+                <li class="services">
+                    <a href="#" class="link-menu">Veille
+                    </a>
+                    <ul class="dropdown">
                         <li><a href="#">CSS</a></li>
                         <li><a href="#">JavaScript</a></li>
                         <li><a href="#">Angular</a></li>
@@ -64,9 +67,10 @@
                         <li><a href="#">Java</a></li>
                     </ul>
                 </li>
-                <li class="has-submenu">
-                    <a href="#" aria-haspopup="true" aria-expanded="false">Veille</a>
-                    <ul class="">
+                <li class="services">
+                    <a href="#" class="link-menu">Compétences
+                    </a>
+                    <ul class="dropdown">
                         <li><a href="#">Inverse de chaîne</a></li>
                         <li><a href="#">Encodeur d'URL</a></li>
                         <li><a href="#">Décapant des lignes vides</a></li>
@@ -78,7 +82,7 @@
                     <a href="#">Projets</a>
                 </li>
                 <li>
-                    <a href="#">Portfolio</a>
+                    <a href="#" class="btn">Portfolio</a>
                 </li>
             </ul>
         </div>
@@ -114,12 +118,12 @@
                 Ce qui m’a permis de devenir qui je suis
             </h3>
             <div class="logo-grid">
-                <img src="./LOGO1.png" class="logo" width="400" height="81">
-                <img src="./LOGO1.png" class="logo">
-                <img src="./LOGO1.png" class="logo">
-                <img src="./LOGO1.png" class="logo">
-                <img src="./LOGO1.png" class="logo">
-                <img src="./LOGO1.png" class="logo">
+                <img src="./LOGO1.png" class="logo" width="400" height="81" alt="">
+                <img src="./LOGO1.png" class="logo" width="400" height="81" alt="">
+                <img src="./LOGO1.png" class="logo" width="400" height="81" alt="">
+                <img src="./LOGO1.png" class="logo" width="400" height="81" alt="">
+                <img src="./LOGO1.png" class="logo" width="400" height="81" alt="">
+                <img src="./LOGO1.png" class="logo" width="400" height="81" alt="">
             </div>
             <cite class="mobile-hidden">Beaucoup de connaissance que j’ai acquis proviennent de ces endroits <a
                     class="link-text-small" href="#">En savoir plus.</a></cite>
@@ -296,7 +300,6 @@
                 </div>
             </div>
         </div>
-        </div>
     </section>
     <section class="review-container">
         <h2>
@@ -446,21 +449,18 @@
             travailler.
         </p>
         <section class="slider-interest">
-                <h3>
-                    Mes centres d’intérêts en dehors du travail
-                </h3>
-                <p class="current-text">
-                    Voici mes centres d’intérêts qui m’aide à m’améliorer quotidiennement. Cela m’aide dans mon travail
-                    .
-                </p>
-                <ul>
-                    <li>Il est très important d’avoir des loisirs</li>
-                    <li>Certains ont un rapport avec mon travail</li>
-                    <li>La veille numérique est indispensable</li>
-                </ul>
-                <button class="butInformation">
-                    Travailler avec moi
-                </button>
+            <h3>
+                Mes centres d’intérêts en dehors du travail
+            </h3>
+            <p class="current-text">
+                Voici mes centres d’intérêts qui m’aide à m’améliorer quotidiennement. Cela m’aide dans mon travail
+                .
+            </p>
+            <ul>
+                <li>Il est très important d’avoir des loisirs</li>
+                <li>Certains ont un rapport avec mon travail</li>
+                <li>La veille numérique est indispensable</li>
+            </ul>
             <div class="slider-image">
                 <img src="./IMG/interest/Photographie.jpg" alt="">
                 <img src="./IMG/interest/CINEMA.jpg" alt="">
@@ -471,6 +471,9 @@
                 <img src="./IMG/interest/ART-DESIGN.jpg" alt="">
                 <img src="./IMG/interest/WEB-DESIGN.jpg" alt="">
             </div>
+            <button class="btnInformation">
+                Travailler avec moi
+            </button>
         </section>
         <section class="slider-interest">
             <h3>
@@ -486,9 +489,6 @@
                 <li>Réalisation de l’image de marque pour le musée Batarden</li>
                 <li>Stage au sein de l’entreprise de Graphisme SignTec</li>
             </ul>
-            <button class="butInformation">
-                Travailler avec moi
-            </button>
             <div class="buttons">
                 <img src="../../IMAGE-TEXTE.png" width="100px " alt="">
                 <button class="button-year year2019">
@@ -497,17 +497,20 @@
                 <button class="button-year year2020">
                     2020 <!-- CHANGEMENT D'IMAGE EN APPUYANT -->
                 </button>
-                <button class="button-year year2021" >
+                <button class="button-year year2021">
                     2021 <!-- CHANGEMENT D'IMAGE EN APPUYANT -->
                 </button>
                 <button class="button-year year2022">
                     2022 <!-- CHANGEMENT D'IMAGE EN APPUYANT -->
                 </button>
             </div>
+            <button class="btnInformation">
+                Travailler avec moi
+            </button>
         </section>
         <section class="slider-interest">
             <h3>
-                Voici les différentes étapes de mon parcours scolaires
+                Voici les étapes de mon parcours scolaires
             </h3>
             <p class="current-text">
                 Voici les grandes étapes par lesquelles je suis passé durant l’entièreté de mon parcours professionnel.
@@ -523,10 +526,10 @@
                     Qualification en Technicien en Infographie
                 </li>
             </ul>
-            <button class="butInformation">
+            <img src="./IMG/PARCOURS-SCOLAIRES.png" alt="">
+            <button class="btnInformation last-button">
                 Travailler avec moi
             </button>
-            <img src="./IMG/PARCOURS-SCOLAIRES.png" alt="">
         </section>
     </section>
     <section class="langages">
@@ -544,7 +547,7 @@
                 <span>100%</span> web developper
             </p>
         </div>
-        <a class="link mobile-hidden" href="#" >En apprendre plus sur moi</a>
+        <a class="link mobile-hidden" href="#">En apprendre plus sur moi</a>
         <img src="./JS-TS.png" alt="">
     </section>
 </main>
