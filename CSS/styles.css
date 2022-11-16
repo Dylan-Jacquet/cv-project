@@ -1,3 +1,11 @@
+body {
+    background: no-repeat 15% top url("../IMG/BGVIDEO.svg");
+    background-size: 130%;
+    background-color: white;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
 header {
     z-index: 10;
     left: 0;
@@ -22,15 +30,9 @@ header {
     width: 100%;
     z-index: 1000;
 }
-/* NAVBAR*/
-/*VIDEO IN THE BACK OF THE NAV*/
-.video-presentation {
-    z-index: 1;
-}
+/* NAVBAR  */
 /* NAVBAR STYLING STARTS */
-.dropdown li{
-    width: 100rem;
-}
+
 
 li a {
     border-radius: 4px;
@@ -84,18 +86,7 @@ li a:hover {
     padding: 0.5em 1em;
     min-width: 8em;
     text-align: left;
-}
-
-.dropdown li:hover {
-    color: #004bff;
-}
-
-.services:hover .dropdown {
-    transition: all 500ms ease;
-    display: block;
-    opacity: 1;
-    right: 0;
-    top: 1em;
+    width: 100rem;
 }
 
 /* BURGER MENU */
@@ -158,9 +149,7 @@ li a:hover {
     font-size: 1rem;
     transition: all 400ms 100ms;
     flex-direction: column;
-    justify-content: flex-start;
     align-content: center;
-    flex-wrap: nowrap;
     align-items: flex-start;
     padding: 6rem 2rem 8rem;
     height: 100vh;
@@ -179,12 +168,6 @@ input[type=checkbox]:checked ~ .container .menu {
 }
 /*END BURGER MENU*/
 /*NAV BUILD*/
-
-body {
-    background: no-repeat 15% top url("../IMG/BGVIDEO.svg");
-    background-size: 130%;
-    background-color: white;
-}
 
 li a:hover {
     color: #004bff;
@@ -205,6 +188,7 @@ li a:hover {
     background-size: 130%;
 }
 
+/*VIDEO IN THE BACK OF THE NAV*/
 .video-presentation {
     z-index: 1;
     border-radius: .25rem;
@@ -212,6 +196,8 @@ li a:hover {
     -webkit-box-shadow: 0 0 21px -7px rgba(0, 0, 0, 0.67);
     -moz-box-shadow: 0 0 21px -7px rgba(0, 0, 0, 0.67);
     margin-bottom: 1.5rem;
+    order: -1;
+    aspect-ratio: 48 / 31.155;
 }
 
 h2 {
@@ -319,7 +305,7 @@ h3 {
 }
 
 .section-slider h2 {
-    font: 1.5rem Archia-Bold,Helvetica,Arial, sans-serif;
+    font-size: 1.5rem;
     line-height: 2rem;
     letter-spacing: 0.025em;
 }
@@ -422,22 +408,83 @@ h3 {
 }
 
 /*SECTION 4 */
-.review-container {
 
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
-.slider{
+.slider {
+    margin: 20px;
+    text-align: left;
+    border-radius: .5rem;
+    position: relative;
+}
+
+.slides {
     display: flex;
-    gap: 1.25rem;
-    flex: auto;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start;
     overflow-x: scroll;
-    scroll-snap-type: x mandatory;
+    position: relative;
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    padding-bottom: 1rem;
+    scroll-snap-type: x mandatory;
+    gap: 1.5rem;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+    box-sizing: border-box;
+    background: white;
+    transform-origin: center center;
+    transform: scale(1);
+    scroll-snap-align: center;
+}
+
+.slider__nav {
+    box-sizing: border-box;
+    position: absolute;
+    margin-top: 20px;
+    left: 12.5%;
+    width: 15rem;
+    text-align: center;
+}
+
+.slide a {
+    position: absolute;
+    top: 48%;
+    width: 35px;
+    height: 35px;
+    border: solid black;
+    border-width: 0 4px 4px 0;
+    padding: 3px;
+    box-sizing: border-box;
+    display: none;
+}
+
+a.slide__prev {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    left: 5%;
+}
+
+a.slide__next {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right: 5%;
+}
+
+.slider__navlink {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin: 0 3px 0 3px;
+    border: 1px solid #004BFF;
 }
 
 .card-reviews{
@@ -448,12 +495,13 @@ h3 {
     flex-direction: column;
     justify-content: space-between;
     min-height: 22rem;
-    min-width: 18rem;
+    min-width: 21rem;
+    align-items: flex-start;
 }
 
 .review-container h2 {
     margin: 3.5rem 0 3rem;
-    font: 1.5rem Archia-Bold,Helvetica,Arial, sans-serif;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 2rem;
 }
@@ -500,8 +548,6 @@ h3 {
     font-weight: 700;
     line-height: 18px; /*************CONVERSION*/
 }
-
-
 /***/
 /*SECTION 5 */
 .slider-interest {
@@ -619,7 +665,7 @@ h3 {
 
 .langages h2{
     padding: 0 1.25rem;
-    font: 2.2rem Archia-Bold,Helvetica,Arial,sans-serif;
+    font-size: 2.2rem;
 }
 
 .langages span{
@@ -649,19 +695,23 @@ h3 {
 
 .information-footer h2{
     padding: 0 1.25rem;
-    font: 2rem Archia-Bold,Helvetica,Arial,sans-serif;
 }
 
 .information-footer button{
     border: 2px solid white;
-    font: 1rem Archia-Bold,Helvetica,Arial,sans-serif;
+    font: .875rem Archia-Bold,Helvetica,Arial,sans-serif;
     color: white;
     background-color: transparent;
     border-radius: 2rem;
-    padding: 0.75rem 1.5rem;
+    padding: .625rem 1.5rem;
     display: block;
     width: 90%;
     margin: 0 auto;
+}
+.information-footer button:first-of-type{
+    border: 2px solid #00fac8;
+    color: #002577;
+    background-color: #00fac8;
 }
 /***/
 
@@ -697,10 +747,4 @@ h3 {
     font-weight: 400;
     font-style: italic;
     color: #A3EAFF; /* CHANGE CONTRAST ACCESSIBILITY*/
-}
-
-.video-presentation {
-    order: -1;
-    aspect-ratio: 48 / 31.155;
-    z-index: 1;
 }
