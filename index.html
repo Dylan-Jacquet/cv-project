@@ -7,8 +7,8 @@
     <meta name="author" content="Dylan Jacquet">
     <meta name="description" content="Voici un site internet présentant le CV de Dylan Jacquet Web Designer">
     <meta name="keywords" content="HTML, CSS, JavaScript">
-    <link rel="stylesheet" href="./CSS/reset.css">
-    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Dylan Jacquet CV</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
             Menu de navigation
         </h2>
         <a href="index.html" class="logo">
-            <img src="./IMG/logo.svg" alt="Homepage">
+            <img src="./img/logo.svg" alt="Homepage" width="140px">
         </a>
         <input type="checkbox" id="checkbox_toggle"/>
         <label class="burger-wrapper" for="checkbox_toggle" id="burger">
@@ -51,7 +51,7 @@
                         <li><a href="#">HTML & CSS</a></li>
                     </ul>
                 </li>
-                <li>
+                <li class="link-only">
                     <a href="#" class="link-menu">Langages</a>
                 </li>
                 <li class="services">
@@ -78,11 +78,11 @@
                         <li><a href="#">Compte des mots de chaîne</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="#">Projets</a>
+                <li class="link-only">
+                    <a href="#" class="link-menu">Projets</a>
                 </li>
-                <li>
-                    <a href="#" class="btn">Portfolio</a>
+                <li class="link-only">
+                    <a href="#" class="btn link-menu">Portfolio</a>
                 </li>
             </ul>
         </div>
@@ -106,11 +106,11 @@
             </cite>
         </div>
         <video controls class="video-presentation">
-            <source src="Dylan-Jacquet-CV.mp4" type="video/mp4"/>
-            <source src="Dylan-Jacquet-CV.webm" type="video/webm"/>
+           <!-- <source src="Dylan-Jacquet-CV.mp4" type="video/mp4"/> -->
+            <source src="./img/VIDEO-PRESENTATION.mp4" type="video/mp4"/>
             <p>
                 Votre navigateur de recherche ne supporte pas ce contenu. Vous pouvez retrouver
-                <a href="Dylan-Jacquet-CV.mp4">ici la vidéo.</a>
+                <a href="#">ici la vidéo.</a>
             </p>
         </video>
         <section class="logo-section">
@@ -198,18 +198,18 @@
         </p>
         <div class="main-container-button">
             <div class="buttons">
-                <button class="btn_slider" id="btn_button1">Qui suis-je ?</button> <!-- Menu changeant JS -->
-                <button class="btn_slider" id="btn_button2">Pourquoi ce choix ?</button> <!-- Menu changeant JS-->
-                <button class="btn_slider" id="btn_button3">Ce que j’aime</button> <!-- Menu changeant JS -->
+                <a href="#btn_button1" class="btn_slider active" id="btn_button1" data-number="button1">Qui suis-je ?</a> <!-- Menu changeant JS -->
+                <a href="#btn_button2" class="btn_slider" id="btn_button2" data-number="button2">Pourquoi ce choix ?</a> <!-- Menu changeant JS-->
+                <a href="#btn_button3" class="btn_slider" id="btn_button3" data-number="button3">Ce que j’aime</a> <!-- Menu changeant JS -->
             </div>
             <div class="identity">
-                <div class="button1" id="button1">
+                <div class="tabContent" id="button1">
                     <video controls class="video-presentation">
-                        <source src="Dylan-Jacquet-CV.mp4" type="video/mp4"/>
-                        <source src="Dylan-Jacquet-CV.webm" type="video/webm"/>
+                        <source src="./img/VIDEO-PRESENTATION.mp4" type="video/mp4"/>
+                        <source src="#" type="video/webm"/>
                         <p>
                             Votre navigateur de recherche ne supporte pas ce contenu. Vous pouvez retrouver
-                            <a href="Dylan-Jacquet-CV.mp4">ici la vidéo.</a>
+                            <a href="#">ici la vidéo.</a>
                         </p>
                     </video>
                     <p>
@@ -219,7 +219,7 @@
                         possède le permis B et je possède une qualification en infographie et bientôt un diplôme.
                     </p>
                     <div class="identity-container">
-                        <img src="./IMG/USER.jpg" alt="Photo de moi" width="64" height="64">
+                        <img src="./img/USER.jpg" alt="Photo de moi" width="64" height="64">
                         <div>
                             <p>
                                 Dylan Jacquet
@@ -236,13 +236,13 @@
                         Travailler avec moi
                     </button>
                 </div>
-                <div class="button2" id="button2">
+                <div class="tabContent hidden" id="button2">
                     <video controls class="video-presentation">
-                        <source src="Dylan-Jacquet-CV.mp4" type="video/mp4"/>
-                        <source src="Dylan-Jacquet-CV.webm" type="video/webm"/>
+                        <source src="./img/VIDEO-PRESENTATION.mp4" type="video/mp4"/>
+                        <source src="#" type="video/webm"/>
                         <p>
                             Votre navigateur de recherche ne supporte pas ce contenu. Vous pouvez retrouver
-                            <a href="Dylan-Jacquet-CV.mp4">ici la vidéo.</a>
+                            <a href="#">ici la vidéo.</a>
                         </p>
                     </video>
                     <p>
@@ -250,7 +250,7 @@
                         d’application mobile m’ont toujours intéressé.
                     </p>
                     <div class="identity-container">
-                        <img src="./IMG/USER.jpg" alt="Photo de moi" width="64" height="64">
+                        <img src="./img/USER.jpg" alt="Photo de moi" width="64" height="64">
                         <div>
                             <p>
                                 Dylan Jacquet
@@ -267,13 +267,13 @@
                         Travailler avec moi
                     </button>
                 </div>
-                <div class="button3" id="button3">
+                <div class="tabContent hidden" id="button3">
                     <video controls class="video-presentation">
-                        <source src="Dylan-Jacquet-CV.mp4" type="video/mp4"/>
-                        <source src="Dylan-Jacquet-CV.webm" type="video/webm"/>
+                        <source src="./img/VIDEO-PRESENTATION.mp4" type="video/mp4"/>
+                        <source src="#" type="video/webm"/>
                         <p>
                             Votre navigateur de recherche ne supporte pas ce contenu. Vous pouvez retrouver
-                            <a href="Dylan-Jacquet-CV.mp4">ici la vidéo.</a>
+                            <a href="#">ici la vidéo.</a>
                         </p>
                     </video>
                     <p>
@@ -281,7 +281,7 @@
                         et plus tard j’aimerais être un développeur web Full Stack .
                     </p>
                     <div class="identity-container">
-                        <img src="./IMG/USER.jpg" alt="Photo de moi" width="64" height="64">
+                        <img src="./img/USER.jpg" alt="Photo de moi" width="64" height="64">
                         <div>
                             <p>
                                 Dylan Jacquet
@@ -309,21 +309,21 @@
             <div class="slides">
                 <section class="card-reviews slide" id="slide-1">
                     <h3>
-                        Lorem ipsum dolor sit amet
+                        Réalisation d'un site web au top !
                     </h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur beatae eveniet
-                        laboriosam molestias natus non nulla,
+                        J'ai contacté Dylan pour me réaliser un site web, j'ai été ravi de voir le résultat en un
+                        temps record. Je recommande grandement.
                     </p>
-                    <img src="./IMG/rating-star.svg" alt="RATING" width="125" height="32"> <!-- RATING -->
+                    <img src="./img/rating-star.svg" alt="RATING" width="125" height="32"> <!-- RATING -->
                     <div class="identity-card">
-                        <img src="./IMG/USER.jpg" alt="Photo de moi" width="64" height="64">
+                        <img src="./img/USER.jpg" alt="Photo de moi" width="64" height="64">
                         <div>
                             <p>
-                                Nom entrepreneur
+                                Jean-Bernard Lafoine
                             </p>
                             <p>
-                                Poste entreprise
+                                Chef de la boulangerie "Nos petits bonheurs"
                             </p>
                         </div>
                     </div>
@@ -332,21 +332,21 @@
                 </section>
                 <section class="card-reviews slide" id="slide-2">
                     <h3>
-                        Lorem ipsum dolor sit amet
+                        Un très bon travailleur !
                     </h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur beatae eveniet
-                        laboriosam molestias natus non nulla,
+                        Dylan est un très bon travailleur, il est courageux, investi et il n'a pas peur de sortir de
+                        sa zone de confort.
                     </p>
-                    <img src="./IMG/rating-star.svg" alt="RATING" width="125" height="32"> <!-- RATING -->
+                    <img src="./img/rating-star.svg" alt="RATING" width="125" height="32"> <!-- RATING -->
                     <div class="identity-card">
-                        <img src="./IMG/USER.jpg" alt="Photo de moi" width="64" height="64">
+                        <img src="./img/USER.jpg" alt="Photo de moi" width="64" height="64">
                         <div>
                             <p>
-                                Nom entrepreneur
+                                Eric Legros
                             </p>
                             <p>
-                                Poste entreprise
+                                Lettreur au sein de l'entreprise SignTec
                             </p>
                         </div>
                     </div>
@@ -355,21 +355,21 @@
                 </section>
                 <section class="card-reviews slide" id="slide-3">
                     <h3>
-                        Lorem ipsum dolor sit amet
+                        Un site internet de top qualité !
                     </h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur beatae eveniet
-                        laboriosam molestias natus non nulla,
+                        J'ai eu l'occasion d'avoir à faire aux services de Dylan, il est très professionnel et
+                        il est soucieux des détails !
                     </p>
-                    <img src="./IMG/rating-star.svg" alt="RATING" width="125" height="32"> <!-- RATING -->
+                    <img src="./img/rating-star.svg" alt="RATING" width="125" height="32"> <!-- RATING -->
                     <div class="identity-card">
-                        <img src="./IMG/USER.jpg" alt="Photo de moi" width="64" height="64">
+                        <img src="./img/USER.jpg" alt="Photo de moi" width="64" height="64">
                         <div>
                             <p>
-                                Nom entrepreneur
+                                Daniel Gerard
                             </p>
                             <p>
-                                Poste entreprise
+                                Organisateur de soirée étudiante
                             </p>
                         </div>
                     </div>
@@ -378,21 +378,21 @@
                 </section>
                 <section class="card-reviews slide" id="slide-4">
                     <h3>
-                        Lorem ipsum dolor sit amet
+                        Une image de marque remarquable !
                     </h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur beatae eveniet
-                        laboriosam molestias natus non nulla,
-                    </p>
-                    <img src="./IMG/rating-star.svg" alt="RATING" width="125" height="32"> <!-- RATING -->
+                        Dans le cadre de ses études Dylan a réalisé notre image de marque sur son temps libre, il nous
+                        l'a proposé et nous avons été ravi de lui faire une offre !
+                    </p>:m
+                    <img src="./img/rating-star.svg" alt="RATING" width="125" height="32"> <!-- RATING -->
                     <div class="identity-card">
-                        <img src="./IMG/USER.jpg" alt="Photo de moi" width="64" height="64">
+                        <img src="./img/USER.jpg" alt="Photo de moi" width="64" height="64">
                         <div>
                             <p>
-                                Nom entrepreneur
+                                Guillaume Denoel
                             </p>
                             <p>
-                                Poste entreprise
+                                Directeur du musée "Batarden"
                             </p>
                         </div>
                     </div>
@@ -407,9 +407,9 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur beatae eveniet
                         laboriosam molestias natus non nulla,
                     </p>
-                    <img src="./IMG/rating-star.svg" alt="RATING" width="125" height="32"> <!-- RATING -->
+                    <img src="./img/rating-star.svg" alt="RATING" width="125" height="32"> <!-- RATING -->
                     <div class="identity-card">
-                        <img src="./IMG/USER.jpg" alt="Photo de moi" width="64" height="64">
+                        <img src="./img/USER.jpg" alt="Photo de moi" width="64" height="64">
                         <div>
                             <p>
                                 Nom entrepreneur
@@ -430,9 +430,9 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur beatae eveniet
                         laboriosam molestias natus non nulla, perspiciatis repellendus! Harum inventore
                     </p>
-                    <img src="./IMG/rating-star.svg" alt="RATING" width="125" height="32"> <!-- RATING -->
+                    <img src="./img/rating-star.svg" alt="RATING" width="125" height="32"> <!-- RATING -->
                     <div class="identity-card">
-                        <img src="./IMG/USER.jpg" alt="Photo de moi" width="64" height="64">
+                        <img src="./img/USER.jpg" alt="Photo de moi" width="64" height="64">
                         <div>
                             <p>
                                 Nom entrepreneur
@@ -478,14 +478,14 @@
                 <li>La veille numérique est indispensable</li>
             </ul>
             <div class="slider-image">
-                <img src="./IMG/interest/Photographie.jpg" alt="">
-                <img src="./IMG/interest/CINEMA.jpg" alt="">
-                <img src="./IMG/interest/SPORT.jpg" alt="">
-                <img src="./IMG/interest/LECTURE.jpg" alt="">
-                <img src="./IMG/interest/CODE-CHALLENGE.jpg" alt="">
-                <img src="./IMG/interest/JEUX-VIDEO.jpg" alt="">
-                <img src="./IMG/interest/ART-DESIGN.jpg" alt="">
-                <img src="./IMG/interest/WEB-DESIGN.jpg" alt="">
+                <img src="./img/interest/Photographie.jpg" alt="">
+                <img src="./img/interest/CINEMA.jpg" alt="">
+                <img src="./img/interest/SPORT.jpg" alt="">
+                <img src="./img/interest/LECTURE.jpg" alt="">
+                <img src="./img/interest/CODE-CHALLENGE.jpg" alt="">
+                <img src="./img/interest/JEUX-VIDEO.jpg" alt="">
+                <img src="./img/interest/ART-DESIGN.jpg" alt="">
+                <img src="./img/interest/WEB-DESIGN.jpg" alt="">
             </div>
             <button class="btnInformation">
                 Travailler avec moi
@@ -493,17 +493,21 @@
         </section>
         <section class="slider-interest">
             <h3>
-                Mes différentes expériences professionnelles
+                Voici les étapes de mon parcours scolaires
             </h3>
             <p class="current-text">
-                Voici une liste des différentes expériences professionnelles pertinente qui sont liées à mon métier de
-                web
-                développeur.
+                Voici les grandes étapes par lesquelles je suis passé durant l’entièreté de mon parcours professionnel.
             </p>
             <ul>
-                <li>Réalisation d'un site internet pour un site de centre de vacances BestLIFE'</li>
-                <li>Réalisation de l’image de marque pour le musée Batarden</li>
-                <li>Stage au sein de l’entreprise de Graphisme SignTec</li>
+                <li>
+                    Bachelier en Technique Infographique option WEB
+                </li>
+                <li>
+                    1 an à l’HELMO ESAS en Assistant Social
+                </li>
+                <li>
+                    Qualification en Technicien en Infographie + CESS
+                </li>
             </ul>
             <div class="buttons">
                 <img src="../../IMAGE-TEXTE.png" width="100px " alt="">
@@ -526,23 +530,23 @@
         </section>
         <section class="slider-interest">
             <h3>
-                Voici les étapes de mon parcours scolaires
+                Mes différentes expériences professionnelles
             </h3>
             <p class="current-text">
-                Voici les grandes étapes par lesquelles je suis passé durant l’entièreté de mon parcours professionnel.
+                Voici une liste des différentes expériences professionnelles pertinente qui sont liées à mon métier de web développeur.
             </p>
             <ul>
                 <li>
-                    Bachelier en Technique Infographique option WEB
+                    Réalisation d'un site internet pour un site de centre de vacances BestLIFE
                 </li>
                 <li>
-                    1 an à l’HELMO ESAS en Assistant Social
+                    Réalisation de l’image de marque pour le musée Batarden
                 </li>
                 <li>
-                    Qualification en Technicien en Infographie
+                    Stage au sein de l’entreprise de Graphisme SignTec
                 </li>
             </ul>
-            <img src="./IMG/PARCOURS-SCOLAIRES.png" alt="">
+            <img src="./img/PARCOURS-SCOLAIRES.png" alt="">
             <button class="btnInformation last-button">
                 Travailler avec moi
             </button>
@@ -564,7 +568,7 @@
             </p>
         </div>
         <a class="link mobile-hidden" href="#">En apprendre plus sur moi</a>
-        <img src="./JS-TS.png" alt="">
+        <img src="#" alt="">
     </section>
 </main>
 <footer>
@@ -633,7 +637,7 @@
             </li>
         </ul>
         <div class="small-footer">
-            <img class="logo" src="./IMG/logo.svg" alt="Homepage"/>
+            <img class="logo" src="./img/logo.svg" alt="Homepage"/>
             <p>DylanJacquet</p>
             <p>Les Forges 71, 4987</p>
             <p>Stoumont Belgique</p>
@@ -647,6 +651,6 @@
         </div>
     </div>
 </footer>
-<script src="./JS/main.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>
