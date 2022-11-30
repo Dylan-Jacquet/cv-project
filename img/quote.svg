@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="46.944" height="33.339" viewBox="0 0 46.944 33.339"><g transform="translate(-1113.042 -2989.645)"><path d="M20.817,15.889l-.016.01a10.983,10.983,0,1,0-10.137,6.056l-.018.01L4.631,33.339h6.674l9.242-16.955q.09-.16.175-.322Z" transform="translate(1159.986 3022.984) rotate(180)" fill="#00fac8"/><path d="M20.764,15.849l-.016.01A10.955,10.955,0,1,0,10.637,21.9l-.018.01-6,11.344h6.657L20.5,16.342q.09-.159.175-.321Z" transform="translate(1134.958 3022.942) rotate(180)" fill="#00fac8"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 46.9 33.3" style="enable-background:new 0 0 46.9 33.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#00FAC8;}
+</style>
+<g transform="translate(-1113.042 -2989.645)">
+	<path class="st0" d="M1139.2,3007.1L1139.2,3007.1c-2.7,5.4-0.5,12,4.9,14.7c5.4,2.7,12,0.5,14.7-4.9c2.7-5.4,0.5-12-4.9-14.7
+		c-1.4-0.7-3-1.1-4.6-1.2l0,0l6-11.4h-6.7l-9.2,17c-0.1,0.1-0.1,0.2-0.2,0.3L1139.2,3007.1z"/>
+	<path class="st0" d="M1114.2,3007.1L1114.2,3007.1c-2.7,5.4-0.5,12,4.9,14.7s12,0.5,14.7-4.9c2.7-5.4,0.5-12-4.9-14.7
+		c-1.4-0.7-3-1.1-4.6-1.2l0,0l6-11.3h-6.7l-9.2,16.9c-0.1,0.1-0.1,0.2-0.2,0.3L1114.2,3007.1z"/>
+</g>
+</svg>

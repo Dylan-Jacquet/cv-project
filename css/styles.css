@@ -1,6 +1,6 @@
 body {
-    background: no-repeat 15% top url("../img/BGVIDEO.svg");
     background-size: 130%;
+    background: no-repeat 15% top url(../img/BGVIDEO.svg);
     background-color: white;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -242,13 +242,13 @@ p strong {
     padding: 0.70rem 1rem;
 }
 
-cite:before {
+cite::before {
+    content: url(../img/email.svg);
     position: relative;
     display: inline-block;
     width: .875rem;
     top: 0.02rem;
     left: -.2rem;
-    content: url(../img/email.svg);
 }
 
 cite {
@@ -277,15 +277,18 @@ h3 {
 }
 
 .logo-grid {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1.5rem;
     grid-row-gap: .5rem;
+    justify-items: center;
+    align-items: center;
 }
 
 .logo-grid svg {
     z-index: 1;
-    width: 100%;
+    width: 80%;
 }
 
 /* FIN DE LA SECTION 1*/
@@ -376,20 +379,24 @@ h3 {
     position: relative;
 }
 
-.quote-p:before{
-    content: url(../img/quote.svg);
+.quote-p::before{
+    content: url("../img/quote.svg");
     position: absolute;
     top: -16px;
     left: -16px;
     z-index: -1;
+    display: inline-block;
+    width: 3rem;
 }
 .quote-p:after{
-    content: url(../img/quote.svg);
+    content: url("../img/quote.svg");
     position: absolute;
     bottom: -16px;
     right: 0;
     z-index: -1;
     rotate: 180deg;
+    display: inline-block;
+    width: 3rem;
 }
 
 .identity .video-presentation {
@@ -621,9 +628,11 @@ a.slide__next {
     padding: 0 1.5rem;
 }
 
-.slider-interest ul li:before {
-    content: url(../img/v-blue.svg);
+.slider-interest ul li::before {
+    content: url("../img/v-blue.svg");
     margin-right: 0.5rem;
+    display: inline-block;
+    width: 1rem;
 }
 
 .slider-interest ul li {
@@ -702,9 +711,11 @@ a.slide__next {
     -moz-box-shadow: -9px 10px 17px -10px rgba(95, 130, 140, 0.75);
 }
 
-.button-year:before {
-    content: url(../img/belgium.svg);
+.button-year::before {
+    content: url("../img/belgium.svg");
     border-radius: 1rem;
+    display: inline-block;
+    width: 1.5rem;
 }
 
 /*SECTION 5 BIS**/
