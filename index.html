@@ -9,6 +9,7 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles-desktop.css">
     <title>Dylan Jacquet CV</title>
 </head>
 <body>
@@ -441,7 +442,7 @@
                     class="link-text-small" href="#">En savoir plus.</a></cite>
         </section>
     </section>
-    <section class="mobile-hidden">
+    <section class="comparatif mobile-hidden" id="comparatif">
         <h2>
             Dites au revoir aux sites internet peu accessible
         </h2>
@@ -449,56 +450,54 @@
             Je m’appelle Dylan Jacquet, je suis un étudiant de la HEPL, dans ma section nous avons appris l’art de la
             qualité du web.
         </p>
-        <article class="comparaison">
-            <h3>
-                Un mauvais développeur web
-            </h3>
-            <ul>
-                <li>
-                    <img src="./img/erreur-moi.jpeg" alt="">
-                </li>
-                <li>
-                    Il ne se remet jamais en question
-                </li>
-                <li>
-                    Il ne pense pas au référencement naturel
-                </li>
-                <li>
-                    Il ne cible pas l’expérience de l’utilisateur final
-                </li>
-                <li>
-                    Son site ne remplit pas les normes d’accessibilité
-                </li>
-                <li>
-                    Il sous-estime l’importance de la qualité du code
-                </li>
-            </ul>
-        </article>
-        <article class="comparaison">
-            <h3>
-                Dylan Jacquet développeur Web
-            </h3>
-            <ul>
-                <li>
-                    <img src="./img/moi.jpeg" alt="">
-                </li>
-                <li>
-                    Travaille efficacement et rapidement
-                </li>
-                <li>
-                    Respecte les principes d’accessibilités
-                </li>
-                <li>
-                    Pratique continuellement une veille numérique
-                </li>
-                <li>
-                    Réalise des projets complètement responsive
-                </li>
-                <li>
-                    Réalise un site web de qualité et sécurisé
-                </li>
-            </ul>
-        </article>
+        <div class="container-comparaison">
+            <article class="comparaison">
+                <h3>
+                    Un mauvais développeur web
+                </h3>
+                <img src="./img/erreur-moi.jpeg" alt="">
+                <ul>
+                    <li>
+                        Il ne se remet jamais en question
+                    </li>
+                    <li>
+                        Il ne pense pas au référencement naturel
+                    </li>
+                    <li>
+                        Il ne cible pas l’expérience de l’utilisateur final
+                    </li>
+                    <li>
+                        Son site ne remplit pas les normes d’accessibilité
+                    </li>
+                    <li>
+                        Il sous-estime l’importance de la qualité du code
+                    </li>
+                </ul>
+            </article>
+            <article class="comparaison">
+                <h3>
+                    Dylan Jacquet développeur Web
+                </h3>
+                <img src="./img/moi.jpeg" alt="">
+                <ul>
+                    <li>
+                        Travaille efficacement et rapidement
+                    </li>
+                    <li>
+                        Respecte les principes d’accessibilités
+                    </li>
+                    <li>
+                        Pratique continuellement une veille numérique
+                    </li>
+                    <li>
+                        Réalise des projets complètement responsive
+                    </li>
+                    <li>
+                        Réalise un site web de qualité et sécurisé
+                    </li>
+                </ul>
+            </article>
+        </div>
     </section>
     <section class="section-slider">
         <h2>
@@ -520,79 +519,80 @@
             <div class="identity">
                 <div class="tabContent" id="button1">
                     <img class="imgfull" src="./img/quisuisje.svg" alt="Back-End et Front End">
-                    <p class="quote-p">
-                        Je m’appelle Dylan, je suis un étudiant de l’<abbr title="">HEPL</abbr>. J’ai 21 ans. J’habite
-                        dans la commune de
-                        Stoumont. Je
-                        possède le permis B et je possède une qualification en infographie et bientôt un diplôme.
-                    </p>
-                    <div class="identity-container">
-                        <img src="./img/USER.jpg" alt="Photo de moi" width="64" height="64">
-                        <div>
-                            <p>
-                                Dylan Jacquet
-                            </p>
-                            <p>
-                                Étudiant à l’<abbr title="">HEPL</abbr> en Technique Infographique Option WEB
-                            </p>
+                    <div class="content">
+                        <p class="quote-p">
+                            Je m’appelle Dylan, je suis un étudiant de l’<abbr title="">HEPL</abbr>. J’ai 21 ans.
+                            J’habite
+                            dans la commune de
+                            Stoumont. Je
+                            possède le permis B et je possède une qualification en infographie et bientôt un diplôme.
+                        </p>
+                        <div class="identity-container">
+                            <img src="./img/USER.jpg" alt="Photo de moi" width="64" height="64">
+                            <div>
+                                <p>
+                                    Dylan Jacquet
+                                </p>
+                                <p>
+                                    Étudiant à l’<abbr title="">HEPL</abbr> en Technique Infographique Option WEB
+                                </p>
+                            </div>
                         </div>
+                        <a href="#" class="highlighted-link">
+                            Apprenez en plus à propos de moi
+                        </a>
                     </div>
-                    <a href="#" class="highlighted-link">
-                        Apprenez en plus à propos de moi
-                    </a>
-                    <button class="butInformation">
-                        Travailler avec moi
-                    </button>
                 </div>
                 <div class="tabContent hidden" id="button2">
                     <img class="imgfull" src="./img/whythischoice.svg" alt="Back-End et Front End">
-                    <p class="quote-p">
-                        J’ai décidé de choisir l’option Web, car la création de site internet et le développement
-                        d’application mobile m’ont toujours intéressé.
-                    </p>
-                    <div class="identity-container">
-                        <img src="./img/USER.jpg" alt="Photo de moi" width="64" height="64">
-                        <div>
-                            <p>
-                                Dylan Jacquet
-                            </p>
-                            <p>
-                                Étudiant à l’<abbr title="">HEPL</abbr> en Technique Infographique Option WEB
-                            </p>
+                    <div class="content">
+                        <p class="quote-p">
+                            J’ai décidé de choisir l’option Web, car la création de site internet et le développement
+                            d’application mobile m’ont toujours intéressé.
+                        </p>
+                        <div class="identity-container">
+                            <img src="./img/USER.jpg" alt="Photo de moi" width="64" height="64">
+                            <div>
+                                <p>
+                                    Dylan Jacquet
+                                </p>
+                                <p>
+                                    Étudiant à l’<abbr title="">HEPL</abbr> en Technique Infographique Option WEB
+                                </p>
+                            </div>
                         </div>
+                        <a href="#" class="highlighted-link">
+                            Apprenez en plus à propos de moi
+                        </a>
                     </div>
-                    <a href="#" class="highlighted-link">
-                        Apprenez en plus à propos de moi
-                    </a>
-                    <button class="butInformation">
-                        Travailler avec moi
-                    </button>
                 </div>
                 <div class="tabContent hidden" id="button3">
                     <img class="imgfull" src="./img/frontandback.svg" alt="Back-End et Front End">
-                    <p class="quote-p">
-                        Dans le Web, j’apprécie la plupart des choses. J’ai appris à faire du Front END et du Back
-                        END
-                        et plus tard j’aimerais être un développeur web Full Stack .
-                    </p>
-                    <div class="identity-container">
-                        <img src="./img/USER.jpg" alt="Photo de moi" width="64" height="64">
-                        <div>
-                            <p>
-                                Dylan Jacquet
-                            </p>
-                            <p>
-                                Étudiant à l’<abbr title="">HEPL</abbr> en Technique Infographique Option WEB
-                            </p>
+                    <div class="content">
+                        <p class="quote-p">
+                            Dans le Web, j’apprécie la plupart des choses. J’ai appris à faire du Front END et du Back
+                            END
+                            et plus tard j’aimerais être un développeur web Full Stack .
+                        </p>
+                        <div class="identity-container">
+                            <img src="./img/USER.jpg" alt="Photo de moi" width="64" height="64">
+                            <div>
+                                <p>
+                                    Dylan Jacquet
+                                </p>
+                                <p>
+                                    Étudiant à l’<abbr title="">HEPL</abbr> en Technique Infographique Option WEB
+                                </p>
+                            </div>
                         </div>
+                        <a href="#" class="highlighted-link">
+                            Apprenez en plus à propos de moi
+                        </a>
                     </div>
-                    <a href="#" class="highlighted-link">
-                        Apprenez en plus à propos de moi
-                    </a>
-                    <button class="butInformation">
-                        Travailler avec moi
-                    </button>
                 </div>
+                <button class="butInformation">
+                    Travailler avec moi
+                </button>
             </div>
         </div>
     </section>
@@ -809,8 +809,10 @@
                      alt="Le site de l'Athénée Royale Ardenne Hautes Fagnes">
                 <img id="1" src="./img/slider-parcours/Qualification.jpg" width="256" height="150"
                      alt="Stand représentant la nouvelle image de marque du musée 'Batarden'">
-                <img id="2" src="./img/slider-parcours/Helmo.jpg" width="256" height="150" alt="Le site de l'HELMO ESAS">
-                <img id="3" src="./img/slider-parcours/HEPL.jpg" width="256" height="150" alt="Le site de l'HEPL de Seraing">
+                <img id="2" src="./img/slider-parcours/Helmo.jpg" width="256" height="150"
+                     alt="Le site de l'HELMO ESAS">
+                <img id="3" src="./img/slider-parcours/HEPL.jpg" width="256" height="150"
+                     alt="Le site de l'HEPL de Seraing">
             </div>
             <div class="buttons">
                 <button class="button-year" data-order="0">

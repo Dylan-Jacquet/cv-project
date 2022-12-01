@@ -1,0 +1,313 @@
+@media (min-width: 1200px) {
+    body {
+        max-width: 80%;
+        margin: 0 auto;
+        background: no-repeat right -4rem top url(../img/BGVIDEO.svg);
+        background-size: 65%;
+        background-color: white;
+    }
+}
+
+@media (min-width: 995px) {
+    .mobile-hidden {
+        display: initial;
+    }
+
+    body {
+        margin: 0 auto;
+        background: no-repeat right -13rem top url(../img/BGVIDEO.svg);
+        background-size: 75%;
+        background-color: white;
+    }
+
+    .menu {
+        top: 0;
+        left: 0;
+        position: initial;
+        flex-direction: row;
+        height: initial;
+        width: initial;
+        opacity: 1;
+        margin-top: 0;
+        padding: 0;
+        display: inline-flex;
+        transition: initial;
+    }
+
+    .burger, .burger-wrapper, #checkbox_toggle {
+        display: none;
+    }
+
+    .logo {
+        margin-right: 0;
+        width: auto;
+        height: 3rem;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        border: none;
+        padding: 1rem 1.25rem;
+    }
+
+    .link-menu, .services, .link-only {
+        background-color: white;
+        border: none;
+        width: auto;
+        white-space: nowrap;
+    }
+
+    .link-menu {
+    }
+
+    header {
+        max-width: 90%;
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin: 0 auto;
+        height: auto;
+        background-color: white;
+        position: relative;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 117rem;
+        margin: 0 auto;
+    }
+
+    .menu-icons {
+        color: grey;
+        font-size: 4rem;
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        transform: translateY(-50%);
+        cursor: pointer;
+        z-index: 1500;
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 1);
+    }
+
+    .logo {
+        display: flex;
+        margin-right: 5rem;
+    }
+
+    .logo i {
+        margin: auto;
+        font-size: 2rem;
+        color: grey;
+    }
+
+    .menu {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-end;
+        transition: 0;
+    }
+
+    .menu > li {
+        position: relative;
+    }
+
+    .sub-menu li {
+        line-height: 3rem;
+    }
+
+    .menu a {
+        display: block;
+        color: #7e838f;
+        font-size: .875rem;
+        font-weight: 500;
+        transition: color .2s;
+    }
+
+    .link-menu {
+        padding: 0rem;
+    }
+
+    .menu a:hover {
+        color: blue;
+    }
+
+    .presentation {
+        max-width: 90%;
+        padding-top: 1rem;
+        display: grid;
+        gap: 0 5rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        align-items: center;
+    }
+
+    .video-presentation {
+        width: 100%;
+        order: 0;
+        grid-column: span 7;
+        height: 420px;
+    }
+
+    .personnal-information {
+        order: -1;
+        grid-column: span 5;
+        text-align: left;
+    }
+
+    .personnal-information h2, .personnal-information .current-text, cite {
+        text-align: left;
+    }
+
+    .butInformation {
+        margin: 0 0 1rem 0;
+    }
+
+    /*SECTION PRESENTATION*/
+    .logo-section h3 {
+        font-size: 1.25rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .personnal-information strong {
+        font: 1rem 'Archia-Bold', 'Times New Roman', serif;
+    }
+
+    .logo-section {
+        text-align: center;
+        grid-column: span 12;
+        padding: 1.75rem 0 5rem;
+    }
+
+    .logo-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin-bottom: 1rem;
+    }
+
+    .logo-grid svg {
+        height: 4rem;
+    }
+
+    .logo-section cite {
+        font-size: .875rem;
+    }
+
+    .comparatif h2, .comparatif p {
+        margin-bottom: 0;
+        padding: 0 5rem 1.5rem;
+        max-width: 70%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .container-comparaison {
+        display: flex;
+        justify-content: center;
+        column-gap: 2rem;
+        margin-bottom: 4rem;
+
+    }
+
+    .comparatif p {
+        line-height: 1.5;
+        color: #7e838f;
+    }
+
+    .comparaison {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 21px -7px rgba(0, 0, 0, 0.67);
+        -webkit-box-shadow: 0 0 21px -7px rgba(0, 0, 0, 0.67);
+        -moz-box-shadow: 0 0 21px -7px rgba(0, 0, 0, 0.67);
+        padding: 3rem 1rem;
+        width: 40%;
+    }
+
+    .comparaison h3 {
+        font: 1.5rem "Archia-Bold", "Helvetica Neue", Helvetica, Arial;
+        color: #004bff;
+        margin-bottom: 0;
+    }
+
+    .comparaison img {
+        height: 300px;
+        width: auto;
+        margin: 0 auto;
+        display: block;
+        padding: 2rem;
+    }
+
+    .comparaison ul {
+        margin-top: auto;
+    }
+
+    .comparaison li {
+        font-size: .875rem;
+        color: #7e838f;
+        padding: 1rem 2rem;
+    }
+
+    .section-slider h2 {
+        font-size: 2.5rem;
+        max-width: 50%;
+        line-height: 1.2;
+        margin: 0 auto 1rem;
+    }
+
+    .section-slider p.current-text {
+        max-width: 50%;
+        margin: 0 auto 3rem;
+        color: #7e838f;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .tabContent {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .tabContent .imgfull {
+        width: 50%;
+
+    }
+
+    .tabContent .quote-p, .identity-container {
+        font-size: 1.5rem;
+        grid-column: span 3;
+    }
+
+    .highlighted-link {
+        grid-column: span 2;
+    }
+
+    .tabContent .butInformation {
+        grid-column: 2/6;
+    }
+
+    .tabContent .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .identity .butInformation {
+        margin: 0 auto;
+    }
+}
