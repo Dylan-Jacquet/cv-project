@@ -1,22 +1,29 @@
 @media (min-width: 1200px) {
     body {
-        max-width: 80%;
         margin: 0 auto;
+        /*noinspection CssReplaceWithShorthandSafely*/
+        background-color: white;
+        /*noinspection CssReplaceWithShorthandSafely*/
         background: no-repeat right -4rem top url(../img/BGVIDEO.svg);
         background-size: 65%;
-        background-color: white;
     }
 }
 
 @media (min-width: 995px) {
-    .mobile-hidden {
-        display: initial;
+    .desktop-hidden {
+        display: none;
+    }
+
+    .mobile-hidden, .reverse .mobile-hidden {
+        display: block;
     }
 
     body {
         margin: 0 auto;
+        /*noinspection CssReplaceWithShorthandSafely*/
         background: no-repeat right -13rem top url(../img/BGVIDEO.svg);
         background-size: 75%;
+        /*noinspection CssReplaceWithShorthandSafely*/
         background-color: white;
     }
 
@@ -117,7 +124,7 @@
         width: 100%;
         align-items: center;
         justify-content: flex-end;
-        transition: 0;
+        transition: all 0.1ms;
     }
 
     .menu > li {
@@ -137,7 +144,7 @@
     }
 
     .link-menu {
-        padding: 0rem;
+        padding: 0;
     }
 
     .menu a:hover {
@@ -207,8 +214,8 @@
         font-size: .875rem;
     }
 
+    /*COMPARATIF*/
     .comparatif h2, .comparatif p {
-        margin-bottom: 0;
         padding: 0 5rem 1.5rem;
         max-width: 70%;
         text-align: center;
@@ -262,11 +269,18 @@
         padding: 1rem 2rem;
     }
 
-    .section-slider h2 {
+
+    /*IDENTITY*/
+    .section-slider {
+        padding: 0 10rem;
+    }
+
+    .section-slider h2, .title-interest {
         font-size: 2.5rem;
         max-width: 50%;
         line-height: 1.2;
         margin: 0 auto 1rem;
+
     }
 
     .section-slider p.current-text {
@@ -294,8 +308,13 @@
         grid-column: span 3;
     }
 
+    .quote-p {
+        margin-top: 1rem;
+    }
+
     .highlighted-link {
         grid-column: span 2;
+        width: fit-content;
     }
 
     .tabContent .butInformation {
@@ -310,4 +329,120 @@
     .identity .butInformation {
         margin: 0 auto;
     }
+
+    /* INTEREST**/
+    .subtitle-interest {
+        max-width: 50%;
+        color: #7e838f;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 1.5;
+    }
+
+    .slider-interest {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        row-gap: 1rem;
+        padding: 0 10rem 8rem;
+    / / margin: 0 auto 8 rem;
+    }
+
+    .slider-interest h3 {
+        grid-column: span 4;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .slider-interest .current-text {
+        grid-column: span 4;
+        grid-row: 2/3;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .slider-interest ul {
+        grid-column: span 4;
+        grid-row: 3/5;
+        padding: 0;
+        margin: 0;
+    }
+
+    .slider-interest .slider-image {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        grid-column: span 8;
+        grid-row: span 7;
+        margin: 0;
+        overflow: visible;
+        padding: 0;
+    }
+
+    .slider-image img {
+        max-width: 10rem;
+    }
+
+    .slider-interest .btnInformation {
+        grid-column: 1/3;
+        grid-row: 6;
+        margin: 0;
+    }
+
+    .slider-interest .experience-pro {
+        grid-column: span 8;
+        grid-row: span 7;
+    }
+
+
+    .reverse .parcours-img {
+        grid-column: 1/9;
+        grid-row: 1/5;
+        margin: 0 auto;
+    }
+
+    .parcours-img .active {
+        margin: 0;
+    }
+
+    .reverse {
+        grid-template-columns: repeat(13, 1fr);
+        padding: 0 10rem 6rem;
+    }
+
+    .reverse .buttons {
+        grid-column: 1/9;
+        grid-row: 2;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    .reverse-text {
+        display: flex;
+        flex-direction: column;
+        grid-column: 9/14;
+        gap: 1.5rem;
+    }
+
+    /*SECTION_LANGAGES*/
+    .langages {
+        display: flex;
+        flex-direction: row;
+        padding: 0 10rem;
+    }
+
+    .langages-specialisation {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .langages-specialisation div{
+        display: flex;
+        flex-direction: row;
+    }
+    /*SECTION BEFORE FOOTER*/
+    /*CHATBOX*/
+    /*FOOTER*/
 }
