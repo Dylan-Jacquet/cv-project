@@ -509,11 +509,11 @@
         </p>
         <div class="main-container-button">
             <div class="buttons">
-                <a href="#btn_button1" class="btn_slider active" id="btn_button1" data-number="button1">Qui suis-je
-                    ?</a> <!-- Menu changeant JS -->
-                <a href="#btn_button2" class="btn_slider" id="btn_button2" data-number="button2">Pourquoi ce choix ?</a>
+                <button class="btn_slider active" id="btn_button1" data-number="button1">Qui suis-je
+                    ?</button> <!-- Menu changeant JS -->
+                <button class="btn_slider" id="btn_button2" data-number="button2">Pourquoi ce choix ?</button>
                 <!-- Menu changeant JS-->
-                <a href="#btn_button3" class="btn_slider" id="btn_button3" data-number="button3">Ce que j’aime</a>
+                <button class="btn_slider" id="btn_button3" data-number="button3">Ce que j’aime</button>
                 <!-- Menu changeant JS -->
             </div>
             <div class="identity">
@@ -602,7 +602,7 @@
         </h2>
         <div class="slider">
             <div class="slides">
-                <section class="card-reviews slide" id="slide-1">
+                <section class="card-reviews slide active_slides" id="slide-1">
                     <h3>
                         Réalisation d'un site web au top !
                     </h3>
@@ -625,7 +625,7 @@
                     <a class="slide__prev" href="#slide-6" title="Prev"></a>
                     <a class="slide__next" href="#slide-2" title="Next"></a>
                 </section>
-                <section class="card-reviews slide" id="slide-2">
+                <section class="card-reviews slide active_slides" id="slide-2">
                     <h3>
                         Un très bon travailleur !
                     </h3>
@@ -648,7 +648,7 @@
                     <a class="slide__prev" href="#slide-1" title="Prev"></a>
                     <a class="slide__next" href="#slide-3" title="Next"></a>
                 </section>
-                <section class="card-reviews slide" id="slide-3">
+                <section class="card-reviews slide active_slides" id="slide-3">
                     <h3>
                         Un site internet de top qualité !
                     </h3>
@@ -751,7 +751,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="interest_experience">
         <h2 class="mobile-hidden title-interest">
             Voici une section avec plus de détails sur moi
         </h2>
@@ -878,7 +878,7 @@
                     <span>100%</span> web developper
                 </p>
             </div>
-            <a class="link mobile-hidden" href="#">En apprendre plus sur moi</a>
+            <a class="link mobile-hidden highlighted-link" href="#">En apprendre plus sur moi</a>
         </div>
         <div class="slider-footer">
             <img data-order="1" class="footer-slider" src="./img/parcours/slide1.svg" alt="Javascript et Typescript"
@@ -974,20 +974,22 @@
                     <li>Me contacter</li>
                 </ul>
             </li>
+            <li>
+                <div class="small-footer">
+                    <img class="logo" src="./img/logo-LIGHT.svg" alt="Homepage"/>
+                    <p>DylanJacquet</p>
+                    <p>Les Forges 71, 4987</p>
+                    <p>Stoumont Belgique</p>
+                    <div>
+                        <img src="" alt="Linkedin"> <!-- Linkedin  -->
+                        <img src="" alt="Github"> <!-- Github -->
+                        <img src="" alt="Instagram"> <!-- Instagram-->
+                    </div>
+                    <img src="#" alt="LOGO">
+                    <p> Content Authenticity Initiative</p>
+                </div>
+            </li>
         </ul>
-        <div class="small-footer">
-            <img class="logo" src="./img/logo-LIGHT.svg" alt="Homepage"/>
-            <p>DylanJacquet</p>
-            <p>Les Forges 71, 4987</p>
-            <p>Stoumont Belgique</p>
-            <div>
-                <img src="" alt="Linkedin"> <!-- Linkedin  -->
-                <img src="" alt="Github"> <!-- Github -->
-                <img src="" alt="Instagram"> <!-- Instagram-->
-            </div>
-            <img src="#" alt="LOGO">
-            <p> Content Authenticity Initiative</p>
-        </div>
     </div>
 </footer>
 <script src="./js/main.js"></script>

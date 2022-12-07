@@ -4,6 +4,8 @@ body {
     background-color: white;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    text-align: center;
+    overflow-x: hidden;
 }
 
 header {
@@ -607,6 +609,7 @@ a.slide__next {
 .slider-interest {
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
 
 .slider-interest h3 {
