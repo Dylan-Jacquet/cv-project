@@ -8,8 +8,10 @@
     <!--Micro-data HTML-->
     <meta name="author" content="Dylan Jacquet">
     <meta name="title" content="Dylan Jacquet - CV Développeur Web">
-    <meta name="description" content="Voici un site internet présentant le CV de Dylan Jacquet Web Designer, vous pouvez retrouver ses différentes expériences professionnelles ainsi que son parcours scolaires.">
-    <meta name="keywords" content="Dylan Jacquet, Développeur Web, CV,compétence, inforgraphiste, développeur, full stack, Dylan, Jacquet, artiste, design HTML, CSS, JavaScript">
+    <meta name="description"
+          content="Voici un site internet présentant le CV de Dylan Jacquet Web Designer, vous pouvez retrouver ses différentes expériences professionnelles ainsi que son parcours scolaires.">
+    <meta name="keywords"
+          content="Dylan Jacquet, Développeur Web, CV,compétence, inforgraphiste, développeur, full stack, Dylan, Jacquet, artiste, design HTML, CSS, JavaScript">
     <!-- Feuilles de styles  -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
@@ -25,15 +27,15 @@
 </head>
 <body>
 <header>
-    <h1 class="hidden">
-        CV de Dylan JACQUET
+    <h1 class="hidden" aria-level="1">
+        <abbr title="Curriculum Vitae">CV</abbr> de Dylan JACQUET
     </h1>
     <nav class="navbar">
-        <h2 class="hidden">
+        <h2 class="hidden" aria-level="2">
             Menu de navigation
         </h2>
         <a href="index.html" class="logo">
-            <img src="./img/logo.svg" alt="Homepage" width="140px">
+            <img src="./img/logo.svg" alt="Homepage" width="140px" height="">
         </a>
         <input type="checkbox" id="checkbox_toggle"/>
         <label class="burger-wrapper" for="checkbox_toggle" id="burger">
@@ -47,20 +49,20 @@
                     <a href="" class="link-menu">Accueil
                     </a>
                     <ul class="dropdown">
-                        <li><a href="#">Lien 1</a></li>
-                        <li><a href="#">Lien 2</a></li>
-                        <li><a href="#">Lien 3</a></li>
-                        <li><a href="#">Lien 4</a></li>
-                        <li><a href="#">Lien 5</a></li>
+                        <li><a href="#" hreflang="fr-BE">Lien 1</a></li>
+                        <li><a href="#" hreflang="fr-BE">Lien 2</a></li>
+                        <li><a href="#" hreflang="fr-BE">Lien 3</a></li>
+                        <li><a href="#" hreflang="fr-BE">Lien 4</a></li>
+                        <li><a href="#" hreflang="fr-BE">Lien 5</a></li>
                     </ul>
                 </li>
                 <li class="services">
                     <a href="#" class="link-menu">A propos
                     </a>
                     <ul class="dropdown">
-                        <li><a href="#">Javascript et Typescript</a></li>
-                        <li><a href="#">PHP et MySql</a></li>
-                        <li><a href="#">HTML & CSS</a></li>
+                        <li><a href="#" hreflang="fr-BE">Javascript et Typescript</a></li>
+                        <li><a href="#" hreflang="fr-BE"><abbr>PHP</abbr> et <abbr>MySql</abbr></a></li>
+                        <li><a href="#" hreflang="fr-BE"><abbr>HTML</abbr> & <abbr>CSS</abbr></a></li>
                     </ul>
                 </li>
                 <li class="link-only">
@@ -70,7 +72,7 @@
                     <a href="#" class="link-menu">Veille
                     </a>
                     <ul class="dropdown">
-                        <li><a href="#">CSS</a></li>
+                        <li><a href="#"><abbr title="">CSS</abbr></a></li>
                         <li><a href="#">JavaScript</a></li>
                         <li><a href="#">Angular</a></li>
                         <li><a href="#">Java</a></li>
@@ -103,11 +105,12 @@
 <main>
     <section class="presentation">
         <div class="personnal-information">
-            <h2>
+            <h2 aria-level="2">
                 Dylan Jacquet Développeur Web
             </h2>
             <p class="current-text">
-                <strong class="mobile-hidden">Je suis le développeur web #1 de la section web à l’HEPL.</strong> Ma
+                <strong class="mobile-hidden">Je suis le développeur web #1 de la section web à l’ <abbr
+                        title="Hautes École de la Province de Liège">HEPL</abbr>.</strong> Ma
                 maitrise des différents
                 langages
                 de programmation me permet d’être polyvalent dans le métier du web.
@@ -122,15 +125,16 @@
             <source src="./img/VIDEO-PRESENTATION.mp4" type="video/mp4"/>
             <p>
                 Votre navigateur de recherche ne supporte pas ce contenu. Vous pouvez retrouver
-                <a href="#">ici la vidéo.</a>
+                <a href="#" hreflang="fr-BE">ici la vidéo.</a>
             </p>
         </video>
         <section class="logo-section">
-            <h3>
+            <h3 aria-level="3">
                 Ce qui m’a permis de devenir qui je suis
             </h3>
             <div class="logo-grid">
-                <svg xmlns="http://www.w3.org/2000/svg" width="105" height="42" viewBox="0 0 211.205 72.23">
+                <svg role="img" xmlns="http://www.w3.org/2000/svg" width="105" height="42" viewBox="0 0 211.205 72.23">
+                    <title>Logo Dylan Jacquet Wed Designer</title>
                     <g id="Groupe_33" data-name="Groupe 33" transform="translate(0 0.001)">
                         <g id="Groupe_29" data-name="Groupe 29" transform="translate(0 -0.001)">
                             <path id="Tracé_58" data-name="Tracé 58"
@@ -164,7 +168,8 @@
                         </g>
                     </g>
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="113" height="42" viewBox="0 0 227.191 57.278">
+                <svg role="img" xmlns="http://www.w3.org/2000/svg" width="113" height="42" viewBox="0 0 227.191 57.278">
+                    <title>Logo Athénée Royale Ardenne Hautes Fagnes</title>
                     <g id="LOGO_ARAHF" data-name="LOGO ARAHF" transform="translate(-34.62)">
                         <g id="Groupe_25" data-name="Groupe 25" transform="translate(34.62 0)">
                             <path id="Tracé_29" data-name="Tracé 29"
@@ -226,7 +231,8 @@
                               transform="translate(-48.155 -4.981)" fill="#5c5c5c"/>
                     </g>
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="85" height="42" viewBox="0 0 190.544 72.645">
+                <svg role="img" xmlns="http://www.w3.org/2000/svg" width="85" height="42" viewBox="0 0 190.544 72.645">
+                    <title>Logo de la Province de Liège</title>
                     <g id="Groupe_38" data-name="Groupe 38" transform="translate(-198.425 -184.252)">
                         <g id="Groupe_36" data-name="Groupe 36" transform="translate(198.425 184.252)">
                             <path id="Tracé_83" data-name="Tracé 83"
@@ -246,7 +252,8 @@
                         </g>
                     </g>
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="38" viewBox="0 0 82 76.174">
+                <svg role="img" xmlns="http://www.w3.org/2000/svg" width="41" height="38" viewBox="0 0 82 76.174">
+                    <title>Le permis B</title>
                     <g id="Groupe_28" data-name="Groupe 28" transform="translate(-120.457 56.213)">
                         <g id="Groupe_26" data-name="Groupe 26" transform="translate(120.457 -6.039)"
                            style="isolation: isolate">
@@ -299,7 +306,8 @@
                         </g>
                     </g>
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="57" height="45" viewBox="0 0 117.933 91.008">
+                <svg role="img" xmlns="http://www.w3.org/2000/svg" width="57" height="45" viewBox="0 0 117.933 91.008">
+                    <title>Le Certificat d'enseignement secondaire supérieur</title>
                     <g id="miaQMK" transform="translate(-55.25 6.459)">
                         <g id="Groupe_40" data-name="Groupe 40" transform="translate(55.25 -6.459)">
                             <g id="Groupe_39" data-name="Groupe 39">
@@ -370,7 +378,8 @@
                         </g>
                     </g>
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="111" height="42" viewBox="0 0 222.446 70.204">
+                <svg role="img" xmlns="http://www.w3.org/2000/svg" width="111" height="42" viewBox="0 0 222.446 70.204">
+                    <title>Haute École Libre Mosane département social</title>
                     <g id="Groupe_35" data-name="Groupe 35" transform="translate(-0.5 -0.558)">
                         <rect id="Rectangle_59" data-name="Rectangle 59" width="220.446" height="68.204" rx="4"
                               transform="translate(1.5 1.558)" fill="#fff" stroke="#aaa" stroke-miterlimit="10"
@@ -454,16 +463,16 @@
         </section>
     </section>
     <section class="comparatif mobile-hidden" id="comparatif">
-        <h2>
+        <h2 aria-level="2">
             Dites au revoir aux sites internet peu accessible
         </h2>
         <p>
-            Je m’appelle Dylan Jacquet, je suis un étudiant de la HEPL, dans ma section nous avons appris l’art de la
+            Je m’appelle Dylan Jacquet, je suis un étudiant de la <abbr title="Haute École de la Province de Liège">HEPL</abbr>, dans ma section nous avons appris l’art de la
             qualité du web.
         </p>
         <div class="container-comparaison">
             <article class="comparaison">
-                <h3>
+                <h3 aria-level="3">
                     Un mauvais développeur web
                 </h3>
                 <img src="./img/erreur-moi.jpeg" alt="">
@@ -486,7 +495,7 @@
                 </ul>
             </article>
             <article class="comparaison">
-                <h3>
+                <h3 aria-level="3">
                     Dylan Jacquet développeur Web
                 </h3>
                 <img src="./img/moi.jpeg" alt="">
@@ -511,17 +520,18 @@
         </div>
     </section>
     <section class="section-slider">
-        <h2>
+        <h2 aria-level="2">
             Découvrez en davantage sur mon curriculum vitae
         </h2>
         <p class="current-text">
-            Je m’appelle Dylan Jacquet, je suis un étudiant de la HEPL, dans ma section nous avons appris l’art de la
+            Je m’appelle Dylan Jacquet, je suis un étudiant de la <abbr title="Haute École de la Province de Liège">HEPL</abbr>, dans ma section nous avons appris l’art de la
             qualité du web.
         </p>
         <div class="main-container-button">
             <div class="buttons">
                 <button class="btn_slider active" id="btn_button1" data-number="button1">Qui suis-je
-                    ?</button> <!-- Menu changeant JS -->
+                    ?
+                </button> <!-- Menu changeant JS -->
                 <button class="btn_slider" id="btn_button2" data-number="button2">Pourquoi ce choix ?</button>
                 <!-- Menu changeant JS-->
                 <button class="btn_slider" id="btn_button3" data-number="button3">Ce que j’aime</button>
@@ -581,9 +591,8 @@
                     <img class="imgfull" src="./img/frontandback.svg" alt="Back-End et Front End">
                     <div class="content">
                         <p class="quote-p">
-                            Dans le Web, j’apprécie la plupart des choses. J’ai appris à faire du Front END et du Back
-                            END
-                            et plus tard j’aimerais être un développeur web Full Stack .
+                            Dans le Web, j’apprécie la plupart des choses. J’ai appris à faire du <em>Front END</em> et du <em>Back END</em>
+                            et plus tard j’aimerais être un développeur web <em>Full Stack</em>.
                         </p>
                         <div class="identity-container">
                             <img src="./img/USER.jpg" alt="Photo de moi" width="64" height="64">
@@ -608,13 +617,13 @@
         </div>
     </section>
     <section class="review-container">
-        <h2>
+        <h2 aria-level="2">
             Voici quelques avis sur mes travaux réalisés
         </h2>
         <div class="slider">
             <div class="slides">
                 <section class="card-reviews slide active_slides" id="slide-1">
-                    <h3>
+                    <h3 aria-level="3">
                         Réalisation d'un site web au top !
                     </h3>
                     <p>
@@ -637,7 +646,7 @@
                     <a class="slide__next" href="#slide-2" title="Next"></a>
                 </section>
                 <section class="card-reviews slide active_slides" id="slide-2">
-                    <h3>
+                    <h3 aria-level="3">
                         Un très bon travailleur !
                     </h3>
                     <p>
@@ -660,7 +669,7 @@
                     <a class="slide__next" href="#slide-3" title="Next"></a>
                 </section>
                 <section class="card-reviews slide active_slides" id="slide-3">
-                    <h3>
+                    <h3 aria-level="3">
                         Un site internet de top qualité !
                     </h3>
                     <p>
@@ -683,7 +692,7 @@
                     <a class="slide__next" href="#slide-4" title="Next"></a>
                 </section>
                 <section class="card-reviews slide" id="slide-4">
-                    <h3>
+                    <h3 aria-level="3">
                         Une image de marque remarquable !
                     </h3>
                     <p>
@@ -706,7 +715,7 @@
                     <a class="slide__next" href="#slide-5" title="Next"></a>
                 </section>
                 <section class="card-reviews slide" id="slide-5">
-                    <h3>
+                    <h3 aria-level="3">
                         Un élève très technique
                     </h3>
                     <p>
@@ -729,7 +738,7 @@
                     <a class="slide__next" href="#slide-6" title="Next"></a>
                 </section>
                 <section class="card-reviews slide" id="slide-6">
-                    <h3>
+                    <h3 aria-level="3">
                         Un élève discret et travailleur !
                     </h3>
                     <p>
@@ -763,7 +772,7 @@
         </div>
     </section>
     <section class="interest_experience">
-        <h2 class="mobile-hidden title-interest">
+        <h2 class="mobile-hidden title-interest" aria-level="2">
             Voici une section avec plus de détails sur moi
         </h2>
         <p class="mobile-hidden subtitle-interest">
@@ -771,7 +780,7 @@
             travailler.
         </p>
         <section class="slider-interest">
-            <h3>
+            <h3 aria-level="3">
                 Mes centres d’intérêts en dehors du travail
             </h3>
             <p class="current-text">
@@ -799,11 +808,12 @@
         </section>
         <section class="slider-interest reverse">
             <div class="reverse-text">
-                <h3>
+                <h3 aria-level="3">
                     Voici les étapes de mon parcours scolaires
                 </h3>
                 <p class="current-text">
-                    Voici les grandes étapes par lesquelles je suis passé durant l’entièreté de mon parcours professionnel.
+                    Voici les grandes étapes par lesquelles je suis passé durant l’entièreté de mon parcours
+                    professionnel.
                 </p>
                 <ul>
                     <li>
@@ -849,7 +859,7 @@
             </button>
         </section>
         <section class="slider-interest">
-            <h3>
+            <h3 aria-level="3">
                 Mes différentes expériences professionnelles
             </h3>
             <p class="current-text">
@@ -875,18 +885,18 @@
     </section>
     <section class="langages">
         <div class="langages-specialisation">
-            <h2>
+            <h2 aria-level="2">
                 Mes langages de programmation maîtrisés
             </h2>
             <div>
                 <p>
-                    <span>50%</span> front end
+                    <span>50%</span> <dfn><em lang="en-EN">front end</em></dfn>
                 </p>
                 <p>
-                    <span>50%</span> back end
+                    <span>50%</span> <dfn><em lang="en-EN">back end</em></dfn>
                 </p>
                 <p>
-                    <span>100%</span> web developper
+                    <span>100%</span> développeur web
                 </p>
             </div>
             <a class="link mobile-hidden highlighted-link" href="#">En apprendre plus sur moi</a>
@@ -903,6 +913,7 @@
         </div>
     </section>
     <section class="chatbox-container">
+        <h2 class="hidden" aria-level="2">CHATBOX</h2>
         <img class="chatbox-bulle" src="" alt="">
         <div class="chatbox-contenu">
             <img src="" alt="">
@@ -923,7 +934,7 @@
 </main>
 <footer>
     <section class="information-footer">
-        <h2>
+        <h2 aria-level="2">
             Mon CV vous intéresse. Consulter en plus !
         </h2>
         <button>Mes projets</button>

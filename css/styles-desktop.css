@@ -152,7 +152,6 @@
     }
 
     .presentation {
-        max-width: 75%;
         padding-top: 1rem;
         display: grid;
         gap: 0 5rem;
