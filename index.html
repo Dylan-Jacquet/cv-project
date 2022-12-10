@@ -11,7 +11,7 @@
     <meta name="description"
           content="Voici un site internet présentant le CV de Dylan Jacquet Web Designer, vous pouvez retrouver ses différentes expériences professionnelles ainsi que son parcours scolaires.">
     <meta name="keywords"
-          content="Dylan Jacquet, Développeur Web, CV,compétence, inforgraphiste, développeur, full stack, Dylan, Jacquet, artiste, design HTML, CSS, JavaScript">
+          content="Dylan Jacquet, Développeur Web, CV,compétence, infographiste, développeur, full stack, Dylan, Jacquet, artiste, design HTML, CSS, JavaScript">
     <!-- Feuilles de styles  -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
@@ -27,14 +27,14 @@
 </head>
 <body>
 <header>
-    <h1 class="hidden" aria-level="1">
+    <h1 class="hidden" aria-level="1" role="heading">
         <abbr title="Curriculum Vitae">CV</abbr> de Dylan JACQUET
     </h1>
     <nav class="navbar">
-        <h2 class="hidden" aria-level="2">
+        <h2 class="hidden" aria-level="2" role="heading">
             Menu de navigation
         </h2>
-        <a href="index.html" class="logo">
+        <a href="index.html" title="" class="logo">
             <img src="./img/logo.svg" alt="Homepage" width="140px" height="">
         </a>
         <input type="checkbox" id="checkbox_toggle"/>
@@ -46,57 +46,53 @@
         <div class="container">
             <ul class="menu" id="menu-mobile">
                 <li class="services">
-                    <a href="" class="link-menu">Accueil
-                    </a>
+                    Accueil
                     <ul class="dropdown">
-                        <li><a href="#" hreflang="fr-BE">Lien 1</a></li>
-                        <li><a href="#" hreflang="fr-BE">Lien 2</a></li>
-                        <li><a href="#" hreflang="fr-BE">Lien 3</a></li>
-                        <li><a href="#" hreflang="fr-BE">Lien 4</a></li>
-                        <li><a href="#" hreflang="fr-BE">Lien 5</a></li>
+                        <li><a href="#"title="" hreflang="fr-BE">Lien 1</a></li>
+                        <li><a href="#"title="" hreflang="fr-BE">Lien 2</a></li>
+                        <li><a href="#"title="" hreflang="fr-BE">Lien 3</a></li>
+                        <li><a href="#"title="" hreflang="fr-BE">Lien 4</a></li>
+                        <li><a href="#"title="" hreflang="fr-BE">Lien 5</a></li>
                     </ul>
                 </li>
                 <li class="services">
-                    <a href="#" class="link-menu">A propos
-                    </a>
+                    A propos
                     <ul class="dropdown">
-                        <li><a href="#" hreflang="fr-BE">Javascript et Typescript</a></li>
-                        <li><a href="#" hreflang="fr-BE"><abbr>PHP</abbr> et <abbr>MySql</abbr></a></li>
-                        <li><a href="#" hreflang="fr-BE"><abbr>HTML</abbr> & <abbr>CSS</abbr></a></li>
+                        <li><a href="#"title="" hreflang="fr-BE">Javascript et Typescript</a></li>
+                        <li><a href="#"title="" hreflang="fr-BE"><abbr>PHP</abbr> et <abbr>MySql</abbr></a></li>
+                        <li><a href="#"title="" hreflang="fr-BE"><abbr>HTML</abbr> & <abbr>CSS</abbr></a></li>
                     </ul>
                 </li>
                 <li class="link-only">
-                    <a href="#" class="link-menu">Langages</a>
+                    <a href="#" title="Vers la section mes langages" class="link-menu">Langages</a>
                 </li>
                 <li class="services">
-                    <a href="#" class="link-menu">Veille
-                    </a>
+                    Veille
                     <ul class="dropdown">
-                        <li><a href="#"><abbr title="">CSS</abbr></a></li>
-                        <li><a href="#">JavaScript</a></li>
-                        <li><a href="#">Angular</a></li>
-                        <li><a href="#">Java</a></li>
-                        <li><a href="#">Java</a></li>
-                        <li><a href="#">Java</a></li>
-                        <li><a href="#">Java</a></li>
+                        <li><a href="#"title=""><abbr title="">CSS</abbr></a></li>
+                        <li><a href="#"title="">JavaScript</a></li>
+                        <li><a href="#"title="">Angular</a></li>
+                        <li><a href="#"title="">Java</a></li>
+                        <li><a href="#"title="">Java</a></li>
+                        <li><a href="#"title="">Java</a></li>
+                        <li><a href="#"title="">Java</a></li>
                     </ul>
                 </li>
                 <li class="services">
-                    <a href="#" class="link-menu">Compétences
-                    </a>
+                    Compétences
                     <ul class="dropdown">
-                        <li><a href="#">Inverse de chaîne</a></li>
-                        <li><a href="#">Encodeur d'URL</a></li>
-                        <li><a href="#">Décapant des lignes vides</a></li>
-                        <li><a href="#">Compte des mots de chaîne</a></li>
-                        <li><a href="#">Compte des mots de chaîne</a></li>
+                        <li><a href="#"title="">Inverse de chaîne</a></li>
+                        <li><a href="#"title="">Encodeur d'URL</a></li>
+                        <li><a href="#"title="">Décapant des lignes vides</a></li>
+                        <li><a href="#"title="">Compte des mots de chaîne</a></li>
+                        <li><a href="#"title="">Compte des mots de chaîne</a></li>
                     </ul>
                 </li>
                 <li class="link-only">
-                    <a href="#" class="link-menu">Projets</a>
+                    <a href="#" title="Vers la section mes projets" class="link-menu">Projets</a>
                 </li>
                 <li class="link-only">
-                    <a href="#" class="btn link-menu">Portfolio</a>
+                    <a href="#" title="Vers la page Portfolio" class="btn link-menu">Portfolio</a>
                 </li>
             </ul>
         </div>
@@ -105,7 +101,7 @@
 <main>
     <section class="presentation">
         <div class="personnal-information">
-            <h2 aria-level="2">
+            <h2 aria-level="2" role="heading">
                 Dylan Jacquet Développeur Web
             </h2>
             <p class="current-text">
@@ -125,11 +121,11 @@
             <source src="./img/VIDEO-PRESENTATION.mp4" type="video/mp4"/>
             <p>
                 Votre navigateur de recherche ne supporte pas ce contenu. Vous pouvez retrouver
-                <a href="#" hreflang="fr-BE">ici la vidéo.</a>
+                <a href="#" title="" hreflang="fr-BE">ici la vidéo.</a>
             </p>
         </video>
         <section class="logo-section">
-            <h3 aria-level="3">
+            <h3 aria-level="3" role="heading">
                 Ce qui m’a permis de devenir qui je suis
             </h3>
             <div class="logo-grid">
@@ -458,12 +454,12 @@
                     </g>
                 </svg>
             </div>
-            <cite class="mobile-hidden">Beaucoup de connaissance que j’ai acquis proviennent de ces endroits <a
-                    class="link-text-small" href="#">En savoir plus.</a></cite>
+            <cite class="mobile-hidden">Beaucoup de connaissance que j’ai acquis proviennent de ces endroits
+                <a href="" title="" class="link-text-small">En savoir plus.</a></cite>
         </section>
     </section>
     <section class="comparatif mobile-hidden" id="comparatif">
-        <h2 aria-level="2">
+        <h2 aria-level="2" role="heading">
             Dites au revoir aux sites internet peu accessible
         </h2>
         <p>
@@ -472,7 +468,7 @@
         </p>
         <div class="container-comparaison">
             <article class="comparaison">
-                <h3 aria-level="3">
+                <h3 aria-level="3" role="heading">
                     Un mauvais développeur web
                 </h3>
                 <img src="./img/erreur-moi.jpeg" alt="">
@@ -495,7 +491,7 @@
                 </ul>
             </article>
             <article class="comparaison">
-                <h3 aria-level="3">
+                <h3 aria-level="3" role="heading">
                     Dylan Jacquet développeur Web
                 </h3>
                 <img src="./img/moi.jpeg" alt="">
@@ -520,7 +516,7 @@
         </div>
     </section>
     <section class="section-slider">
-        <h2 aria-level="2">
+        <h2 aria-level="2" role="heading">
             Découvrez en davantage sur mon curriculum vitae
         </h2>
         <p class="current-text">
@@ -610,20 +606,20 @@
                         </a>
                     </div>
                 </div>
-                <button class="butInformation">
+                <a href="" title="" class="butInformation">
                     Travailler avec moi
-                </button>
+                </a>
             </div>
         </div>
     </section>
     <section class="review-container">
-        <h2 aria-level="2">
+        <h2 aria-level="2" role="heading">
             Voici quelques avis sur mes travaux réalisés
         </h2>
         <div class="slider">
             <div class="slides">
                 <section class="card-reviews slide active_slides" id="slide-1">
-                    <h3 aria-level="3">
+                    <h3 aria-level="3" role="heading">
                         Réalisation d'un site web au top !
                     </h3>
                     <p>
@@ -646,7 +642,7 @@
                     <a class="slide__next" href="#slide-2" title="Next"></a>
                 </section>
                 <section class="card-reviews slide active_slides" id="slide-2">
-                    <h3 aria-level="3">
+                    <h3 aria-level="3" role="heading">
                         Un très bon travailleur !
                     </h3>
                     <p>
@@ -669,7 +665,7 @@
                     <a class="slide__next" href="#slide-3" title="Next"></a>
                 </section>
                 <section class="card-reviews slide active_slides" id="slide-3">
-                    <h3 aria-level="3">
+                    <h3 aria-level="3" role="heading">
                         Un site internet de top qualité !
                     </h3>
                     <p>
@@ -692,7 +688,7 @@
                     <a class="slide__next" href="#slide-4" title="Next"></a>
                 </section>
                 <section class="card-reviews slide" id="slide-4">
-                    <h3 aria-level="3">
+                    <h3 aria-level="3" role="heading">
                         Une image de marque remarquable !
                     </h3>
                     <p>
@@ -715,7 +711,7 @@
                     <a class="slide__next" href="#slide-5" title="Next"></a>
                 </section>
                 <section class="card-reviews slide" id="slide-5">
-                    <h3 aria-level="3">
+                    <h3 aria-level="3" role="heading">
                         Un élève très technique
                     </h3>
                     <p>
@@ -738,7 +734,7 @@
                     <a class="slide__next" href="#slide-6" title="Next"></a>
                 </section>
                 <section class="card-reviews slide" id="slide-6">
-                    <h3 aria-level="3">
+                    <h3 aria-level="3" role="heading">
                         Un élève discret et travailleur !
                     </h3>
                     <p>
@@ -772,7 +768,7 @@
         </div>
     </section>
     <section class="interest_experience">
-        <h2 class="mobile-hidden title-interest" aria-level="2">
+        <h2 class="mobile-hidden title-interest" aria-level="2" role="heading">
             Voici une section avec plus de détails sur moi
         </h2>
         <p class="mobile-hidden subtitle-interest">
@@ -780,7 +776,7 @@
             travailler.
         </p>
         <section class="slider-interest">
-            <h3 aria-level="3">
+            <h3 aria-level="3" role="heading">
                 Mes centres d’intérêts en dehors du travail
             </h3>
             <p class="current-text">
@@ -802,13 +798,13 @@
                 <img src="./img/interest/ART-DESIGN.jpg" alt="">
                 <img src="./img/interest/WEB-DESIGN.jpg" alt="">
             </div>
-            <button class="btnInformation">
+            <a  href="" title="" class="btnInformation">
                 Travailler avec moi
-            </button>
+            </a>
         </section>
         <section class="slider-interest reverse">
             <div class="reverse-text">
-                <h3 aria-level="3">
+                <h3 aria-level="3" role="heading">
                     Voici les étapes de mon parcours scolaires
                 </h3>
                 <p class="current-text">
@@ -826,9 +822,9 @@
                         Qualification en Technicien en Infographie à l'ARAHF + CESS
                     </li>
                 </ul>
-                <button class="btnInformation mobile-hidden">
+                <a href="" title="" class="btnInformation mobile-hidden">
                     Travailler avec moi
-                </button>
+                </a>
             </div>
             <div class="parcours-img">
                 <img id="0" class="active" src="./img/slider-parcours/Arahf.jpg" width="256" height="150"
@@ -854,12 +850,12 @@
                     2022 <!-- CHANGEMENT D'IMAGE EN APPUYANT -->
                 </button>
             </div>
-            <button class="btnInformation desktop-hidden">
+            <a href="" title="" class="btnInformation desktop-hidden">
                 Travailler avec moi
-            </button>
+            </a>
         </section>
         <section class="slider-interest">
-            <h3 aria-level="3">
+            <h3 aria-level="3" role="heading">
                 Mes différentes expériences professionnelles
             </h3>
             <p class="current-text">
@@ -878,14 +874,14 @@
                 </li>
             </ul>
             <img class="experience-pro" src="./img/experiencepro/signtec.jpg" alt="Photo de l'entreprise SignTec">
-            <button class="btnInformation last-button">
+            <a href="" title="" class="btnInformation last-button">
                 Travailler avec moi
-            </button>
+            </a>
         </section>
     </section>
     <section class="langages">
         <div class="langages-specialisation">
-            <h2 aria-level="2">
+            <h2 aria-level="2" role="heading">
                 Mes langages de programmation maîtrisés
             </h2>
             <div>
@@ -913,7 +909,7 @@
         </div>
     </section>
     <section class="chatbox-container">
-        <h2 class="hidden" aria-level="2">CHATBOX</h2>
+        <h2 class="hidden" aria-level="2" role="heading">CHATBOX</h2>
         <img class="chatbox-bulle" src="" alt="">
         <div class="chatbox-contenu">
             <img src="" alt="">
@@ -934,12 +930,12 @@
 </main>
 <footer>
     <section class="information-footer">
-        <h2 aria-level="2">
+        <h2 aria-level="2" role="heading">
             Mon CV vous intéresse. Consulter en plus !
         </h2>
-        <button>Mes projets</button>
-        <button>Contacter-moi</button>
-        <button>Mon Portfolio</button>
+        <a href="" title="">Mes projets</a>
+        <a href="" title="">Contacter-moi</a>
+        <a href="" title="">Mon Portfolio</a>
     </section>
     <div class="footer-menu">
         <ul>
@@ -948,8 +944,8 @@
                 <ul>
                     <li>Dylan</li>
                     <li>Jacquet</li>
-                    <li>+32 493 32 64 55</li>
-                    <li>contact@dylanjacquet.com</li>
+                    <li><a href="tel:0493-326-455">+32 493 32 64 55</a></li>
+                    <li><a href="mailto:contact@dylanjacquet.com">contact@dylanjacquet.com</a></li>
                     <li>Forges 71</li>
                     <li>4987</li>
                     <li>Stoumont</li>
@@ -960,40 +956,40 @@
             <li class="footer-li-title">
                 Mes réseaux sociaux
                 <ul>
-                    <li>Github</li>
-                    <li>Instagram</li>
-                    <li>Stack Overflow</li>
+                    <li><a href="" title="">Github</a></li>
+                    <li><a href="" title="">Instagram</a></li>
+                    <li><a href="" title="">Linkedin</a></li>
                 </ul>
             </li>
             <li class="footer-li-title">
                 Ressources
                 <ul>
-                    <li>CSS Tricks</li>
-                    <li>Alsacréations</li>
-                    <li>A list apart</li>
-                    <li>Udemy</li>
-                    <li>Openclassrooms</li>
-                    <li>Smashing Magazine</li>
-                    <li>Dribbble</li>
-                    <li>Behance</li>
-                    <li>Pinterest</li>
-                    <li>Fontpair</li>
-                    <li>Bradfrost</li>
+                    <li> <a href="" title="">CSS Tricks</a> </li>
+                    <li><a href="" title="">Alsacréations</a></li>
+                    <li><a href="" title="">A list apart</a></li>
+                    <li><a href="" title="">Udemy</a></li>
+                    <li><a href="" title="">Openclassrooms</a></li>
+                    <li><a href="" title="">Smashing Magazine</a></li>
+                    <li><a href="" title="">Dribbble</a></li>
+                    <li><a href="" title="">Behance</a></li>
+                    <li><a href="" title="">Pinterest</a></li>
+                    <li><a href="" title="">Fontpair</a></li>
+                    <li><a href="" title="">Bradfrost</a></li>
                 </ul>
             </li>
             <li class="footer-li-title">
                 Site intéressant
                 <ul>
-                    <li>Accueil</li>
-                    <li>Présentation</li>
-                    <li>Comparatifs</li>
-                    <li>Qui suis-je ?</li>
-                    <li>Reviews</li>
-                    <li>Mes centres d'intérêts</li>
-                    <li>Mon parcours</li>
-                    <li>Mes expériences</li>
-                    <li>Mes langages maitrisés</li>
-                    <li>Me contacter</li>
+                    <li><a href="" title="">Accueil</a></li>
+                    <li><a href="" title="">Présentation</a></li>
+                    <li><a href="" title="">Comparatifs</a></li>
+                    <li><a href="" title="">Qui suis-je ?<</a>/li>
+                    <li><a href="" title="">Reviews</a></li>
+                    <li><a href="" title="">Mes centres d'intérêts</a></li>
+                    <li><a href="" title="">Mon parcours</a></li>
+                    <li><a href="" title="">Mes expériences</a></li>
+                    <li><a href="" title="">Mes langages maitrisés</a></li>
+                    <li><a href="" title="">Me contacter</a></li>
                 </ul>
             </li>
             <li>
