@@ -10,6 +10,9 @@
 }
 
 @media (min-width: 995px) {
+    .services{
+        width: initial;
+    }
     .desktop-hidden {
         display: none;
     }
@@ -38,7 +41,8 @@
         margin-top: 0;
         padding: 0;
         display: inline-flex;
-        transition: initial;
+        transition: all 0.5s;
+        overflow: visible;
     }
 
     .burger, .burger-wrapper, #checkbox_toggle {
@@ -47,12 +51,60 @@
 
     .logo {
         margin-right: 0;
-        width: auto;
+        width: 400%;
         height: 3rem;
     }
 
-    .dropdown {
+    .services,.link-only{
+        padding: 1rem .5rem;
+    }
+
+    .link-only:last-of-type{
+        padding: 0;
+        align-self: center;
+    }
+    .link-only .btn{
+        font-size: 0.875rem;
+        border: #004bff solid 2px;
+        background: white;
+        padding: .5rem 2.5rem;
+        border-radius:3rem;
+        color: #004bff;
+        justify-self: center;
+    }
+
+    .dropdown{
+        transition: all .5s;
+        z-index: 999;
+        position: absolute;
         display: none;
+        opacity: 0;
+        background-color: #f4f6f8;
+        border-radius: .5rem;
+        padding: .5rem 2rem;
+        top: 3rem;
+    }
+
+    .dropdown li {
+        padding: 1rem 0;
+    }
+    .dropdown li a{
+        font: 1rem Archia-Medium;
+        color: #0f141e;
+    }
+    .dropdown li a:before{
+        content: "->";
+    }
+    .services:after{
+        content: "v";
+    }
+
+    .trigger-enter{
+        transition: all 0.5s;
+        display: block;
+    }
+    .trigger-enter-active{
+        opacity: 1;
     }
 
     .navbar {
@@ -69,18 +121,13 @@
         white-space: nowrap;
     }
 
-    .link-menu {
-    }
-
     header {
-        max-width: 75%;
         top: 0;
         left: 0;
         padding: 0;
         margin: 0 auto;
         height: auto;
         background-color: white;
-        position: relative;
     }
 
     .container {
@@ -121,24 +168,31 @@
 
     .menu {
         display: flex;
+        align-items: flex-start;
         width: 100%;
-        align-items: center;
         justify-content: flex-end;
         transition: all 0.1ms;
+    }
+
+    .menu li{
+        font: .875rem Archia-Medium, Helvetica, Arial, sans-serif;
+        color: #7e838f;
     }
 
     .menu > li {
         position: relative;
     }
 
+
     .sub-menu li {
+        transition: all 0.5s;
         line-height: 3rem;
     }
 
     .menu a {
+        font: inherit;
         display: block;
         color: #7e838f;
-        font-size: .875rem;
         font-weight: 500;
         transition: color .2s;
     }
@@ -546,5 +600,13 @@
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         margin: 0 auto;
+    }
+    .footer-logo{
+
+    }
+    .footer-li-title ul li, .footer-li-title ul li a{
+        background-color: #004bff;
+        color: white;
+        font: .875rem "Archia-Regular", Helvetica, Arial, sans-serif;
     }
 }

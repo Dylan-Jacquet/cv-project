@@ -3,7 +3,19 @@ const buttonSelector = document.querySelectorAll('.btn_slider');
 const tabSelector = document.querySelectorAll('.tabContent');
 const buttonYear = document.getElementsByClassName('button-year');
 const parcoursImg = document.querySelectorAll('.parcours-img img');
+const btnMenus = document.querySelectorAll('.services');
 
+const handleEnter = function (){
+    this.lastElementChild.classList.add('trigger-enter');
+    setTimeout(() => this.lastElementChild.classList.add('trigger-enter-active'),150);
+}
+
+const handleExit = function (){
+    this.lastElementChild.classList.remove('trigger-enter' , 'trigger-enter-active');
+}
+btnMenus.forEach(btnMenu => btnMenu.addEventListener('click', handleEnter));
+btnMenus.forEach(btnMenu => btnMenu.addEventListener('mouseenter', handleEnter));
+btnMenus.forEach(btnMenu => btnMenu.addEventListener('mouseleave', handleExit));
 //BUTTON DESCRIPTION
 const displayTab = function (e){
     let id = e.currentTarget.dataset.number;
