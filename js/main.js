@@ -8,6 +8,7 @@ const btnMenus = document.querySelectorAll('.services');
 const handleEnter = function (){
     this.lastElementChild.classList.add('trigger-enter');
     setTimeout(() => this.lastElementChild.classList.add('trigger-enter-active'),150);
+    this.lastElementChild.after.classList.remove('trigger-enter')
 }
 
 const handleExit = function (){

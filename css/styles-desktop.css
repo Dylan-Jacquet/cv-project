@@ -71,6 +71,13 @@
         border-radius:3rem;
         color: #004bff;
         justify-self: center;
+        transition: all 250ms;
+    }
+    .butInformation:hover ,.link-only .btn:hover, .slider-interest .btnInformation:hover{
+        border: 2px solid #00FAC8;
+        background-color: #00FAC8;
+        color: #0f141e;
+
     }
 
     .dropdown{
@@ -89,14 +96,23 @@
         padding: 1rem 0;
     }
     .dropdown li a{
-        font: 1rem Archia-Medium;
+        font: 1rem "Archia-Medium", Helvetica, Arial, sans-serif;
         color: #0f141e;
     }
     .dropdown li a:before{
-        content: "->";
+        content: url(../img/under-menu.svg);
     }
     .services:after{
-        content: "v";
+        display: inline-block;
+        content: url(../img/arrow-menu.svg);
+        transform: scale(.9);
+        transition: all 450ms;
+        padding-right: .2rem;
+    }
+    .services:hover:after{
+        display: inline-block;
+        content: url(../img/arrow-menu.svg);
+        transform: scale(.9) rotate(180deg);
     }
 
     .trigger-enter{
@@ -175,8 +191,11 @@
     }
 
     .menu li{
-        font: .875rem Archia-Medium, Helvetica, Arial, sans-serif;
+        font: .875rem "Archia-Regular", Helvetica, Arial, sans-serif;
         color: #7e838f;
+    }
+    .menu li:hover{
+        color: #004bff;
     }
 
     .menu > li {
@@ -228,6 +247,9 @@
 
     .personnal-information h2, .personnal-information .current-text, cite {
         text-align: left;
+    }
+    .personnal-information h2{
+        line-height: 3rem;
     }
 
     .butInformation {
@@ -370,6 +392,7 @@
         max-width: 33%;
         min-width: 32.3%;
         opacity: 0;
+        display: none;
     }
 
     .slides {
@@ -380,6 +403,7 @@
 
     .active_slides {
         opacity: 1;
+        display: flex;
     }
 
     .slider__nav {
@@ -394,6 +418,7 @@
     }
 
     .tabContent {
+        transition: all 250ms;
         display: flex;
         gap: 2rem;
     }
@@ -411,6 +436,7 @@
     .tabContent .quote-p, .identity-container {
         font-size: 1.5rem;
         grid-column: span 3;
+        line-height: 2.125rem;
     }
 
     .quote-p {
@@ -455,7 +481,7 @@
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(6, min-content);
         row-gap: 1rem;
-        padding: 0 0 8rem;
+        padding: 0 2rem 8rem;
     / / margin: 0 auto 8 rem;
     }
 
@@ -483,7 +509,7 @@
 
     .slider-interest .slider-image {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
         gap: 1rem;
         grid-column: span 8;
         grid-row: span 7;
@@ -499,7 +525,8 @@
     .slider-interest .btnInformation {
         grid-column: 1/3;
         grid-row: 6;
-        margin: 0;
+        margin: 0 auto 0 0;
+        text-align: center;
     }
 
     .slider-interest .experience-pro {
@@ -524,14 +551,15 @@
 
     .reverse {
         grid-template-columns: repeat(13, 1fr);
-        padding: 0 0 6rem;
+        padding: 0 2rem 6rem;
     }
 
     .reverse .buttons {
         grid-column: 1/9;
-        grid-row: 2;
+        grid-row: 1;
         margin: 0;
         padding: 0;
+        bottom: -90%;
         position: relative;
     }
 
@@ -591,6 +619,20 @@
 
     /*CHATBOX*/
     /*FOOTER*/
+    .information-footer a:first-of-type{
+        border: 2px solid #00FAC8;
+        background-color: #00FAC8;
+        color: #002577;
+    }
+    .information-footer a{
+        padding: .6rem 1rem;
+        border: 2px solid white;
+        margin: 0 auto;
+        min-width: 22rem;
+        color: white;
+        border-radius: 2rem;
+        font: .875rem "Archia-Bold", Helvetica, Arial, sans-serif;
+    }
     .footer-menu{
         width: 100%;
         padding: 5rem 12rem;

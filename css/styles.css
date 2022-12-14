@@ -14,7 +14,7 @@ header {
     top: 0;
     right: 0;
     bottom: auto;
-    position: fixed;
+    //position: fixed;
     height: 4rem;
     background-color: white;
     padding: 1rem;
@@ -235,14 +235,15 @@ p strong {
 }
 
 .butInformation {
+    transition: all 250ms;
     display: block;
     margin: 0 auto 1rem;
     font: .875rem Archia-Bold, Helvetica, Arial, sans-serif;
-    border: none;
+    border: #004bff solid 2px;
     color: white;
     background-color: #004bff;
     border-radius: 2rem;
-    padding: 0.70rem 1rem;
+    padding: 0.6rem 1rem;
 }
 
 cite::before {
@@ -355,12 +356,14 @@ h3 {
     margin-bottom: 3rem;
 }
 
-.active {
+.active, .btn_slider:active{
     color: white;
     background-color: #0f141e;
 }
 
-.btn_slider:active {
+
+
+.btn_slider:hover {
     color: #0f141e;
     background-color: #e3e9f5;
 }
@@ -677,12 +680,13 @@ a.slide__next {
     display: block;
     margin: 0 auto 1rem;
     font: .875rem Archia-Bold, Helvetica, Arial, sans-serif;
-    border: none;
+    border: 2px solid #004bff;
     color: white;
     background-color: #004bff;
     border-radius: 2rem;
-    padding: 0.70rem 1rem;
-    width: 15rem;
+    padding: 0.60rem 1rem;
+    min-width: 15rem;
+    transition: all 250ms;
 }
 .last-button {
     margin-top: 1rem;
