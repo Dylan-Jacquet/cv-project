@@ -144,6 +144,7 @@
         margin: 0 auto;
         height: auto;
         background-color: white;
+        max-width: 70rem;
     }
 
     .container {
@@ -571,12 +572,13 @@
     }
 
     /*SECTION_LANGAGES*/
-    .langages {
-        display: flex;
-        flex-direction: row;
-        padding: 0 12rem;
+
+    .wrapper-langages {
+
+        max-width: 90%;
+        margin: 0 auto;
     }
-    .langages h2{
+    .langages .wrapper-langages h2{
         max-width: 75%;
         text-align: left;
         padding: 0;
@@ -608,6 +610,7 @@
     }
     .slider-footer{
         margin-bottom: 10rem;
+        width: initial;
     }
 
     /*SECTION BEFORE FOOTER*/
@@ -619,6 +622,9 @@
 
     /*CHATBOX*/
     /*FOOTER*/
+    footer{
+        background-color: #004bff;
+    }
     .information-footer a:first-of-type{
         border: 2px solid #00FAC8;
         background-color: #00FAC8;
@@ -634,12 +640,15 @@
         font: .875rem "Archia-Bold", Helvetica, Arial, sans-serif;
     }
     .footer-menu{
-        width: 100%;
-        padding: 5rem 12rem;
+        max-width: 70rem;
+        padding: 5rem 2rem;
         text-align: left;
+        margin: 0 auto;
+
     }
     .footer-menu > ul {
         display: grid;
+        gap: 2rem;
         grid-template-columns: repeat(5, 1fr);
         margin: 0 auto;
     }

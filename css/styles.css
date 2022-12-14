@@ -741,30 +741,31 @@ a.slide__next {
 
 
 /* SECTION 6*/
-
-.langages {
+.wrapper-langages{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+.langages {
     padding: 4.5rem 0 4rem;
     background-color: #F1F3FA;
     text-align: center;
 }
 
-.langages h2 {
+.langages .wrapper-langages h2 {
     padding: 0 1.25rem;
     font-size: 2.2rem;
 }
 
-.langages span {
+.langages .wrapper-langages span {
     display: block;
     font: 3rem Archia-Bold, Helvetica, Arial, sans-serif;
     font-weight: 700;
     color: #004bff;
 }
 
-.langages p {
+.langages .wrapper-langages p {
     font: 1rem Archia-Regular, Helvetica, Arial, sans-serif;
     font-weight: 400;
     color: #474c56;
@@ -780,9 +781,6 @@ a.slide__next {
     margin-top: 3rem;
 }
 
-.slider-footer img {
-
-}
 
 /**/
 
