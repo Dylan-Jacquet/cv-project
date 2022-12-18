@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/styles-desktop.css">
+
     <!--Meta Property-->
     <meta property="og:locale" content="fr_BE">
     <meta property="og:type" content="website">
@@ -46,28 +47,28 @@
         <div class="container">
             <ul class="menu" id="menu-mobile">
                 <li class="services">
-                    Ma page
+                    <span>Ma page</span>
                     <ul class="dropdown sub-menu trigger-enter">
-                        <li><a href="#" title="" hreflang="fr-BE">Présentation</a></li>
-                        <li><a href="#" title="" hreflang="fr-BE">Qui suis-je ?</a></li>
-                        <li><a href="#" title="" hreflang="fr-BE">Mes informations</a></li>
-                        <li><a href="#" title="" hreflang="fr-BE">Mes langages maîtrisés</a></li>
-                        <li><a href="#" title="" hreflang="fr-BE">Me contacter</a></li>
+                        <li><a href="#Presentation" title="Vers la section présentation" hreflang="fr-BE">Présentation</a></li>
+                        <li><a href="#Qui-suis-je" title="Vers la section qui suis-je" hreflang="fr-BE">Qui suis-je ?</a></li>
+                        <li><a href="#avis-clients" title="Vers les avis clients" hreflang="fr-BE">Des avis sur mon travail</a></li>
+                        <li><a href="#mes-langages" title="Vers mes langages maitrisés" hreflang="fr-BE">Mes langages maîtrisés</a></li>
+                        <li><a href="#contacter" title="Vers les informations de contact" hreflang="fr-BE">Me contacter</a></li>
                     </ul>
                 </li>
                 <li class="services">
-                    A propos
+                    <span>A propos</span>
                     <ul class="dropdown sub-menu">
-                        <li><a href="#" title="" hreflang="fr-BE">Qui suis-je ?</a></li>
-                        <li><a href="#" title="" hreflang="fr-BE">Pourquoi ce choix ?</a></li>
-                        <li><a href="#" title="" hreflang="fr-BE">Ce que j'aime</a></li>
+                        <li><a href="#button1" title="" hreflang="fr-BE">Qui suis-je ?</a></li>
+                        <li><a href="#button2" title="" hreflang="fr-BE">Pourquoi ce choix ?</a></li>
+                        <li><a href="#button3" title="" hreflang="fr-BE">Ce que j'aime</a></li>
                     </ul>
                 </li>
                 <li class="link-only">
                     <a href="#" title="Vers la section mes langages" class="link-menu">Langages</a>
                 </li>
                 <li class="services">
-                    Veille
+                    <span>Veille</span>
                     <ul class="dropdown sub-menu">
                         <li><a href="#" title=""><abbr title="">CSS Tricks</abbr></a></li>
                         <li><a href="#" title="">Alsacréations</a></li>
@@ -79,7 +80,7 @@
                     </ul>
                 </li>
                 <li class="services">
-                    Compétences
+                    <span>Compétences</span>
                     <ul class="dropdown sub-menu">
                         <li><a href="#" title="">Photographie</a></li>
                         <li><a href="#" title="">Cinéma</a></li>
@@ -102,7 +103,7 @@
     </nav>
 </header>
 <main>
-    <section class="presentation">
+    <section class="presentation" id="Presentation">
         <div class="personnal-information">
             <h2 aria-level="2" role="heading">
                 Dylan Jacquet Développeur Web
@@ -475,7 +476,14 @@
                 <h3 aria-level="3" role="heading">
                     Un mauvais développeur web
                 </h3>
-                <img src="./img/erreur-moi.jpeg" alt="">
+                <picture>
+                    <source type="image/webp"
+                            srcset="./img/erreur-moi.jpeg">
+                    <img srcset=""
+                         src="./img/erreur-moi.jpeg"
+                         alt=""
+                         width="" height="">
+                </picture>
                 <ul>
                     <li>
                         Il ne se remet jamais en question
@@ -498,7 +506,14 @@
                 <h3 aria-level="3" role="heading">
                     Dylan Jacquet développeur Web
                 </h3>
-                <img src="./img/moi.jpeg" alt="">
+                <picture>
+                    <source type="image/webp"
+                            srcset="./img/moi.jpeg">
+                    <img srcset=""
+                         src="./img/moi.jpeg"
+                         alt=""
+                         width="" height="">
+                </picture>
                 <ul>
                     <li>
                         Travaille efficacement et rapidement
@@ -519,7 +534,7 @@
             </article>
         </div>
     </section>
-    <section class="section-slider">
+    <section class="section-slider" id="Qui-suis-je">
         <h2 aria-level="2" role="heading">
             Découvrez en davantage sur mon curriculum vitae
         </h2>
@@ -540,17 +555,33 @@
             </div>
             <div class="identity">
                 <div class="tabContent" id="button1">
-                    <img class="imgfull" src="./img/quisuisje.svg" alt="Back-End et Front End">
+                    <picture>
+                        <source type="image/webp"
+                                srcset="./img/slider/quisuisje-320.webp 320w,
+                                    ./img/slider/quisuisje-480.webp 480w,
+                                    ./img/slider/quisuisje-640.webp 640w">
+                        <img class="imgfull"
+                             srcset="./img/slider/quisuisje-320.jpg 320w,
+                                    ./img/slider/quisuisje-480.jpg 480w,
+                                    ./img/slider/quisuisje-640.jpg 640w"
+                             src="./img/slider/quisuisje-640.jpg"
+                             width="640" height="375"
+                             alt="Back-End et Front End">
+                    </picture>
                     <div class="content">
                         <p class="quote-p">
                             Je m’appelle Dylan, je suis un étudiant de l’<abbr title="">HEPL</abbr>. J’ai 21 ans.
-                            J’habite
-                            dans la commune de
-                            Stoumont. Je
-                            possède le permis B ainsi qu'une qualification en infographie et le CESS.
+                            J’habite dans la commune de Stoumont. Je possède le permis B ainsi qu'une qualification en infographie et le CESS.
                         </p>
                         <div class="identity-container">
-                            <img src="./img/USER.jpg" alt="Photo de moi" width="64" height="64">
+                            <picture>
+                                <source type="image/webp"
+                                        srcset="./img/USER.jpg">
+                                <img srcset="./img/USER.jpg"
+                                     src="./img/USER.jpg"
+                                     alt="Photo de moi"
+                                     width="64" height="64">
+                            </picture>
                             <div>
                                 <p>
                                     Dylan Jacquet
@@ -566,14 +597,33 @@
                     </div>
                 </div>
                 <div class="tabContent hidden" id="button2">
-                    <img class="imgfull" src="./img/whythischoice.svg" alt="Back-End et Front End">
+                    <picture>
+                        <source type="image/webp"
+                                srcset="./img/slider/whythischoice-320.webp 320w,
+                                    ./img/slider/whythischoice-480.webp 480w,
+                                    ./img/slider/whythischoice-640.webp 640w">
+                        <img class="imgfull"
+                             srcset="./img/slider/whythischoice-320.jpg 320w,
+                                    ./img/slider/whythischoice-480.jpg 480w,
+                                    ./img/slider/whythischoice-640.jpg 640w"
+                             src="./img/slider/whythischoice-640.jpg"
+                             width="640" height="375"
+                             alt="Back-End et Front End">
+                    </picture>
                     <div class="content">
                         <p class="quote-p">
                             J’ai décidé de choisir l’option Web, car la création de site internet et le développement
                             d’application mobile m’ont toujours intéressé.
                         </p>
                         <div class="identity-container">
-                            <img src="./img/USER.jpg" alt="Photo de moi" width="64" height="64">
+                            <picture>
+                                <source type="image/webp"
+                                        srcset="./img/USER.jpg">
+                                <img srcset="./img/USER.jpg"
+                                     src="./img/USER.jpg"
+                                     alt="Photo de moi"
+                                     width="64" height="64">
+                            </picture>
                             <div>
                                 <p>
                                     Dylan Jacquet
@@ -589,7 +639,19 @@
                     </div>
                 </div>
                 <div class="tabContent hidden" id="button3">
-                    <img class="imgfull" src="./img/frontandback.svg" alt="Back-End et Front End">
+                    <picture>
+                        <source type="image/webp"
+                                srcset="./img/slider/frontandback-320.webp 320w,
+                                    ./img/slider/frontandback-480.webp 480w,
+                                    ./img/slider/frontandback-640.webp 640w">
+                        <img class="imgfull"
+                             srcset="./img/slider/frontandback-320.jpg 320w,
+                                    ./img/slider/frontandback-480.jpg 480w,
+                                    ./img/slider/frontandback-640.jpg 640w"
+                             src="./img/slider/frontandback-640.jpg"
+                             width="640" height="376"
+                             alt="Back-End et Front End">
+                    </picture>
                     <div class="content">
                         <p class="quote-p">
                             Dans le Web, j’apprécie la plupart des choses. J’ai appris à faire du <em>Front END</em> et
@@ -597,7 +659,14 @@
                             et plus tard j’aimerais être un développeur web <em>Full Stack</em>.
                         </p>
                         <div class="identity-container">
-                            <img src="./img/USER.jpg" alt="Photo de moi" width="64" height="64">
+                            <picture>
+                                <source type="image/webp"
+                                        srcset="./img/USER.jpg">
+                                <img srcset="./img/USER.jpg"
+                                     src="./img/USER.jpg"
+                                     alt="Photo de moi"
+                                     width="64" height="64">
+                            </picture>
                             <div>
                                 <p>
                                     Dylan Jacquet
@@ -618,7 +687,7 @@
             </div>
         </div>
     </section>
-    <section class="review-container">
+    <section class="review-container" id="avis-clients">
         <h2 aria-level="2" role="heading">
             Voici quelques avis sur mes travaux réalisés
         </h2>
@@ -634,7 +703,14 @@
                     </p>
                     <img src="./img/rating-star.svg" alt="RATING" width="125" height="32"> <!-- RATING -->
                     <div class="identity-card">
-                        <img src="./img/USER.jpg" alt="Photo de moi" width="64" height="64">
+                        <picture>
+                            <source type="image/webp"
+                                    srcset="./img/USER.jpg">
+                            <img srcset="./img/USER.jpg"
+                                 src="./img/USER.jpg"
+                                 alt="Photo de moi"
+                                 width="64" height="64">
+                        </picture>
                         <div>
                             <p>
                                 Jean-Bernard Lafoine
@@ -657,7 +733,14 @@
                     </p>
                     <img src="./img/rating-star.svg" alt="RATING" width="125" height="32"> <!-- RATING -->
                     <div class="identity-card">
-                        <img src="./img/USER.jpg" alt="Photo de moi" width="64" height="64">
+                        <picture>
+                            <source type="image/webp"
+                                    srcset="./img/USER.jpg">
+                            <img srcset="./img/USER.jpg"
+                                 src="./img/USER.jpg"
+                                 alt="Photo de moi"
+                                 width="64" height="64">
+                        </picture>
                         <div>
                             <p>
                                 Eric Legros
@@ -680,7 +763,14 @@
                     </p>
                     <img src="./img/rating-star.svg" alt="RATING" width="125" height="32"> <!-- RATING -->
                     <div class="identity-card">
-                        <img src="./img/USER.jpg" alt="Photo de moi" width="64" height="64">
+                        <picture>
+                            <source type="image/webp"
+                                    srcset="./img/USER.jpg">
+                            <img srcset="./img/USER.jpg"
+                                 src="./img/USER.jpg"
+                                 alt="Photo de moi"
+                                 width="64" height="64">
+                        </picture>
                         <div>
                             <p>
                                 Daniel Gerard
@@ -703,7 +793,14 @@
                     </p>
                     <img src="./img/rating-star.svg" alt="RATING" width="125" height="32"> <!-- RATING -->
                     <div class="identity-card">
-                        <img src="./img/USER.jpg" alt="Photo de moi" width="64" height="64">
+                        <picture>
+                            <source type="image/webp"
+                                    srcset="./img/USER.jpg">
+                            <img srcset="./img/USER.jpg"
+                                 src="./img/USER.jpg"
+                                 alt="Photo de moi"
+                                 width="64" height="64">
+                        </picture>
                         <div>
                             <p>
                                 Guillaume Denoel
@@ -726,7 +823,14 @@
                     </p>
                     <img src="./img/rating-star.svg" alt="RATING" width="125" height="32"> <!-- RATING -->
                     <div class="identity-card">
-                        <img src="./img/USER.jpg" alt="Photo de moi" width="64" height="64">
+                        <picture>
+                            <source type="image/webp"
+                                    srcset="./img/USER.jpg">
+                            <img srcset="./img/USER.jpg"
+                                 src="./img/USER.jpg"
+                                 alt="Photo de moi"
+                                 width="64" height="64">
+                        </picture>
                         <div>
                             <p>
                                 Martin Lamontagne
@@ -749,7 +853,14 @@
                     </p>
                     <img src="./img/rating-star.svg" alt="RATING" width="125" height="32"> <!-- RATING -->
                     <div class="identity-card">
-                        <img src="./img/USER.jpg" alt="Photo de moi" width="64" height="64">
+                        <picture>
+                            <source type="image/webp"
+                                    srcset="./img/USER.jpg">
+                            <img srcset="./img/USER.jpg"
+                                 src="./img/USER.jpg"
+                                 alt="Photo de moi"
+                                 width="64" height="64">
+                        </picture>
                         <div>
                             <p>
                                 Bernard Legros
@@ -764,7 +875,7 @@
                 </section>
             </div>
             <div class="slider__nav">
-                <a class="slider__navlink" href="#slide-1"></a>
+                <a class="slider__navlink slider-navlink-active" href="#slide-1"></a>
                 <a class="slider__navlink" href="#slide-2"></a>
                 <a class="slider__navlink" href="#slide-3"></a>
                 <a class="slider__navlink" href="#slide-4"></a>
@@ -773,7 +884,7 @@
             </div>
         </div>
     </section>
-    <section class="interest_experience">
+    <section class="interest_experience" id="">
         <h2 class="mobile-hidden title-interest" aria-level="2" role="heading">
             Voici une section avec plus de détails sur moi
         </h2>
@@ -885,7 +996,7 @@
             </a>
         </section>
     </section>
-    <section class="langages">
+    <section class="langages" id="mes-langages">
         <div class="wrapper-langages">
             <div class="langages-specialisation">
                 <h2 aria-level="2" role="heading">
@@ -938,13 +1049,13 @@
     </section>
 </main>
 <footer>
-    <section class="information-footer">
+    <section class="information-footer" id="contacter">
         <h2 aria-level="2" role="heading">
             Mon CV vous intéresse. Consulter en plus !
         </h2>
-        <a href="" title="">Mes projets</a>
-        <a href="" title="">Contacter-moi</a>
-        <a href="" title="">Mon Portfolio</a>
+        <a class="btn" href="" title="">Mes projets</a>
+        <a class="btn" href="" title="">Contacter-moi</a>
+        <a class="btn" href="" title="">Mon Portfolio</a>
     </section>
     <div class="footer-menu">
         <ul>
@@ -953,7 +1064,7 @@
                 <ul>
                     <li>Dylan</li>
                     <li>Jacquet</li>
-                    <li><a href="tel:0493-326-455">+32 493 32 64 55</a></li>
+                    <li><a href="tel:+32493326455">+32 493 32 64 55</a></li>
                     <li><a href="mailto:contact@dylanjacquet.com">contact@dylanjacquet.com</a></li>
                     <li>Forges 71</li>
                     <li>4987</li>

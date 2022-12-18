@@ -9,6 +9,23 @@
     }
 }
 
+@media (min-width: 390px) {
+    .slides{
+        max-width: 21rem;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 720px) {
+    a[href="#slide-4"],a[href="#slide-5"],a[href="#slide-6"]{
+        display: none;
+    }
+    .slides{
+        max-width: 43rem;
+        margin: 0 auto;
+    }
+}
+
 @media (min-width: 995px) {
     .services{
         width: initial;
@@ -81,23 +98,26 @@
     }
 
     .dropdown{
+        box-shadow: 0px 0px 7px rgba(0,0,0,0.5);
         transition: all .5s;
         z-index: 999;
         position: absolute;
         display: none;
         opacity: 0;
-        background-color: #f4f6f8;
+        background-color: white;
         border-radius: .5rem;
         padding: .5rem 2rem;
         top: 3rem;
     }
 
     .dropdown li {
+        background-color: white;
         padding: 1rem 0;
     }
     .dropdown li a{
         font: 1rem "Archia-Medium", Helvetica, Arial, sans-serif;
         color: #0f141e;
+        background-color: white;
     }
     .dropdown li a:before{
         content: url(../img/under-menu.svg);
@@ -113,6 +133,7 @@
         display: inline-block;
         content: url(../img/arrow-menu.svg);
         transform: scale(.9) rotate(180deg);
+        transform-origin: center;
     }
 
     .trigger-enter{
@@ -124,19 +145,30 @@
     }
 
     .navbar {
+        margin: 0 auto;
+        max-width: 70rem;
         display: flex;
         justify-content: flex-end;
         border: none;
         padding: 1rem 1.25rem;
     }
 
-    .link-menu, .services, .link-only {
+    .menu{
+        gap: .5rem;
+    }
+
+    .link-menu, .services, .link-only, .services span {
         background-color: white;
         border: none;
         width: auto;
         white-space: nowrap;
+        display: inline;
+        font: .875rem Archia-Regular;
     }
 
+    .services span{
+        padding: 0;
+    }
     header {
         top: 0;
         left: 0;
@@ -144,7 +176,6 @@
         margin: 0 auto;
         height: auto;
         background-color: white;
-        max-width: 70rem;
     }
 
     .container {
@@ -226,7 +257,7 @@
     }
 
     .presentation {
-        padding-top: 1rem;
+        padding-top: 4rem;
         display: grid;
         gap: 0 5rem;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -392,14 +423,20 @@
     .card-reviews {
         max-width: 33%;
         min-width: 32.3%;
-        opacity: 0;
+    }
+
+    a[href="#slide-3"],a[href="#slide-4"],a[href="#slide-5"],a[href="#slide-6"]{
         display: none;
     }
 
+    .slider{
+        max-width: 70rem;
+    }
     .slides {
+        max-width: initial;
         display: flex;
-        overflow-x: initial;
         margin: 0 auto;
+        gap: 1rem;
     }
 
     .active_slides {
@@ -424,10 +461,6 @@
         gap: 2rem;
     }
 
-    .tabContent .imgfull {
-        width: 50%;
-
-    }
 
     .identity{
         gap: 0;
@@ -574,8 +607,8 @@
     /*SECTION_LANGAGES*/
 
     .wrapper-langages {
-
-        max-width: 90%;
+        flex-direction: row;
+        max-width: 65rem;
         margin: 0 auto;
     }
     .langages .wrapper-langages h2{
@@ -625,22 +658,9 @@
     footer{
         background-color: #004bff;
     }
-    .information-footer a:first-of-type{
-        border: 2px solid #00FAC8;
-        background-color: #00FAC8;
-        color: #002577;
-    }
-    .information-footer a{
-        padding: .6rem 1rem;
-        border: 2px solid white;
-        margin: 0 auto;
-        min-width: 22rem;
-        color: white;
-        border-radius: 2rem;
-        font: .875rem "Archia-Bold", Helvetica, Arial, sans-serif;
-    }
+
     .footer-menu{
-        max-width: 70rem;
+        max-width: 65rem;
         padding: 5rem 2rem;
         text-align: left;
         margin: 0 auto;

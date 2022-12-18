@@ -14,7 +14,7 @@ header {
     top: 0;
     right: 0;
     bottom: auto;
-    //position: fixed;
+    position: fixed;
     height: 4rem;
     background-color: white;
     padding: 1rem;
@@ -39,7 +39,11 @@ header {
     width: 100%;
 }
 
-.link-menu {
+
+.link-menu, .services span {
+    font :1rem Archia-SemiBold, Helvetica, Arial, sans-serif;
+    background-color: #f4f6f8;
+    text-align: left;
     padding: 1.25rem 0 1.25rem 1.25rem;
     display: block;
     border-bottom: 1px solid black;
@@ -173,6 +177,8 @@ li a:hover {
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
 }
+
+
 
 input[type=checkbox]:checked ~ .container .menu {
     z-index: 4;
@@ -353,6 +359,8 @@ h3 {
 }
 
 .imgfull{
+    width: 100%;
+    height: auto;
     margin-bottom: 3rem;
 }
 
@@ -541,6 +549,12 @@ a.slide__next {
     border-radius: 50%;
     margin: 0 3px 0 3px;
     border: 1px solid #004BFF;
+}
+.slider-navlink-active{
+    background-color: #004bff;
+    width: 40px;
+    height: 10px;
+    border-radius: 1rem;
 }
 
 .card-reviews {
@@ -743,7 +757,7 @@ a.slide__next {
 /* SECTION 6*/
 .wrapper-langages{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -819,12 +833,28 @@ a.slide__next {
 
 /***/
 
+.information-footer a:first-of-type{
+    border: 2px solid #00FAC8;
+    background-color: #00FAC8;
+    color: #002577;
+}
+.information-footer a{
+    padding: .6rem 1rem;
+    border: 2px solid white;
+    margin: 0 auto;
+    min-width: 22rem;
+    color: white;
+    border-radius: 2rem;
+    font: .875rem "Archia-Bold", Helvetica, Arial, sans-serif;
+}
+
 .footer-menu {
     padding: 3.25rem 1.25rem 5rem;
     background-color: #004bff;
 }
 
 .footer-li-title {
+    text-align: left;
     font: 0.875rem Archia-Bold, Helvetica, Arial, sans-serif;
     font-weight: 700;
     color: #00fac8;
@@ -839,8 +869,12 @@ a.slide__next {
     line-height: 1rem;
 }
 
-.footer-li-title ul li {
+.footer-li-title ul li, .footer-li-title ul li a{
+    text-align: left;
     margin-bottom: 1.2rem;
+    background-color: #004bff;
+    color: white;
+    font: .875rem "Archia-Regular", Helvetica, Arial, sans-serif;
 }
 
 .footer-li-title ul li:first-of-type {
@@ -864,4 +898,11 @@ a.slide__next {
 }
 .chatbox-contenu{
     display: none;
+}
+
+/* SWIPER JS */
+
+.swiper {
+    width: 600px;
+    height: 300px;
 }
