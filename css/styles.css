@@ -745,9 +745,12 @@ a.slide__next {
 }
 
 /*SECTION 5 BIS**/
+picture{
+    text-align: center;
+}
 
 .experience-pro{
-    width: 88%;
+    height: auto;
     margin: 2rem auto 0;
     border-radius: .5rem;
     aspect-ratio: 16/9;

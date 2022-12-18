@@ -49,11 +49,16 @@
                 <li class="services">
                     <span>Ma page</span>
                     <ul class="dropdown sub-menu trigger-enter">
-                        <li><a href="#Presentation" title="Vers la section présentation" hreflang="fr-BE">Présentation</a></li>
-                        <li><a href="#Qui-suis-je" title="Vers la section qui suis-je" hreflang="fr-BE">Qui suis-je ?</a></li>
-                        <li><a href="#avis-clients" title="Vers les avis clients" hreflang="fr-BE">Des avis sur mon travail</a></li>
-                        <li><a href="#mes-langages" title="Vers mes langages maitrisés" hreflang="fr-BE">Mes langages maîtrisés</a></li>
-                        <li><a href="#contacter" title="Vers les informations de contact" hreflang="fr-BE">Me contacter</a></li>
+                        <li><a href="#Presentation" title="Vers la section présentation"
+                               hreflang="fr-BE">Présentation</a></li>
+                        <li><a href="#Qui-suis-je" title="Vers la section qui suis-je" hreflang="fr-BE">Qui suis-je
+                            ?</a></li>
+                        <li><a href="#avis-clients" title="Vers les avis clients" hreflang="fr-BE">Des avis sur mon
+                            travail</a></li>
+                        <li><a href="#mes-langages" title="Vers mes langages maitrisés" hreflang="fr-BE">Mes langages
+                            maîtrisés</a></li>
+                        <li><a href="#contacter" title="Vers les informations de contact" hreflang="fr-BE">Me
+                            contacter</a></li>
                     </ul>
                 </li>
                 <li class="services">
@@ -571,7 +576,8 @@
                     <div class="content">
                         <p class="quote-p">
                             Je m’appelle Dylan, je suis un étudiant de l’<abbr title="">HEPL</abbr>. J’ai 21 ans.
-                            J’habite dans la commune de Stoumont. Je possède le permis B ainsi qu'une qualification en infographie et le CESS.
+                            J’habite dans la commune de Stoumont. Je possède le permis B ainsi qu'une qualification en
+                            infographie et le CESS.
                         </p>
                         <div class="identity-container">
                             <picture>
@@ -884,7 +890,7 @@
             </div>
         </div>
     </section>
-    <section class="interest_experience" id="">
+    <section class="interest_experience" id="interest">
         <h2 class="mobile-hidden title-interest" aria-level="2" role="heading">
             Voici une section avec plus de détails sur moi
         </h2>
@@ -915,11 +921,11 @@
                 <img src="./img/interest/ART-DESIGN.jpg" alt="">
                 <img src="./img/interest/WEBDESIGN.jpg" alt="">
             </div>
-            <a href="" title="" class="btnInformation">
+            <a href="#" title="Vers le formulaire de contact" class="btnInformation">
                 Travailler avec moi
             </a>
         </section>
-        <section class="slider-interest reverse">
+        <section class="slider-interest reverse" id="parcours-sco">
             <div class="reverse-text">
                 <h3 aria-level="3" role="heading">
                     Voici les étapes de mon parcours scolaires
@@ -944,14 +950,74 @@
                 </a>
             </div>
             <div class="parcours-img">
-                <img id="0" class="active" src="./img/slider-parcours/Arahf.jpg" width="256" height="150"
-                     alt="Le site de l'Athénée Royale Ardenne Hautes Fagnes">
-                <img id="1" src="./img/slider-parcours/Qualification.jpg" width="256" height="150"
-                     alt="Stand représentant la nouvelle image de marque du musée 'Batarden'">
-                <img id="2" src="./img/slider-parcours/Helmo.jpg" width="256" height="150"
-                     alt="Le site de l'HELMO ESAS">
-                <img id="3" src="./img/slider-parcours/HEPL.jpg" width="256" height="150"
-                     alt="Le site de l'HEPL de Seraing">
+                <picture>
+                    <source type="image/webp"
+                            srcset="./img/slider-parcours/Arahf-320.webp 320w,
+                                ./img/slider-parcours/Arahf-480.webp 480w,
+                                ./img/slider-parcours/Arahf-640.webp 640w,
+                                ./img/slider-parcours/Arahf-800.webp 800w,
+                                ./img/slider-parcours/Arahf-960.webp 960w,">
+                    <img id="0" class="active"
+                         srcset="./img/slider-parcours/Arahf-320.jpg 320w,
+                                ./img/slider-parcours/Arahf-480.jpg 480w,
+                                ./img/slider-parcours/Arahf-640.jpg 640w,
+                                ./img/slider-parcours/Arahf-800.jpg 800w,
+                                ./img/slider-parcours/Arahf-960.jpg 960w,"
+                         src="./img/slider-parcours/Arahf-960.jpg"
+                         alt="Le site de l'Athénée Royale Ardenne Hautes Fagnes"
+                         width="960" height="563">
+                </picture>
+                <picture>
+                    <source type="image/webp"
+                            srcset="./img/slider-parcours/Qualification-320.webp 320w,
+                                ./img/slider-parcours/Qualification-480.webp 480w,
+                                ./img/slider-parcours/Qualification-640.webp 640w,
+                                ./img/slider-parcours/Qualification-800.webp 800w,
+                                ./img/slider-parcours/Qualification-960.webp 960w,">
+                    <img id="1"
+                         srcset="./img/slider-parcours/Qualification-320.jpg 320w,
+                                ./img/slider-parcours/Qualification-480.jpg 480w,
+                                ./img/slider-parcours/Qualification-640.jpg 640w,
+                                ./img/slider-parcours/Qualification-800.jpg 800w,
+                                ./img/slider-parcours/Qualification-960.jpg 960w,"
+                         src="./img/slider-parcours/Qualification-960.jpg"
+                         alt="Stand représentant la nouvelle image de marque du musée 'Batarden'"
+                         width="960" height="563">
+                </picture>
+                <picture>
+                    <source type="image/webp"
+                            srcset="./img/slider-parcours/Helmo-320.webp 320w,
+                                ./img/slider-parcours/Helmo-480.webp 480w,
+                                ./img/slider-parcours/Helmo-640.webp 640w,
+                                ./img/slider-parcours/Helmo-800.webp 800w,
+                                ./img/slider-parcours/Helmo-960.webp 960w,">
+                    <img id="2"
+                         srcset="./img/slider-parcours/Helmo-320.jpg 320w,
+                                ./img/slider-parcours/Helmo-480.jpg 480w,
+                                ./img/slider-parcours/Helmo-640.jpg 640w,
+                                ./img/slider-parcours/Helmo-800.jpg 800w,
+                                ./img/slider-parcours/Helmo-960.jpg 960w,"
+                         src="./img/slider-parcours/Helmo-960.jpg"
+                         alt="Le site de l'HELMO ESAS"
+                         width="960" height="563">
+                </picture>
+                <picture>
+                    <source type="image/webp"
+                            srcset="./img/slider-parcours/HEPL-320.webp 320w,
+                                ./img/slider-parcours/HEPL-480.webp 480w,
+                                ./img/slider-parcours/HEPL-640.webp 640w,
+                                ./img/slider-parcours/HEPL-800.webp 800w,
+                                ./img/slider-parcours/HEPL-960.webp 960w,">
+                    <img id="3"
+                         srcset="./img/slider-parcours/HEPL-320.jpg 320w,
+                                ./img/slider-parcours/HEPL-480.jpg 480w,
+                                ./img/slider-parcours/HEPL-640.jpg 640w,
+                                ./img/slider-parcours/HEPL-800.jpg 800w,
+                                ./img/slider-parcours/HEPL-960.jpg 960w,"
+                         src="./img/slider-parcours/HEPL-960.jpg"
+                         alt="Le site de l'HEPL de Seraing"
+                         width="960" height="563">
+                </picture>
             </div>
             <div class="buttons">
                 <button class="button-year" data-order="0">
@@ -967,11 +1033,11 @@
                     2022 <!-- CHANGEMENT D'IMAGE EN APPUYANT -->
                 </button>
             </div>
-            <a href="" title="" class="btnInformation desktop-hidden">
+            <a href="#" title="Vers le formulaire de contact" class="btnInformation desktop-hidden">
                 Travailler avec moi
             </a>
         </section>
-        <section class="slider-interest">
+        <section class="slider-interest" id="experience-pro">
             <h3 aria-level="3" role="heading">
                 Mes différentes expériences professionnelles
             </h3>
@@ -990,8 +1056,24 @@
                     Stage au sein de l’entreprise SignTec
                 </li>
             </ul>
-            <img class="experience-pro" src="./img/experiencepro/signtec.jpg" alt="Photo de l'entreprise SignTec">
-            <a href="" title="" class="btnInformation last-button">
+            <picture class="experience-pro">
+                <source type="image/webp"
+                        srcset="./img/experiencepro/signtec-320.webp 320w,
+                                ./img/experiencepro/signtec-480.webp 480w,
+                                ./img/experiencepro/signtec-640.webp 640w,
+                                ./img/experiencepro/signtec-800.webp 800w,
+                                ./img/experiencepro/signtec-960.webp 960w,">
+                <img class="experience-pro"
+                     srcset="./img/experiencepro/signtec-320.jpg 320w,
+                                ./img/experiencepro/signtec-480.jpg 480w,
+                                ./img/experiencepro/signtec-640.jpg 640w,
+                                ./img/experiencepro/signtec-800.jpg 800w,
+                                ./img/experiencepro/signtec-960.jpg 960w,"
+                     src="./img/experiencepro/signtec-960.jpg"
+                     alt="Photo de l'entreprise SignTec"
+                     width="960" height="762">
+            </picture>
+            <a href="#" title="Vers le formulaire de contact" class="btnInformation last-button">
                 Travailler avec moi
             </a>
         </section>
@@ -1053,9 +1135,9 @@
         <h2 aria-level="2" role="heading">
             Mon CV vous intéresse. Consulter en plus !
         </h2>
-        <a class="btn" href="" title="">Mes projets</a>
-        <a class="btn" href="" title="">Contacter-moi</a>
-        <a class="btn" href="" title="">Mon Portfolio</a>
+        <a class="btn" href="#" title="Vers les projets de Dylan Jacquet">Mes projets</a>
+        <a class="btn" href="#" title="Vers le formulaire de contact">Contacter-moi</a>
+        <a class="btn" href="#" title="Vers le portfolio de Dylan Jacquet">Mon Portfolio</a>
     </section>
     <div class="footer-menu">
         <ul>
@@ -1076,54 +1158,64 @@
             <li class="footer-li-title">
                 Mes réseaux sociaux
                 <ul>
-                    <li><a href="" title="">Github</a></li>
-                    <li><a href="" title="">Instagram</a></li>
-                    <li><a href="" title="">Linkedin</a></li>
+                    <li><a href="https://github.com/Dylan-Jacquet"
+                           title="Vers le profil Github de Dylan Jacquet">Github</a></li>
+                    <li><a href="https://www.instagram.com/dylan_jacquet234/"
+                           title="Vers le profil Instragram de Dylan Jacquet">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/in/dylan-jacquet-2a3a8a211/"
+                           title="Vers le profil Linkedin de Dylan Jacquet">Linkedin</a></li>
                 </ul>
             </li>
             <li class="footer-li-title">
                 Ressources
                 <ul>
-                    <li><a href="" title="">CSS Tricks</a></li>
-                    <li><a href="" title="">Alsacréations</a></li>
-                    <li><a href="" title="">A list apart</a></li>
-                    <li><a href="" title="">Udemy</a></li>
-                    <li><a href="" title="">Openclassrooms</a></li>
-                    <li><a href="" title="">Smashing Magazine</a></li>
-                    <li><a href="" title="">Dribbble</a></li>
-                    <li><a href="" title="">Behance</a></li>
-                    <li><a href="" title="">Pinterest</a></li>
-                    <li><a href="" title="">Fontpair</a></li>
-                    <li><a href="" title="">Bradfrost</a></li>
+                    <li><a href="https://css-tricks.com/" title="Vers la page CSS Tricks">CSS Tricks</a></li>
+                    <li><a href="https://www.alsacreations.com/" title="Vers la page Alsacréations">Alsacréations</a>
+                    </li>
+                    <li><a href="https://alistapart.com/" title="Vers le site web A List Apart">A list apart</a></li>
+                    <li><a href="https://www.udemy.com/" title="Vers le site web Udemy">Udemy</a></li>
+                    <li><a href="https://openclassrooms.com/fr/"
+                           title="Vers le site web OpenClassrooms">Openclassrooms</a></li>
+                    <li><a href="https://www.smashingmagazine.com/" title="Vers le site web Smashing Magazine">Smashing
+                        Magazine</a></li>
+                    <li><a href="https://dribbble.com/" title="Vers le site web Dribbble">Dribbble</a></li>
+                    <li><a href="https://www.behance.net/" title="Vers le site web Behance">Behance</a></li>
+                    <li><a href="https://www.pinterest.fr/dylanjacquet235/"
+                           title="Vers le site web Pinterest">Pinterest</a></li>
+                    <li><a href="https://www.fontpair.co/" title="Vers le site web Fontpair">Fontpair</a></li>
+                    <li><a href="https://bradfrost.com/" title="Vers le site web de Bradfrost">Bradfrost</a></li>
                 </ul>
             </li>
             <li class="footer-li-title">
                 Site intéressant
                 <ul>
-                    <li><a href="" title="">Accueil</a></li>
-                    <li><a href="" title="">Présentation</a></li>
-                    <li><a href="" title="">Comparatifs</a></li>
-                    <li><a href="" title="">Qui suis-je ?</a>
-                    <li><a href="" title="">Reviews</a></li>
-                    <li><a href="" title="">Mes centres d'intérêts</a></li>
-                    <li><a href="" title="">Mon parcours</a></li>
-                    <li><a href="" title="">Mes expériences</a></li>
-                    <li><a href="" title="">Mes langages maitrisés</a></li>
-                    <li><a href="" title="">Me contacter</a></li>
+                    <li><a href="#" title="Vers la page d'accueil">Accueil</a></li>
+                    <li><a href="#Presentation" title="Vers la section présentation">Présentation</a></li>
+                    <li><a href="#comparatif" title="Vers la section comparatif">Comparatifs</a></li>
+                    <li><a href="#Qui-suis-je" title="Vers la section qui suis-je ?">Qui suis-je ?</a>
+                    <li><a href="#avis-clients" title="Vers les avis des clients">Reviews</a></li>
+                    <li><a href="#interest" title="Vers la section des centres d'intérêts">Mes centres d'intérêts</a>
+                    </li>
+                    <li><a href="#parcours-sco" title="Vers la section mon parcours professionnel">Mon parcours</a></li>
+                    <li><a href="#experience-pro" title="Vers mes expériences professionnelles">Mes expériences</a></li>
+                    <li><a href="#mes-langages" title="Vers mes langages maitrisés">Mes langages maitrisés</a></li>
+                    <li><a href="#contacter" title="Vers les informations de contact">Me contacter</a></li>
                 </ul>
             </li>
             <li>
                 <div class="small-footer">
-                    <img class="footer-logo" src="./img/logo-LIGHT.svg" alt="Homepage"/>
-                    <p>DylanJacquet</p>
+                    <img class="footer-logo" src="./img/logo-light.svg" alt="Homepage"/>
+                    <p>Dylan Jacquet</p>
                     <p>Les Forges 71, 4987</p>
                     <p>Stoumont Belgique</p>
                     <div>
-                        <img src="" alt="Linkedin"> <!-- Linkedin  -->
-                        <img src="" alt="Github"> <!-- Github -->
-                        <img src="" alt="Instagram"> <!-- Instagram-->
+                        <img src="./img/socialmedia/LinkedIn.svg" alt="Linkedin" width="20px" height="20px">
+                        <!-- Linkedin  -->
+                        <img src="./img/socialmedia/github.svg" alt="Github" width="20px" height="20px"> <!-- Github -->
+                        <img src="./img/socialmedia/Instagram.svg" alt="Instagram" width="20px" height="20px">
+                        <!-- Instagram-->
                     </div>
-                    <img src="#" alt="LOGO">
+                    <img src="./img/logo-light.svg" alt="LOGO" width="100px" height="30px">
                     <p> Content Authenticity Initiative</p>
                 </div>
             </li>
