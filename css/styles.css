@@ -41,7 +41,7 @@ header {
 
 
 .link-menu, .services span {
-    font :1rem Archia-SemiBold, Helvetica, Arial, sans-serif;
+    font: 1rem Archia-SemiBold, Helvetica, Arial, sans-serif;
     background-color: #f4f6f8;
     text-align: left;
     padding: 1.25rem 0 1.25rem 1.25rem;
@@ -119,6 +119,7 @@ li a:hover {
 }
 
 .bar1, .bar2, .bar3 {
+    display: block;
     width: 24px;
     height: 2px;
     background-color: #333;
@@ -177,7 +178,6 @@ li a:hover {
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
 }
-
 
 
 input[type=checkbox]:checked ~ .container .menu {
@@ -358,18 +358,14 @@ h3 {
     scroll-margin-top: 5rem;
 }
 
-.imgfull{
-    width: 100%;
-    height: auto;
+.imgfull {
     margin-bottom: 3rem;
 }
 
-.active, .btn_slider:active{
+.active, .btn_slider:active {
     color: white;
     background-color: #0f141e;
 }
-
-
 
 .btn_slider:hover {
     color: #0f141e;
@@ -379,7 +375,6 @@ h3 {
 .identity {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
     flex: auto;
     justify-content: flex-start;
     align-content: flex-start;
@@ -394,11 +389,12 @@ h3 {
     line-height: 1.5rem; /*24px*/
     margin-bottom: 2.375rem;
 }
-.quote-p{
+
+.quote-p {
     position: relative;
 }
 
-.quote-p::before{
+.quote-p::before {
     content: url("../img/quote.svg");
     position: absolute;
     top: -16px;
@@ -407,7 +403,8 @@ h3 {
     display: inline-block;
     width: 3rem;
 }
-.quote-p:after{
+
+.quote-p:after {
     content: url("../img/quote.svg");
     position: absolute;
     bottom: -16px;
@@ -446,10 +443,6 @@ h3 {
     font-family: Archia-Bold, sans-serif;
     font-weight: 700;
     line-height: 18px; /*************CONVERSION*/
-}
-
-.identity-container img {
-    border-radius: 2rem;
 }
 
 .identity p, .identity-container {
@@ -550,7 +543,8 @@ a.slide__next {
     margin: 0 3px 0 3px;
     border: 1px solid #004BFF;
 }
-.slider-navlink-active{
+
+.slider-navlink-active {
     background-color: #004bff;
     width: 40px;
     height: 10px;
@@ -603,7 +597,9 @@ a.slide__next {
     justify-content: stretch;
 }
 
-.identity-card img {
+.identity-card img, .identity-container img {
+    max-width: 4rem;
+    height: auto;
     border-radius: 2rem;
 }
 
@@ -682,7 +678,7 @@ a.slide__next {
 
 .slider-image img {
     border-radius: .5rem;
-    width: 240px;
+    max-width: 15rem;
     height: auto;
 }
 
@@ -691,6 +687,7 @@ a.slide__next {
 }
 
 .btnInformation {
+    text-align: center;
     display: block;
     margin: 0 auto 1rem;
     font: .875rem Archia-Bold, Helvetica, Arial, sans-serif;
@@ -702,18 +699,19 @@ a.slide__next {
     min-width: 15rem;
     transition: all 250ms;
 }
+
 .last-button {
-    margin-top: 1rem;
+    margin-top: 2.5rem;
     margin-bottom: 6rem;
 }
 
 
-
 /* SECTION 5*/
-.slider-interest .buttons{
+.slider-interest .buttons {
     width: 88%;
     margin: 1rem auto 1.2rem;
 }
+
 .parcours-img .active {
     display: block;
     width: 88%;
@@ -745,25 +743,27 @@ a.slide__next {
 }
 
 /*SECTION 5 BIS**/
-picture{
+picture {
     text-align: center;
 }
 
-.experience-pro{
+.experience-pro {
+    max-width: 94%;
     height: auto;
-    margin: 2rem auto 0;
+    margin: 1rem auto 0;
     border-radius: .5rem;
     aspect-ratio: 16/9;
 }
 
 
 /* SECTION 6*/
-.wrapper-langages{
+.wrapper-langages {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .langages {
     padding: 4.5rem 0 4rem;
     background-color: #F1F3FA;
@@ -836,12 +836,13 @@ picture{
 
 /***/
 
-.information-footer a:first-of-type{
+.information-footer a:first-of-type {
     border: 2px solid #00FAC8;
     background-color: #00FAC8;
     color: #002577;
 }
-.information-footer a{
+
+.information-footer a {
     padding: .6rem 1rem;
     border: 2px solid white;
     margin: 0 auto;
@@ -872,7 +873,7 @@ picture{
     line-height: 1rem;
 }
 
-.footer-li-title ul li, .footer-li-title ul li a{
+.footer-li-title ul li, .footer-li-title ul li a {
     text-align: left;
     margin-bottom: 1.2rem;
     background-color: #004bff;
@@ -894,12 +895,13 @@ picture{
 
 /*CHATBOX*/
 
-.chatbox-bulle{
+.chatbox-bulle {
     position: fixed;
     bottom: 0;
     right: 0;
 }
-.chatbox-contenu{
+
+.chatbox-contenu {
     display: none;
 }
 

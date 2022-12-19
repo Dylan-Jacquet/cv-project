@@ -6,7 +6,6 @@ const parcoursImg = document.querySelectorAll('.parcours-img img');
 const btnMenus = document.querySelectorAll('.services');
 
 
-
 const handleEnter = function (e) {
     this.lastElementChild.classList.add('trigger-enter');
     setTimeout(() => this.lastElementChild.classList.add('trigger-enter-active'), 150);
@@ -48,22 +47,16 @@ for (const buttonYearElement of buttonYear) {
     });
 }
 
-
 const buttonsReviews = document.getElementsByClassName('slider__navlink');
 
-
-if(window.innerWidth < 995){
-
-}
-
 for (const buttonReview of buttonsReviews) {
-    buttonReview.addEventListener('click', function (e){
+    buttonReview.addEventListener('click', function (e) {
         removeClassActiveReviews(e);
         e.currentTarget.classList.add('slider-navlink-active');
     });
 }
 
-const removeClassActiveReviews = function (e){
+const removeClassActiveReviews = function (e) {
     for (const buttonsReview of buttonsReviews) {
         buttonsReview.classList.remove('slider-navlink-active');
     }

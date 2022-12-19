@@ -10,26 +10,28 @@
 }
 
 @media (min-width: 390px) {
-    .slides{
+    .slides {
         max-width: 21rem;
         margin: 0 auto;
     }
 }
 
 @media (min-width: 720px) {
-    a[href="#slide-4"],a[href="#slide-5"],a[href="#slide-6"]{
+    a[href="#slide-4"], a[href="#slide-5"], a[href="#slide-6"] {
         display: none;
     }
-    .slides{
+
+    .slides {
         max-width: 43rem;
         margin: 0 auto;
     }
 }
 
 @media (min-width: 995px) {
-    .services{
+    .services {
         width: initial;
     }
+
     .desktop-hidden {
         display: none;
     }
@@ -72,33 +74,35 @@
         height: 3rem;
     }
 
-    .services,.link-only{
+    .services, .link-only {
         padding: 1rem .5rem;
     }
 
-    .link-only:last-of-type{
+    .link-only:last-of-type {
         padding: 0;
         align-self: center;
     }
-    .link-only .btn{
+
+    .link-only .btn {
         font-size: 0.875rem;
         border: #004bff solid 2px;
         background: white;
         padding: .5rem 2.5rem;
-        border-radius:3rem;
+        border-radius: 3rem;
         color: #004bff;
         justify-self: center;
         transition: all 250ms;
     }
-    .butInformation:hover ,.link-only .btn:hover, .slider-interest .btnInformation:hover{
+
+    .butInformation:hover, .link-only .btn:hover, .slider-interest .btnInformation:hover {
         border: 2px solid #00FAC8;
         background-color: #00FAC8;
         color: #0f141e;
 
     }
 
-    .dropdown{
-        box-shadow: 0px 0px 7px rgba(0,0,0,0.5);
+    .dropdown {
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
         transition: all .5s;
         z-index: 999;
         position: absolute;
@@ -114,33 +118,38 @@
         background-color: white;
         padding: 1rem 0;
     }
-    .dropdown li a{
+
+    .dropdown li a {
         font: 1rem "Archia-Medium", Helvetica, Arial, sans-serif;
         color: #0f141e;
         background-color: white;
     }
-    .dropdown li a:before{
+
+    .dropdown li a:before {
         content: url(../img/under-menu.svg);
     }
-    .services:after{
+
+    .services:after {
         display: inline-block;
         content: url(../img/arrow-menu.svg);
         transform: scale(.9);
         transition: all 450ms;
         padding-right: .2rem;
     }
-    .services:hover:after{
+
+    .services:hover:after {
         display: inline-block;
         content: url(../img/arrow-menu.svg);
         transform: scale(.9) rotate(180deg);
         transform-origin: center;
     }
 
-    .trigger-enter{
+    .trigger-enter {
         transition: all 0.5s;
         display: block;
     }
-    .trigger-enter-active{
+
+    .trigger-enter-active {
         opacity: 1;
     }
 
@@ -153,7 +162,7 @@
         padding: 1rem 1.25rem;
     }
 
-    .menu{
+    .menu {
         gap: .5rem;
     }
 
@@ -166,9 +175,10 @@
         font: .875rem Archia-Regular;
     }
 
-    .services span{
+    .services span {
         padding: 0;
     }
+
     header {
         top: 0;
         left: 0;
@@ -222,11 +232,12 @@
         transition: all 0.1ms;
     }
 
-    .menu li{
+    .menu li {
         font: .875rem "Archia-Regular", Helvetica, Arial, sans-serif;
         color: #7e838f;
     }
-    .menu li:hover{
+
+    .menu li:hover {
         color: #004bff;
     }
 
@@ -280,7 +291,8 @@
     .personnal-information h2, .personnal-information .current-text, cite {
         text-align: left;
     }
-    .personnal-information h2{
+
+    .personnal-information h2 {
         line-height: 3rem;
     }
 
@@ -323,10 +335,10 @@
     }
 
     /*COMPARATIF*/
-    .comparatif{
+    .comparatif {
         width: 100%;
         max-width: 70rem;
-        margin:0 auto;
+        margin: 0 auto;
     }
 
     .comparatif h2, .comparatif p {
@@ -407,7 +419,7 @@
     }
 
     /*REVIEW */
-    .review-container h2{
+    .review-container h2 {
         font-size: 2.5rem;
         max-width: 50%;
         display: inline-block;
@@ -415,23 +427,26 @@
         margin-bottom: 3rem;
 
     }
-    .review-container{
+
+    .review-container {
         width: 100%;
         max-width: 70rem;
         margin: 0 auto;
     }
+
     .card-reviews {
         max-width: 33%;
         min-width: 32.3%;
     }
 
-    a[href="#slide-3"],a[href="#slide-4"],a[href="#slide-5"],a[href="#slide-6"]{
+    a[href="#slide-3"], a[href="#slide-4"], a[href="#slide-5"], a[href="#slide-6"] {
         display: none;
     }
 
-    .slider{
+    .slider {
         max-width: 70rem;
     }
+
     .slides {
         max-width: initial;
         display: flex;
@@ -462,7 +477,7 @@
     }
 
 
-    .identity{
+    .identity {
         gap: 0;
         padding-bottom: 7rem;
     }
@@ -496,7 +511,7 @@
     }
 
     /* INTEREST**/
-    .interest_experience{
+    .interest_experience {
         width: 100%;
         max-width: 70rem;
         margin: 0 auto;
@@ -605,13 +620,13 @@
     }
 
     /*SECTION_LANGAGES*/
-
     .wrapper-langages {
         flex-direction: row;
         max-width: 65rem;
         margin: 0 auto;
     }
-    .langages .wrapper-langages h2{
+
+    .langages .wrapper-langages h2 {
         max-width: 75%;
         text-align: left;
         padding: 0;
@@ -630,24 +645,28 @@
         flex-direction: row;
         gap: 2rem;
     }
-    .langages-specialisation div p{
+
+    .langages-specialisation div p {
         text-align: left;
         margin-bottom: 0;
     }
-    .langages-specialisation div span{
+
+    .langages-specialisation div span {
         font-size: 2rem;
         margin-bottom: 0.5rem;
     }
-    .langages-specialisation a{
+
+    .langages-specialisation a {
         margin-left: 0;
     }
-    .slider-footer{
+
+    .slider-footer {
         margin-bottom: 10rem;
         width: initial;
     }
 
     /*SECTION BEFORE FOOTER*/
-    .information-footer h2{
+    .information-footer h2 {
         max-width: 40%;
         margin: 0 auto;
         line-height: 1.2;
@@ -655,27 +674,30 @@
 
     /*CHATBOX*/
     /*FOOTER*/
-    footer{
+    footer {
         background-color: #004bff;
     }
 
-    .footer-menu{
+    .footer-menu {
         max-width: 65rem;
         padding: 5rem 2rem;
         text-align: left;
         margin: 0 auto;
 
     }
+
     .footer-menu > ul {
         display: grid;
         gap: 2rem;
         grid-template-columns: repeat(5, 1fr);
         margin: 0 auto;
     }
-    .footer-logo{
+
+    .footer-logo {
 
     }
-    .footer-li-title ul li, .footer-li-title ul li a{
+
+    .footer-li-title ul li, .footer-li-title ul li a {
         background-color: #004bff;
         color: white;
         font: .875rem "Archia-Regular", Helvetica, Arial, sans-serif;

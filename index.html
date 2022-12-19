@@ -36,12 +36,12 @@
             Menu de navigation
         </h2>
         <a href="index.html" title="" class="logo">
-            <img src="./img/logo.svg" alt="Homepage" width="140px" height="">
+            <img src="./img/logo.svg" alt="Homepage" width="140" height="25">
         </a>
         <label class="burger-wrapper" for="checkbox_toggle" id="burger">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
         </label>
         <input type="checkbox" id="checkbox_toggle"/>
         <div class="container">
@@ -70,38 +70,45 @@
                     </ul>
                 </li>
                 <li class="link-only">
-                    <a href="#" title="Vers la section mes langages" class="link-menu">Langages</a>
+                    <a href="#mes-langages" title="Vers la section mes langages" class="link-menu">Langages</a>
                 </li>
                 <li class="services">
                     <span>Veille</span>
                     <ul class="dropdown sub-menu">
-                        <li><a href="#" title=""><abbr title="">CSS Tricks</abbr></a></li>
-                        <li><a href="#" title="">Alsacréations</a></li>
-                        <li><a href="#" title="">A list apart</a></li>
-                        <li><a href="#" title="">Smashing Magazine</a></li>
-                        <li><a href="#" title="">Dribbble</a></li>
-                        <li><a href="#" title="">Behance</a></li>
-                        <li><a href="#" title="">Bradfrost</a></li>
+                        <li><a href="https://css-tricks.com/" title="Vers la page CSS Tricks" hreflang="en"
+                               target="_blank">CSS Tricks</a></li>
+                        <li><a href="https://www.alsacreations.com/" title="Vers la page Alsacréations" target="_blank">Alsacréations</a>
+                        </li>
+                        <li><a href="https://alistapart.com/" title="Vers le site web A List Apart" hreflang="en"
+                               target="_blank">A list apart</a></li>
+                        <li><a href="https://www.smashingmagazine.com/" title="Vers le site web Smashing Magazine"
+                               hreflang="en" target="_blank">Smashing Magazine</a></li>
+                        <li><a href="https://dribbble.com/" title="Vers le site web Dribbble" hreflang="en"
+                               target="_blank">Dribbble</a></li>
+                        <li><a href="https://www.behance.net/" title="Vers le site web Behance"
+                               target="_blank">Behance</a></li>
+                        <li><a href="https://bradfrost.com/" title="Vers le site web de Bradfrost" hreflang="en"
+                               target="_blank">Bradfrost</a></li>
                     </ul>
                 </li>
                 <li class="services">
                     <span>Compétences</span>
                     <ul class="dropdown sub-menu">
-                        <li><a href="#" title="">Photographie</a></li>
-                        <li><a href="#" title="">Cinéma</a></li>
-                        <li><a href="#" title="">Sport</a></li>
-                        <li><a href="#" title="">Lecture</a></li>
-                        <li><a href="#" title="">Code Challenge</a></li>
-                        <li><a href="#" title="">Jeux-vidéo</a></li>
-                        <li><a href="#" title="">Art / Design</a></li>
-                        <li><a href="#" title="">Web design</a></li>
+                        <li><a href="#interest" title="Vers la section centres d'intérêts">Photographie</a></li>
+                        <li><a href="#interest" title="Vers la section centres d'intérêts">Cinéma</a></li>
+                        <li><a href="#interest" title="Vers la section centres d'intérêts">Sport</a></li>
+                        <li><a href="#interest" title="Vers la section centres d'intérêts">Lecture</a></li>
+                        <li><a href="#interest" title="Vers la section centres d'intérêts">Code Challenge</a></li>
+                        <li><a href="#interest" title="Vers la section centres d'intérêts">Jeux-vidéo</a></li>
+                        <li><a href="#interest" title="Vers la section centres d'intérêts">Art / Design</a></li>
+                        <li><a href="#interest" title="Vers la section centres d'intérêts">Web design</a></li>
                     </ul>
                 </li>
                 <li class="link-only">
-                    <a href="#" title="Vers la section mes projets" class="link-menu">Projets</a>
+                    <a href="#" title="Vers la section mes projets" class="link-menu" target="_blank">Projets</a>
                 </li>
                 <li class="link-only">
-                    <a href="#" title="Vers la page Portfolio" class="btn link-menu">Portfolio</a>
+                    <a href="#" title="Vers la page Portfolio" class="btn link-menu" target="_blank">Portfolio</a>
                 </li>
             </ul>
         </div>
@@ -483,11 +490,29 @@
                 </h3>
                 <picture>
                     <source type="image/webp"
-                            srcset="./img/erreur-moi.jpeg">
-                    <img srcset=""
-                         src="./img/erreur-moi.jpeg"
-                         alt=""
-                         width="" height="">
+                            srcset="./img/comparaison/erreurs-320.webp 320w,
+                         ./img/comparaison/erreurs-480.webp 480w,
+                         ./img/comparaison/erreurs-640.webp 640w,
+                         ./img/comparaison/erreurs-800.webp 800w,
+                         ./img/comparaison/erreurs-960.webp 960w"
+                            sizes="(max-width: 320px) 320px,
+                                (max-width: 600px) 480px,
+                                (max-width: 760px) 640px,
+                                (max-width: 960px) 800px,
+                                960px">
+                    <img srcset="./img/comparaison/erreurs-320.jpg 320w,
+                         ./img/comparaison/erreurs-480.jpg 480w,
+                         ./img/comparaison/erreurs-640.jpg 640w,
+                         ./img/comparaison/erreurs-800.jpg 800w,
+                         ./img/comparaison/erreurs-960.jpg 960w"
+                         sizes="(max-width: 320px) 320px,
+                                (max-width: 600px) 480px,
+                                (max-width: 760px) 640px,
+                                (max-width: 960px) 800px,
+                                960px"
+                         src="./img/comparaison/erreurs-960.jpg"
+                         alt="Une image avec un développeur créant beaucoup d'erreurs"
+                         width="960" height="480">
                 </picture>
                 <ul>
                     <li>
@@ -513,11 +538,29 @@
                 </h3>
                 <picture>
                     <source type="image/webp"
-                            srcset="./img/moi.jpeg">
-                    <img srcset=""
-                         src="./img/moi.jpeg"
-                         alt=""
-                         width="" height="">
+                            srcset="./img/comparaison/moi-320.webp 320w,
+                                    ./img/comparaison/moi-480.webp 480w,
+                                    ./img/comparaison/moi-640.webp 640w,
+                                    ./img/comparaison/moi-800.webp 800w,
+                                    ./img/comparaison/moi-960.webp 960w"
+                            sizes="(max-width: 320px) 320px,
+                                (max-width: 600px) 480px,
+                                (max-width: 760px) 640px,
+                                (max-width: 960px) 800px,
+                                960px">
+                    <img srcset="./img/comparaison/moi-320.jpg 320w,
+                         ./img/comparaison/moi-480.jpg 480w,
+                         ./img/comparaison/moi-640.jpg 640w,
+                         ./img/comparaison/moi-800.jpg 800w,
+                         ./img/comparaison/moi-960.jpg 960w"
+                         sizes="(max-width: 320px) 320px,
+                                (max-width: 600px) 480px,
+                                (max-width: 760px) 640px,
+                                (max-width: 960px) 800px,
+                                960px"
+                         src="./img/comparaison/moi-960.jpg"
+                         alt="Une image avec un développeur créant beaucoup d'erreurs"
+                         width="960" height="480">
                 </picture>
                 <ul>
                     <li>
@@ -539,13 +582,15 @@
             </article>
         </div>
     </section>
-    <section class="section-slider" id="Qui-suis-je">
+    <section class="section-slider" id="Qui-suis-je" itemscope itemtype="https://schema.org/Person">
         <h2 aria-level="2" role="heading">
             Découvrez en davantage sur mon curriculum vitae
         </h2>
         <p class="current-text">
-            Je m’appelle Dylan Jacquet, je suis un étudiant de la <abbr
-                title="Haute École de la Province de Liège">HEPL</abbr>, dans ma section nous avons appris l’art de la
+            Je m’appelle <span itemprop="givenName">Dylan</span> <span itemprop="familyName">Jacquet</span>, je suis un
+            étudiant de la <abbr
+                title="Haute École de la Province de Liège" itemprop="affiliation">HEPL</abbr>, dans ma section nous
+            avons appris l’art de la
             qualité du web.
         </p>
         <div class="main-container-button">
@@ -564,11 +609,17 @@
                         <source type="image/webp"
                                 srcset="./img/slider/quisuisje-320.webp 320w,
                                     ./img/slider/quisuisje-480.webp 480w,
-                                    ./img/slider/quisuisje-640.webp 640w">
+                                    ./img/slider/quisuisje-640.webp 640w"
+                                sizes="(max-width: 320px) 320px,
+                                    (max-width: 600px) 480px,
+                                    640px">
                         <img class="imgfull"
                              srcset="./img/slider/quisuisje-320.jpg 320w,
                                     ./img/slider/quisuisje-480.jpg 480w,
                                     ./img/slider/quisuisje-640.jpg 640w"
+                             sizes="(max-width: 320px) 320px,
+                                    (max-width: 600px) 480px,
+                                    640px"
                              src="./img/slider/quisuisje-640.jpg"
                              width="640" height="375"
                              alt="Back-End et Front End">
@@ -582,11 +633,11 @@
                         <div class="identity-container">
                             <picture>
                                 <source type="image/webp"
-                                        srcset="./img/USER.jpg">
-                                <img srcset="./img/USER.jpg"
-                                     src="./img/USER.jpg"
-                                     alt="Photo de moi"
-                                     width="64" height="64">
+                                        srcset="./img/DylanJacquet.webp">
+                                <img srcset="./img/DylanJacquet.jpg"
+                                     src="./img/DylanJacquet.jpg"
+                                     alt="Photo de Dylan Jacquet"
+                                     width="128" height="128">
                             </picture>
                             <div>
                                 <p>
@@ -607,11 +658,17 @@
                         <source type="image/webp"
                                 srcset="./img/slider/whythischoice-320.webp 320w,
                                     ./img/slider/whythischoice-480.webp 480w,
-                                    ./img/slider/whythischoice-640.webp 640w">
+                                    ./img/slider/whythischoice-640.webp 640w"
+                                sizes="(max-width: 320px) 320px,
+                                    (max-width: 600px) 480px,
+                                    640px">
                         <img class="imgfull"
                              srcset="./img/slider/whythischoice-320.jpg 320w,
                                     ./img/slider/whythischoice-480.jpg 480w,
                                     ./img/slider/whythischoice-640.jpg 640w"
+                             sizes="(max-width: 320px) 320px,
+                                    (max-width: 600px) 480px,
+                                    640px"
                              src="./img/slider/whythischoice-640.jpg"
                              width="640" height="375"
                              alt="Back-End et Front End">
@@ -624,11 +681,11 @@
                         <div class="identity-container">
                             <picture>
                                 <source type="image/webp"
-                                        srcset="./img/USER.jpg">
-                                <img srcset="./img/USER.jpg"
-                                     src="./img/USER.jpg"
-                                     alt="Photo de moi"
-                                     width="64" height="64">
+                                        srcset="./img/DylanJacquet.webp">
+                                <img srcset="./img/DylanJacquet.jpg"
+                                     src="./img/DylanJacquet.jpg"
+                                     alt="Photo de Dylan Jacquet"
+                                     width="128" height="128">
                             </picture>
                             <div>
                                 <p>
@@ -649,11 +706,17 @@
                         <source type="image/webp"
                                 srcset="./img/slider/frontandback-320.webp 320w,
                                     ./img/slider/frontandback-480.webp 480w,
-                                    ./img/slider/frontandback-640.webp 640w">
+                                    ./img/slider/frontandback-640.webp 640w"
+                                sizes="(max-width: 320px) 320px,
+                                    (max-width: 600px) 480px,
+                                    640px">
                         <img class="imgfull"
                              srcset="./img/slider/frontandback-320.jpg 320w,
                                     ./img/slider/frontandback-480.jpg 480w,
                                     ./img/slider/frontandback-640.jpg 640w"
+                             sizes="(max-width: 320px) 320px,
+                                    (max-width: 600px) 480px,
+                                    640px"
                              src="./img/slider/frontandback-640.jpg"
                              width="640" height="376"
                              alt="Back-End et Front End">
@@ -667,11 +730,11 @@
                         <div class="identity-container">
                             <picture>
                                 <source type="image/webp"
-                                        srcset="./img/USER.jpg">
-                                <img srcset="./img/USER.jpg"
-                                     src="./img/USER.jpg"
-                                     alt="Photo de moi"
-                                     width="64" height="64">
+                                        srcset="./img/DylanJacquet.webp">
+                                <img srcset="./img/DylanJacquet.jpg"
+                                     src="./img/DylanJacquet.jpg"
+                                     alt="Photo de Dylan Jacquet"
+                                     width="128" height="128">
                             </picture>
                             <div>
                                 <p>
@@ -711,11 +774,11 @@
                     <div class="identity-card">
                         <picture>
                             <source type="image/webp"
-                                    srcset="./img/USER.jpg">
-                            <img srcset="./img/USER.jpg"
-                                 src="./img/USER.jpg"
-                                 alt="Photo de moi"
-                                 width="64" height="64">
+                                    srcset="./img/DylanJacquet.webp">
+                            <img srcset="./img/DylanJacquet.jpg"
+                                 src="./img/DylanJacquet.jpg"
+                                 alt="Photo de Dylan Jacquet"
+                                 width="128" height="128">
                         </picture>
                         <div>
                             <p>
@@ -741,11 +804,11 @@
                     <div class="identity-card">
                         <picture>
                             <source type="image/webp"
-                                    srcset="./img/USER.jpg">
-                            <img srcset="./img/USER.jpg"
-                                 src="./img/USER.jpg"
-                                 alt="Photo de moi"
-                                 width="64" height="64">
+                                    srcset="./img/DylanJacquet.webp">
+                            <img srcset="./img/DylanJacquet.jpg"
+                                 src="./img/DylanJacquet.jpg"
+                                 alt="Photo de Dylan Jacquet"
+                                 width="128" height="128">
                         </picture>
                         <div>
                             <p>
@@ -771,11 +834,11 @@
                     <div class="identity-card">
                         <picture>
                             <source type="image/webp"
-                                    srcset="./img/USER.jpg">
-                            <img srcset="./img/USER.jpg"
-                                 src="./img/USER.jpg"
-                                 alt="Photo de moi"
-                                 width="64" height="64">
+                                    srcset="./img/DylanJacquet.webp">
+                            <img srcset="./img/DylanJacquet.jpg"
+                                 src="./img/DylanJacquet.jpg"
+                                 alt="Photo de Dylan Jacquet"
+                                 width="128" height="128">
                         </picture>
                         <div>
                             <p>
@@ -801,11 +864,11 @@
                     <div class="identity-card">
                         <picture>
                             <source type="image/webp"
-                                    srcset="./img/USER.jpg">
-                            <img srcset="./img/USER.jpg"
-                                 src="./img/USER.jpg"
-                                 alt="Photo de moi"
-                                 width="64" height="64">
+                                    srcset="./img/DylanJacquet.webp">
+                            <img srcset="./img/DylanJacquet.jpg"
+                                 src="./img/DylanJacquet.jpg"
+                                 alt="Photo de Dylan Jacquet"
+                                 width="128" height="128">
                         </picture>
                         <div>
                             <p>
@@ -831,11 +894,11 @@
                     <div class="identity-card">
                         <picture>
                             <source type="image/webp"
-                                    srcset="./img/USER.jpg">
-                            <img srcset="./img/USER.jpg"
-                                 src="./img/USER.jpg"
-                                 alt="Photo de moi"
-                                 width="64" height="64">
+                                    srcset="./img/DylanJacquet.webp">
+                            <img srcset="./img/DylanJacquet.jpg"
+                                 src="./img/DylanJacquet.jpg"
+                                 alt="Photo de Dylan Jacquet"
+                                 width="128" height="128">
                         </picture>
                         <div>
                             <p>
@@ -861,11 +924,11 @@
                     <div class="identity-card">
                         <picture>
                             <source type="image/webp"
-                                    srcset="./img/USER.jpg">
-                            <img srcset="./img/USER.jpg"
-                                 src="./img/USER.jpg"
-                                 alt="Photo de moi"
-                                 width="64" height="64">
+                                    srcset="./img/DylanJacquet.webp">
+                            <img srcset="./img/DylanJacquet.jpg"
+                                 src="./img/DylanJacquet.jpg"
+                                 alt="Photo de Dylan Jacquet"
+                                 width="128" height="128">
                         </picture>
                         <div>
                             <p>
@@ -912,14 +975,62 @@
                 <li>La veille numérique est indispensable</li>
             </ul>
             <div class="slider-image">
-                <img src="./img/interest/Photographie.jpg" alt="">
-                <img src="./img/interest/CINEMA.jpg" alt="">
-                <img src="./img/interest/SPORT.jpg" alt="">
-                <img src="./img/interest/LECTURE.jpg" alt="">
-                <img src="./img/interest/CODE-CHALLENGE.jpg" alt="">
-                <img src="./img/interest/JEUX-VIDEO.jpg" alt="">
-                <img src="./img/interest/ART-DESIGN.jpg" alt="">
-                <img src="./img/interest/WEBDESIGN.jpg" alt="">
+                <picture>
+                    <source srcset="./img/interest/Photographie.webp"
+                            type="image/webp">
+                    <img src="./img/interest/Photographie.jpg"
+                         alt="Photographie"
+                         width="320" height="365">
+                </picture>
+                <picture>
+                    <source srcset="./img/interest/CINEMA.webp"
+                            type="image/webp">
+                    <img src="./img/interest/CINEMA.jpg"
+                         alt="Cinéma"
+                         width="320" height="365">
+                </picture>
+                <picture>
+                    <source srcset="./img/interest/SPORT.webp"
+                            type="image/webp">
+                    <img src="./img/interest/SPORT.jpg"
+                         alt="Sport"
+                         width="320" height="365">
+                </picture>
+                <picture>
+                    <source srcset="./img/interest/LECTURE.webp"
+                            type="image/webp">
+                    <img src="./img/interest/LECTURE.jpg"
+                         alt="Lecture"
+                         width="320" height="365">
+                </picture>
+                <picture>
+                    <source srcset="/img/interest/CODE-CHALLENGE.webp"
+                            type="image/webp">
+                    <img src="./img/interest/CODE-CHALLENGE.jpg"
+                         alt="Code challenge"
+                         width="320" height="365">
+                </picture>
+                <picture>
+                    <source srcset="./img/interest/JEUX-VIDEO.webp"
+                            type="image/webp">
+                    <img src="./img/interest/JEUX-VIDEO.jpg"
+                         alt="Jeux-vidéo"
+                         width="320" height="365">
+                </picture>
+                <picture>
+                    <source srcset="./img/interest/ART-DESIGN.webp"
+                            type="image/webp">
+                    <img src="./img/interest/ART-DESIGN.jpg"
+                         alt="Art-Design"
+                         width="320" height="365">
+                </picture>
+                <picture>
+                    <source srcset="./img/interest/WEBDESIGN.webp"
+                            type="image/webp">
+                    <img src="./img/interest/WEBDESIGN.jpg"
+                         alt="Web-design"
+                         width="320" height="365">
+                </picture>
             </div>
             <a href="#" title="Vers le formulaire de contact" class="btnInformation">
                 Travailler avec moi
@@ -956,13 +1067,23 @@
                                 ./img/slider-parcours/Arahf-480.webp 480w,
                                 ./img/slider-parcours/Arahf-640.webp 640w,
                                 ./img/slider-parcours/Arahf-800.webp 800w,
-                                ./img/slider-parcours/Arahf-960.webp 960w,">
+                                ./img/slider-parcours/Arahf-960.webp 960w"
+                            sizes="(max-width: 320px) 320px,
+                                (max-width: 600px) 480px,
+                                (max-width: 760px) 640px,
+                                (max-width: 960px) 800px,
+                                960px">
                     <img id="0" class="active"
                          srcset="./img/slider-parcours/Arahf-320.jpg 320w,
                                 ./img/slider-parcours/Arahf-480.jpg 480w,
                                 ./img/slider-parcours/Arahf-640.jpg 640w,
                                 ./img/slider-parcours/Arahf-800.jpg 800w,
-                                ./img/slider-parcours/Arahf-960.jpg 960w,"
+                                ./img/slider-parcours/Arahf-960.jpg 960w"
+                         sizes="(max-width: 320px) 320px,
+                                (max-width: 600px) 480px,
+                                (max-width: 760px) 640px,
+                                (max-width: 960px) 800px,
+                                960px"
                          src="./img/slider-parcours/Arahf-960.jpg"
                          alt="Le site de l'Athénée Royale Ardenne Hautes Fagnes"
                          width="960" height="563">
@@ -973,13 +1094,23 @@
                                 ./img/slider-parcours/Qualification-480.webp 480w,
                                 ./img/slider-parcours/Qualification-640.webp 640w,
                                 ./img/slider-parcours/Qualification-800.webp 800w,
-                                ./img/slider-parcours/Qualification-960.webp 960w,">
+                                ./img/slider-parcours/Qualification-960.webp 960w"
+                            sizes="(max-width: 320px) 320px,
+                                (max-width: 600px) 480px,
+                                (max-width: 760px) 640px,
+                                (max-width: 960px) 800px,
+                                960px">
                     <img id="1"
                          srcset="./img/slider-parcours/Qualification-320.jpg 320w,
                                 ./img/slider-parcours/Qualification-480.jpg 480w,
                                 ./img/slider-parcours/Qualification-640.jpg 640w,
                                 ./img/slider-parcours/Qualification-800.jpg 800w,
-                                ./img/slider-parcours/Qualification-960.jpg 960w,"
+                                ./img/slider-parcours/Qualification-960.jpg 960w"
+                         sizes="(max-width: 320px) 320px,
+                                (max-width: 600px) 480px,
+                                (max-width: 760px) 640px,
+                                (max-width: 960px) 800px,
+                                960px"
                          src="./img/slider-parcours/Qualification-960.jpg"
                          alt="Stand représentant la nouvelle image de marque du musée 'Batarden'"
                          width="960" height="563">
@@ -990,13 +1121,23 @@
                                 ./img/slider-parcours/Helmo-480.webp 480w,
                                 ./img/slider-parcours/Helmo-640.webp 640w,
                                 ./img/slider-parcours/Helmo-800.webp 800w,
-                                ./img/slider-parcours/Helmo-960.webp 960w,">
+                                ./img/slider-parcours/Helmo-960.webp 960w"
+                            sizes="(max-width: 320px) 320px,
+                                (max-width: 600px) 480px,
+                                (max-width: 760px) 640px,
+                                (max-width: 960px) 800px,
+                                960px">
                     <img id="2"
                          srcset="./img/slider-parcours/Helmo-320.jpg 320w,
                                 ./img/slider-parcours/Helmo-480.jpg 480w,
                                 ./img/slider-parcours/Helmo-640.jpg 640w,
                                 ./img/slider-parcours/Helmo-800.jpg 800w,
-                                ./img/slider-parcours/Helmo-960.jpg 960w,"
+                                ./img/slider-parcours/Helmo-960.jpg 960w"
+                         sizes="(max-width: 320px) 320px,
+                                (max-width: 600px) 480px,
+                                (max-width: 760px) 640px,
+                                (max-width: 960px) 800px,
+                                960px"
                          src="./img/slider-parcours/Helmo-960.jpg"
                          alt="Le site de l'HELMO ESAS"
                          width="960" height="563">
@@ -1007,13 +1148,23 @@
                                 ./img/slider-parcours/HEPL-480.webp 480w,
                                 ./img/slider-parcours/HEPL-640.webp 640w,
                                 ./img/slider-parcours/HEPL-800.webp 800w,
-                                ./img/slider-parcours/HEPL-960.webp 960w,">
+                                ./img/slider-parcours/HEPL-960.webp 960w"
+                            sizes="(max-width: 320px) 320px,
+                                (max-width: 600px) 480px,
+                                (max-width: 760px) 640px,
+                                (max-width: 960px) 800px,
+                                960px">
                     <img id="3"
                          srcset="./img/slider-parcours/HEPL-320.jpg 320w,
                                 ./img/slider-parcours/HEPL-480.jpg 480w,
                                 ./img/slider-parcours/HEPL-640.jpg 640w,
                                 ./img/slider-parcours/HEPL-800.jpg 800w,
-                                ./img/slider-parcours/HEPL-960.jpg 960w,"
+                                ./img/slider-parcours/HEPL-960.jpg 960w"
+                         sizes="(max-width: 320px) 320px,
+                                (max-width: 600px) 480px,
+                                (max-width: 760px) 640px,
+                                (max-width: 960px) 800px,
+                                960px"
                          src="./img/slider-parcours/HEPL-960.jpg"
                          alt="Le site de l'HEPL de Seraing"
                          width="960" height="563">
@@ -1062,13 +1213,23 @@
                                 ./img/experiencepro/signtec-480.webp 480w,
                                 ./img/experiencepro/signtec-640.webp 640w,
                                 ./img/experiencepro/signtec-800.webp 800w,
-                                ./img/experiencepro/signtec-960.webp 960w,">
+                                ./img/experiencepro/signtec-960.webp 960w"
+                        sizes="(max-width: 320px) 320px,
+                                (max-width: 600px) 480px,
+                                (max-width: 760px) 640px,
+                                (max-width: 960px) 800px,
+                                960px">
                 <img class="experience-pro"
                      srcset="./img/experiencepro/signtec-320.jpg 320w,
                                 ./img/experiencepro/signtec-480.jpg 480w,
                                 ./img/experiencepro/signtec-640.jpg 640w,
                                 ./img/experiencepro/signtec-800.jpg 800w,
-                                ./img/experiencepro/signtec-960.jpg 960w,"
+                                ./img/experiencepro/signtec-960.jpg 960w"
+                     sizes="(max-width: 320px) 320px,
+                                (max-width: 600px) 480px,
+                                (max-width: 760px) 640px,
+                                (max-width: 960px) 800px,
+                                960px"
                      src="./img/experiencepro/signtec-960.jpg"
                      alt="Photo de l'entreprise SignTec"
                      width="960" height="762">
@@ -1135,9 +1296,9 @@
         <h2 aria-level="2" role="heading">
             Mon CV vous intéresse. Consulter en plus !
         </h2>
-        <a class="btn" href="#" title="Vers les projets de Dylan Jacquet">Mes projets</a>
-        <a class="btn" href="#" title="Vers le formulaire de contact">Contacter-moi</a>
-        <a class="btn" href="#" title="Vers le portfolio de Dylan Jacquet">Mon Portfolio</a>
+        <a class="btn" href="#" title="Vers les projets de Dylan Jacquet" target="_blank">Mes projets</a>
+        <a class="btn" href="#" title="Vers le formulaire de contact" target="_blank">Contacter-moi</a>
+        <a class="btn" href="#" title="Vers le portfolio de Dylan Jacquet" target="_blank">Mon Portfolio</a>
     </section>
     <div class="footer-menu">
         <ul>
@@ -1169,21 +1330,28 @@
             <li class="footer-li-title">
                 Ressources
                 <ul>
-                    <li><a href="https://css-tricks.com/" title="Vers la page CSS Tricks">CSS Tricks</a></li>
-                    <li><a href="https://www.alsacreations.com/" title="Vers la page Alsacréations">Alsacréations</a>
+                    <li><a href="https://css-tricks.com/" title="Vers la page CSS Tricks" target="_blank" hreflang="en">CSS
+                        Tricks</a></li>
+                    <li><a href="https://www.alsacreations.com/" title="Vers la page Alsacréations" target="_blank">Alsacréations</a>
                     </li>
-                    <li><a href="https://alistapart.com/" title="Vers le site web A List Apart">A list apart</a></li>
-                    <li><a href="https://www.udemy.com/" title="Vers le site web Udemy">Udemy</a></li>
+                    <li><a href="https://alistapart.com/" title="Vers le site web A List Apart" target="_blank"
+                           hreflang="en">A list apart</a></li>
+                    <li><a href="https://www.udemy.com/" title="Vers le site web Udemy" target="_blank">Udemy</a></li>
                     <li><a href="https://openclassrooms.com/fr/"
-                           title="Vers le site web OpenClassrooms">Openclassrooms</a></li>
-                    <li><a href="https://www.smashingmagazine.com/" title="Vers le site web Smashing Magazine">Smashing
+                           title="Vers le site web OpenClassrooms" target="_blank">Openclassrooms</a></li>
+                    <li><a href="https://www.smashingmagazine.com/" title="Vers le site web Smashing Magazine"
+                           target="_blank" hreflang="en">Smashing
                         Magazine</a></li>
-                    <li><a href="https://dribbble.com/" title="Vers le site web Dribbble">Dribbble</a></li>
-                    <li><a href="https://www.behance.net/" title="Vers le site web Behance">Behance</a></li>
+                    <li><a href="https://dribbble.com/" title="Vers le site web Dribbble" target="_blank" hreflang="en">Dribbble</a>
+                    </li>
+                    <li><a href="https://www.behance.net/" title="Vers le site web Behance" target="_blank">Behance</a>
+                    </li>
                     <li><a href="https://www.pinterest.fr/dylanjacquet235/"
-                           title="Vers le site web Pinterest">Pinterest</a></li>
-                    <li><a href="https://www.fontpair.co/" title="Vers le site web Fontpair">Fontpair</a></li>
-                    <li><a href="https://bradfrost.com/" title="Vers le site web de Bradfrost">Bradfrost</a></li>
+                           title="Vers le site web Pinterest" target="_blank">Pinterest</a></li>
+                    <li><a href="https://www.fontpair.co/" title="Vers le site web Fontpair" target="_blank"
+                           hreflang="en">Fontpair</a></li>
+                    <li><a href="https://bradfrost.com/" title="Vers le site web de Bradfrost" target="_blank"
+                           hreflang="en">Bradfrost</a></li>
                 </ul>
             </li>
             <li class="footer-li-title">
@@ -1204,18 +1372,18 @@
             </li>
             <li>
                 <div class="small-footer">
-                    <img class="footer-logo" src="./img/logo-light.svg" alt="Homepage"/>
+                    <img class="footer-logo" src="./img/logo-light.svg" alt="Homepage">
                     <p>Dylan Jacquet</p>
                     <p>Les Forges 71, 4987</p>
                     <p>Stoumont Belgique</p>
                     <div>
-                        <img src="./img/socialmedia/LinkedIn.svg" alt="Linkedin" width="20px" height="20px">
+                        <img src="./img/socialmedia/LinkedIn.svg" alt="Linkedin" width="20" height="20">
                         <!-- Linkedin  -->
-                        <img src="./img/socialmedia/github.svg" alt="Github" width="20px" height="20px"> <!-- Github -->
-                        <img src="./img/socialmedia/Instagram.svg" alt="Instagram" width="20px" height="20px">
+                        <img src="./img/socialmedia/github.svg" alt="Github" width="20" height="20"> <!-- Github -->
+                        <img src="./img/socialmedia/Instagram.svg" alt="Instagram" width="20" height="20">
                         <!-- Instagram-->
                     </div>
-                    <img src="./img/logo-light.svg" alt="LOGO" width="100px" height="30px">
+                    <img src="./img/logo-light.svg" alt="Le logo de Dylan Jacquet" width="100" height="30">
                     <p> Content Authenticity Initiative</p>
                 </div>
             </li>
