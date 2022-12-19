@@ -359,6 +359,8 @@ h3 {
 }
 
 .imgfull {
+    max-width: 100%;
+    height: auto;
     margin-bottom: 3rem;
 }
 
