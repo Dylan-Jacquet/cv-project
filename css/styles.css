@@ -908,7 +908,7 @@ picture {
         left: 0;
         position: initial;
         flex-direction: row;
-        height: initial;
+        height: 4rem;
         width: initial;
         opacity: 1;
         margin-top: 0;
