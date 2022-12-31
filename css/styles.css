@@ -1,3 +1,10 @@
+/* VARIABLE CSS */
+:root {
+    --primaryBlue: #004bff;
+    --buttonHover: #00fac8;
+}
+
+/* FIN DES VARIABLES CSS*/
 body {
     background-size: 130%;
     background: no-repeat 15% top url(../img/BGVIDEO.svg);
@@ -70,7 +77,7 @@ li a {
 }
 
 li a:hover {
-    color: #004bff;
+    color: var(--primaryBlue);
 }
 
 /* NAVBAR MENU */
@@ -78,7 +85,7 @@ li a:hover {
     font: 1rem Archia-Bold, Helvetica, Arial, sans-serif;
     font-weight: 800;
     color: white;
-    background-color: #004bff;
+    background-color: var(--primaryBlue);
 
 }
 
@@ -191,7 +198,7 @@ input[type=checkbox]:checked ~ .container .menu {
 /*NAV BUILD*/
 
 li a:hover {
-    color: #004bff;
+    color: var(--primaryBlue);
 }
 
 .mobile-hidden, .reverse .mobile-hidden {
@@ -245,9 +252,9 @@ p strong {
     display: block;
     margin: 0 auto 1rem;
     font: .875rem Archia-Bold, Helvetica, Arial, sans-serif;
-    border: #004bff solid 2px;
+    border: var(--primaryBlue) solid 2px;
     color: white;
-    background-color: #004bff;
+    background-color: var(--primaryBlue);
     border-radius: 2rem;
     padding: 0.6rem 1rem;
 }
@@ -282,7 +289,7 @@ h3 {
     font: 1rem Archia-Bold, Helvetica, Arial, sans-serif; /* 16px */
     font-weight: 700;
     letter-spacing: 0.025rem;
-    color: #004bff;
+    color: var(--primaryBlue);
     margin-bottom: 2.5rem;
 }
 
@@ -434,7 +441,7 @@ h3 {
 }
 
 .identity-container div > p {
-    color: #004bff;
+    color: var(--primaryBlue);
     font: .75rem Archia-Regular, Helvetica, Arial, sans-serif;
     font-weight: 400;
     line-height: 18px; /*************CONVERSION*/
@@ -453,8 +460,8 @@ h3 {
 
 .highlighted-link {
     display: inline-block;
-    color: #004bff;
-    border-bottom: 1px solid #004bff;
+    color: var(--primaryBlue);
+    border-bottom: 1px solid var(--primaryBlue);
     font: 1rem Archia-SemiBold, Helvetica, Arial, sans-serif;
     font-weight: 600;
     line-height: 1.5rem;
@@ -543,11 +550,11 @@ a.slide__next {
     width: 10px;
     border-radius: 50%;
     margin: 0 3px 0 3px;
-    border: 1px solid #004BFF;
+    border: 1px solid var(--primaryBlue);
 }
 
 .slider-navlink-active {
-    background-color: #004bff;
+    background-color: var(--primaryBlue);
     width: 40px;
     height: 10px;
     border-radius: 1rem;
@@ -693,9 +700,9 @@ a.slide__next {
     display: block;
     margin: 0 auto 1rem;
     font: .875rem Archia-Bold, Helvetica, Arial, sans-serif;
-    border: 2px solid #004bff;
+    border: 2px solid var(--primaryBlue);
     color: white;
-    background-color: #004bff;
+    background-color: var(--primaryBlue);
     border-radius: 2rem;
     padding: 0.60rem 1rem;
     min-width: 15rem;
@@ -781,7 +788,7 @@ picture {
     display: block;
     font: 3rem Archia-Bold, Helvetica, Arial, sans-serif;
     font-weight: 700;
-    color: #004bff;
+    color: var(--primaryBlue);
 }
 
 .langages .wrapper-langages p {
@@ -831,16 +838,16 @@ picture {
 }
 
 .information-footer button:first-of-type {
-    border: 2px solid #00fac8;
+    border: 2px solid var(--buttonHover);
     color: #002577;
-    background-color: #00fac8;
+    background-color: var(--buttonHover);
 }
 
 /***/
 
 .information-footer a:first-of-type {
-    border: 2px solid #00FAC8;
-    background-color: #00FAC8;
+    border: 2px solid var(--buttonHover);
+    background-color: var(--buttonHover);
     color: #002577;
 }
 
@@ -856,14 +863,14 @@ picture {
 
 .footer-menu {
     padding: 3.25rem 1.25rem 5rem;
-    background-color: #004bff;
+    background-color: var(--primaryBlue);
 }
 
 .footer-li-title {
     text-align: left;
     font: 0.875rem Archia-Bold, Helvetica, Arial, sans-serif;
     font-weight: 700;
-    color: #00fac8;
+    color: var(--buttonHover);
     line-height: 1rem;
 }
 
@@ -878,7 +885,7 @@ picture {
 .footer-li-title ul li, .footer-li-title ul li a {
     text-align: left;
     margin-bottom: 1.2rem;
-    background-color: #004bff;
+    background-color: var(--primaryBlue);
     color: white;
     font: .875rem "Archia-Regular", Helvetica, Arial, sans-serif;
 }
@@ -895,21 +902,19 @@ picture {
     color: #A3EAFF; /* CHANGE CONTRAST ACCESSIBILITY*/
 }
 
-/*CHATBOX*/
-
-.chatbox-bulle {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-}
-
-.chatbox-contenu {
-    display: none;
-}
-
-/* SWIPER JS */
-
-.swiper {
-    width: 600px;
-    height: 300px;
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+    .menu {
+        top: 0;
+        left: 0;
+        position: initial;
+        flex-direction: row;
+        height: initial;
+        width: initial;
+        opacity: 1;
+        margin-top: 0;
+        padding: 0;
+        display: inline-flex;
+        transition: all 0.5s;
+        overflow: visible;
+    }
 }

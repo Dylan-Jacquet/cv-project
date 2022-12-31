@@ -85,18 +85,18 @@
 
     .link-only .btn {
         font-size: 0.875rem;
-        border: #004bff solid 2px;
+        border: var(--primaryBlue) solid 2px;
         background: white;
         padding: .5rem 2.5rem;
         border-radius: 3rem;
-        color: #004bff;
+        color: var(--primaryBlue);
         justify-self: center;
         transition: all 250ms;
     }
 
     .butInformation:hover, .link-only .btn:hover, .slider-interest .btnInformation:hover {
-        border: 2px solid #00FAC8;
-        background-color: #00FAC8;
+        border: 2px solid var(--buttonHover);
+        background-color: var(--buttonHover);
         color: #0f141e;
 
     }
@@ -238,7 +238,7 @@
     }
 
     .menu li:hover {
-        color: #004bff;
+        color: var(--primaryBlue);
     }
 
     .menu > li {
@@ -374,7 +374,7 @@
 
     .comparaison h3 {
         font: 1.5rem "Archia-Bold", "Helvetica Neue", Helvetica, Arial;
-        color: #004bff;
+        color: var(--primaryBlue);
         margin-bottom: 0;
     }
 
@@ -394,14 +394,16 @@
         font-size: .875rem;
         color: #7e838f;
         padding: 1rem 2rem;
+        text-align: left;
     }
 
 
     /*IDENTITY*/
-    .imgfull{
+    .imgfull {
         max-width: initial;
         height: initial;
     }
+
     .section-slider {
         width: 100%;
         max-width: 70rem;
@@ -676,10 +678,9 @@
         line-height: 1.2;
     }
 
-    /*CHATBOX*/
     /*FOOTER*/
     footer {
-        background-color: #004bff;
+        background-color: var(--primaryBlue);
     }
 
     .footer-menu {
@@ -697,12 +698,8 @@
         margin: 0 auto;
     }
 
-    .footer-logo {
-
-    }
-
     .footer-li-title ul li, .footer-li-title ul li a {
-        background-color: #004bff;
+        background-color: var(--primaryBlue);
         color: white;
         font: .875rem "Archia-Regular", Helvetica, Arial, sans-serif;
     }
