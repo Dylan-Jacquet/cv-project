@@ -4,8 +4,6 @@
         /*noinspection CssReplaceWithShorthandSafely*/
         background-color: white;
         /*noinspection CssReplaceWithShorthandSafely*/
-        background: no-repeat right -4rem top url(../img/BGVIDEO.svg);
-        background-size: 65%;
     }
 }
 
@@ -43,8 +41,6 @@
     body {
         margin: 0 auto;
         /*noinspection CssReplaceWithShorthandSafely*/
-        background: no-repeat right top url(../img/BGVIDEO.svg);
-        background-size: 60%;
         /*noinspection CssReplaceWithShorthandSafely*/
         background-color: white;
     }
@@ -268,12 +264,15 @@
     }
 
     .presentation {
-        padding-top: 4rem;
         display: grid;
         gap: 0 5rem;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 2fr 1fr;
         align-items: center;
+        background: no-repeat right top url(../img/BGVIDEO.svg);
+        background-size: 60%;
+        padding: 4rem 15rem;
+        max-width: 100rem;
     }
 
     .video-presentation {
@@ -474,6 +473,7 @@
 
     .buttons {
         justify-content: center;
+        overflow-x: initial;
     }
 
     .tabContent {

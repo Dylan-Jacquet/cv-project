@@ -6,8 +6,6 @@
 
 /* FIN DES VARIABLES CSS*/
 body {
-    background-size: 130%;
-    background: no-repeat 15% top url(../img/BGVIDEO.svg);
     background-color: white;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -214,6 +212,7 @@ li a:hover {
     margin: 0 auto;
     padding: 5.375rem 1.25rem 0;
     background-size: 130%;
+    background: no-repeat 15% top url(../img/BGVIDEO.svg);
 }
 
 /*VIDEO IN THE BACK OF THE NAV*/
@@ -671,6 +670,8 @@ a.slide__next {
     font-weight: 500;
     line-height: 1.5rem; /*24px*/
     color: #474c56;
+    display: inline-flex;
+    gap: inherit;
 }
 
 .slider-image {
@@ -916,5 +917,33 @@ picture {
         display: inline-flex;
         transition: all 0.5s;
         overflow: visible;
+        max-width: 80%;
     }
+    .logo-grid svg{
+        max-width: 10rem;
+        width: initial;
+    }
+    .tabContent .content{
+        max-width: 30rem;
+    }
+    .personnal-information{
+        padding-top: 4rem;
+    }
+    .slides .card-reviews{
+        min-width: 20.4rem;
+    }
+    .card-reviews h3, .card-reviews p, .identity-container{
+        max-width: 16rem;
+    }
+    .slider .slides{
+        max-width: 70rem;
+    }
+    .slider .slides .slide{
+        margin-right: 2rem;
+        display: inline;
+    }
+   .slider .identity-card div{
+       display: inline;
+   }
+    .slide2{}
 }
